@@ -5,7 +5,7 @@
         width: inherit;
         height: 100vh;
         position: absolute;
-        background: url('T--SCU_China-2017--mainBack3.jpg') no-repeat top center;
+        background: url('T--SCU_China-2017--mainBack4.jpg') no-repeat top center;
 
         background-size: cover;
     }
@@ -20,10 +20,43 @@
     }
     .scu_project_image_wrapper{
         position: relative;
-        background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 900px;
+        background: url("T--SCU_China-2017--project3.jpg") no-repeat 0px 100vh;
         background-size: contain;
         width: inherit;
+
         height: 200vh;
+    }
+    .scu_nav{
+        position: relative;
+        transform: scale(1);
+        padding-top: 100vh;
+        background-size: cover;
+        color: white;
+        font-size: 24px;
+    }
+    .nav-justified{
+			width:80%;
+        margin: 0 auto;
+	}
+	.nav-justified > li {
+    		display: table-cell;
+    		width: 1%;
+    		float:none;
+    }
+    .scu_nav_home{
+        position: relative;
+        padding-left: 0px;
+        opacity: 0.5;
+        background-size: 56px 56px;
+    }
+    .scu_nav_home_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -50px;
+    }
+    .scu_nav_home > p{
+        opacity: 1.0;
     }
     .scu_down_scale{
         transform: scale(0.1);
@@ -46,31 +79,80 @@
 
 }
 @media screen and (max-width: 1200px) {
-    .header_image_wrapper{
+    .scu_header_image_wrapper{
         width: inherit;
         height: 100vh;
-        background: url("T--SCU_China-2017--mainBack3.jpg") no-repeat top center;
+        position: absolute;
+        background: url('T--SCU_China-2017--mainBack4.jpg') no-repeat top center;
+
         background-size: cover;
+    }
+    .scu_down{
+        position: relative;
+        margin: 50px auto 20px auto;
+        text-align: center;
+        font-size: 16px;
+        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
+        color:white;
+        padding-top: 20px;
+    }
+    .scu_project_image_wrapper{
+        position: relative;
+        background: url("T--SCU_China-2017--project3.jpg") no-repeat 0px 100vh;
+        background-size: contain;
+        width: inherit;
+
+        height: 200vh;
+    }
+    .scu_nav{
+        position: relative;
+        transform: scale(1);
+        padding-top: 100vh;
+        background-size: cover;
+        color: white;
+        font-size: 24px;
+    }
+    .nav-justified{
+        width:80%;
+        margin: 0 auto;
+    }
+    .nav-justified > li {
+        display: table-cell;
+        width: 1%;
+        float:none;
+    }
+    .scu_nav_home{
+        position: relative;
+        padding-left: 0px;
+        opacity: 0.5;
+        background-size: 56px 56px;
+    }
+    .scu_nav_home_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -50px;
+    }
+    .scu_nav_home > p{
+        opacity: 1.0;
+    }
+    .scu_down_scale{
+        transform: scale(0.1);
+        text-align: center;
+        margin: -90px auto;
 
     }
-    .scu_content_text {
-        width: 100%;
-        height: auto;
-    }
     .scu_title {
-        margin-top: 10px;
+        position: relative;
+        margin: 30% auto 100px auto;
         text-align: center;
-        font-size: 36px;
-        font-family: "Times New Roman", Georgia, Serif, sans-serif;
+        font-size: 60px;
+        color: white;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     }
-    .scu_content{
-        width: 90%;
-        margin: 0 auto;
-        font-size: 24px;
-        line-height: 28px;
-        text-align:left;
-        /*text-align-last:left;*/
-        font-family: "Times New Roman", Georgia,Serif, sans-serif;
+    .scu_vice_title{
+        font-size: 40px;
+
     }
 }
 @media screen and (min-width:1200px) {
