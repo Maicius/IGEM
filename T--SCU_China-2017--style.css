@@ -5,7 +5,7 @@
         width: inherit;
         height: 100vh;
         position: absolute;
-        background: url('T--SCU_China-2017--mainBack4.jpg') no-repeat top center;
+        background: url('T--SCU_China-2017--mainBack5.jpg') no-repeat top center;
 
         background-size: cover;
     }
@@ -19,20 +19,28 @@
         padding-top: 20px;
     }
     .scu_project_image_wrapper{
-        position: relative;
-        background: url("T--SCU_China-2017--project3.jpg") no-repeat 0px 100vh;
-        background-size: contain;
         width: inherit;
-
+        position: relative;
+        background: url("T--SCU_China-2017--project2.jpg") no-repeat 0px 100vh;
+        background-size: contain;
         height: 200vh;
     }
+
     .scu_nav{
+        margin-top: 10px;
         position: relative;
         transform: scale(1);
         padding-top: 100vh;
         background-size: cover;
         color: white;
         font-size: 24px;
+    }
+    .scu_nav_background{
+        position: relative;
+        transform: scale(1.25);
+        width: 100%;
+        margin-top: -10%;
+
     }
     .nav-justified{
 			width:80%;
@@ -46,14 +54,52 @@
     .scu_nav_home{
         position: relative;
         padding-left: 0px;
-        opacity: 0.5;
-        background-size: 56px 56px;
+        opacity: 0.8;
+        transform: scale(1.5);
+        margin-top: -250px;
+        margin-left: 30%;
     }
     .scu_nav_home_text{
         position: relative;
         font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
         opacity: 1.0;
-        margin-top: -50px;
+        margin-top: -150px;
+        margin-left: 24%;
+    }
+    .scu_nav_modeling_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -150px;
+        margin-left: 16%;
+    }
+    .scu_nav_human_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -165px;
+        margin-left: 22%;
+    }
+    .scu_nav_attri_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -150px;
+        margin-left: 17%;
+    }
+    .scu_nav_gold_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -165px;
+        margin-left: 25%;
+    }
+    .scu_nav_note_text{
+        position: relative;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        opacity: 1.0;
+        margin-top: -150px;
+        margin-left: 16%;
     }
     .scu_nav_home > p{
         opacity: 1.0;
@@ -62,7 +108,6 @@
         transform: scale(0.1);
         text-align: center;
         margin: -90px auto;
-
     }
     .scu_title {
         position: relative;
@@ -83,10 +128,11 @@
         width: inherit;
         height: 100vh;
         position: absolute;
-        background: url('T--SCU_China-2017--mainBack4.jpg') no-repeat top center;
+        background: url('T--SCU_China-2017--mainBack5.jpg') no-repeat top center;
 
         background-size: cover;
     }
+
     .scu_down{
         position: relative;
         margin: 50px auto 20px auto;
@@ -98,10 +144,9 @@
     }
     .scu_project_image_wrapper{
         position: relative;
-        background: url("T--SCU_China-2017--project3.jpg") no-repeat 0px 100vh;
+        background: url("T--SCU_China-2017--project2.jpg") no-repeat 0px 100vh;
         background-size: contain;
         width: inherit;
-
         height: 200vh;
     }
     .scu_nav{
@@ -111,6 +156,10 @@
         background-size: cover;
         color: white;
         font-size: 24px;
+
+    }
+    .scu_nav_background{
+        transform: scale(0.1);
     }
     .nav-justified{
         width:80%;
@@ -131,10 +180,10 @@
         position: relative;
         font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
         opacity: 1.0;
-        margin-top: -50px;
     }
     .scu_nav_home > p{
         opacity: 1.0;
+        margin-top: 60px;
     }
     .scu_down_scale{
         transform: scale(0.1);
