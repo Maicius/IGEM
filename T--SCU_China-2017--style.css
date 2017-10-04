@@ -42,6 +42,29 @@
         margin-top: -10%;
 
     }
+    .scu_footer_text{
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
+        position: relative;
+        margin-top: -40px;
+    }
+    .scu_footer_text_2{
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
+        position: relative;
+        margin-top: -10px;
+    }
+    .scu_footer{
+        position: relative;
+        width: 100%;
+        transform: scale(1.47);
+        margin-top: -50px;
+        margin-left:-2px;
+    }
     .nav-justified{
 			width:80%;
         margin: 0 auto;
@@ -160,6 +183,14 @@
     }
     .scu_nav_background{
         transform: scale(0.1);
+    }
+    .scu_footer_text{
+        text-align: center;
+        color: white;
+        font-size: 16px;
+        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
+        position: relative;
+        margin-top: -40px;
     }
     .nav-justified{
         width:80%;
