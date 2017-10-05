@@ -699,7 +699,6 @@
                             margin-top: 0;
                         }
 
-
                         /**************************************************************** MENU ***************************************************************/
                         /* Wrapper for the menu */
                         .igem_2017_menu_wrapper {
@@ -1069,7 +1068,7 @@
                             font-weight: bold;
                         }
 
-                        .content_wrapper{
+                        .content_wrapper {
                             width: 100%;
                             height: 100vh;
                         }
@@ -1082,85 +1081,97 @@
 
                 <!-- start of content -->
                 <div class="content_wrapper">
-                       <div class="scu_header_image_wrapper">
-                           <div class="scu_title">
-                               <p>iGEM_SCU</p>
-                               <p class="scu_vice_title">special containment university</p>
-                           </div>
-                           <div class="scu_down">
-                               <p>learn more about us</p>
-                               <img class="scu_down_scale" src="T--SCU-China-2017--down.png"/>
-                           </div>
-                       </div>
+                    <div class="scu_header_image_wrapper" onclick="click_scroll()">
+                        <div class="scu_title">
+                            <p>iGEM_SCU</p>
+                            <p class="scu_vice_title">special containment university</p>
+                        </div>
+                        <div class="scu_down" id="scu_down" onclick="click_scroll()">
+                            <p>learn more about us</p>
+                            <img id="scu_down_image" class="scu_down_scale" onclick="click_scroll()"
+                                 src="T--SCU-China-2017--down.png"/>
+                        </div>
+                    </div>
 
-                       <div class="scu_project_image_wrapper">
-                           <div class="nav nav-justified scu_nav">
-                               <img class="scu_nav_background" src="T--SCU_China-2017--bannerBack.png">
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--home.png"> <p class="scu_nav_home_text">Home</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--notebook.png"> <p class="scu_nav_home_text">Project</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--modeling.png"> <p class="scu_nav_modeling_text">Modeling</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--human.png"> <p class="scu_nav_human_text">Human Practice</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--attri.png"> <p class="scu_nav_attri_text">Attribution</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--gold.png"> <p class="scu_nav_gold_text">&nbsp;Gold</br>Medal</p></li>
-                               <li><img class="scu_nav_home" src="T--SCU_China_2017--project.png"> <p class="scu_nav_note_text">NoteBook</p></li>
-                           </div>
-                       </div>
-                    <footer class="footer">
-                        <div class="container">
-                            <img class="scu_footer" src="T--SCU_China-2017--footer3.png">
+                    <div class="scu_project_image_wrapper">
+                        <div class="nav nav-justified scu_nav" id="scu_project">
+
+                            <img class="scu_nav_background" src="T--SCU_China-2017--bannerBack.png">
+                            <img class="scu_nav_line_up" src="T--SCU_China_2017--line.png">
+                            <img class="scu_nav_line_down" src="T--SCU_China_2017--line.png">
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--home.png">
+                                <p class="scu_nav_home_text">Home</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--project.png">
+                                <p class="scu_nav_home_text">Project</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--modeling.png">
+                                <p class="scu_nav_modeling_text">Modeling</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--human.png">
+                                <p class="scu_nav_human_text">Human Practice</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--attri.png">
+                                <p class="scu_nav_attri_text">Attribution</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--gold.png">
+                                <p class="scu_nav_gold_text">&nbsp;Gold</br>Medal</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--notebook.png">
+                                <p class="scu_nav_note_text">NoteBook</p></li>
+                        </div>
+                    </div>
+                    <div class="footer">
+                            <img class="scu_footer" src="T--SCU_China_2017--footer.png">
                             <p class="scu_footer_text">SCU_China-2017@copyright</p>
                             <p class="scu_footer_text_2">Contact Us</p>
-                        </div>
-                    </footer>
+                    </div>
                 </div>
 
 
-                    <p></p>
-                    <!--
-                    NewPP limit report
-                    CPU time usage: 0.008 seconds
-                    Real time usage: 0.009 seconds
-                    Preprocessor visited node count: 9/1000000
-                    Preprocessor generated node count: 42/1000000
-                    Post‐expand include size: 41/2097152 bytes
-                    Template argument size: 0/2097152 bytes
-                    Highest expansion depth: 2/40
-                    Expensive parser function count: 0/100
-                    -->
+                <p></p>
+                <!--
+                NewPP limit report
+                CPU time usage: 0.008 seconds
+                Real time usage: 0.009 seconds
+                Preprocessor visited node count: 9/1000000
+                Preprocessor generated node count: 42/1000000
+                Post‐expand include size: 41/2097152 bytes
+                Template argument size: 0/2097152 bytes
+                Highest expansion depth: 2/40
+                Expensive parser function count: 0/100
+                -->
 
-                    <!-- Saved in parser cache with key 2017_igem_org:pcache:idhash:602-0!*!*!*!*!*!* and timestamp 20170626055012 and revision id 5276
-                     -->
-                </div>
-                <div class="visualClear"></div>
+                <!-- Saved in parser cache with key 2017_igem_org:pcache:idhash:602-0!*!*!*!*!*!* and timestamp 20170626055012 and revision id 5276
+                 -->
             </div>
+            <div class="visualClear"></div>
         </div>
-
-    </div>
-
-    <!-- Side Menubar -->
-    <div id="sideMenu">
-        <a href="http://2017.igem.org/">
-            <div id="home_logo">
-                <img src="./Team_SCU China - 2017.igem.org_files/HQ_menu_logo.jpg">
-            </div>
-        </a>
-
-        <div style="clear:both; height:5px;"></div>
-
-        <div id="menuDisplay"></div>  <!--- Menu will be loaded here --->
-    </div>
-
-    <!-- Pop_Why Div is definded here -->
-    <div class="pop_why_cover"></div>
-
-    <div class="pop_why_box">
-        <div class="pop_close">×</div>
-        <div class="pop_why_content"><h3> Loading ... </h3></div>
     </div>
 
 </div>
+
+<!-- Side Menubar -->
+<div id="sideMenu">
+    <a href="http://2017.igem.org/">
+        <div id="home_logo">
+            <img src="./Team_SCU China - 2017.igem.org_files/HQ_menu_logo.jpg">
+        </div>
+    </a>
+
+    <div style="clear:both; height:5px;"></div>
+
+    <div id="menuDisplay"></div>  <!--- Menu will be loaded here --->
+</div>
+
+<!-- Pop_Why Div is definded here -->
+<div class="pop_why_cover"></div>
+
+<div class="pop_why_box">
+    <div class="pop_close">×</div>
+    <div class="pop_why_content"><h3> Loading ... </h3></div>
+</div>
+
+</div>
 <link rel="stylesheet" href="T--SCU_China-2017--style.css" type="text/css">
-<script type= "text/javascript" src="T--SCU_China-2017-js.js"></script>
+
 <script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="jquery.min.js"></script>
+<script type="text/javascript" src="jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="T--SCU_China-2017-js.js"></script>
 </div></body>
 </html>

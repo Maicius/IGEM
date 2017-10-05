@@ -5,7 +5,7 @@
         width: inherit;
         height: 100vh;
         position: absolute;
-        background: url('T--SCU_China-2017--mainBack5.jpg') no-repeat top center;
+        background: url('T--SCU_China-2017--mainBack6.jpg') no-repeat top center;
 
         background-size: cover;
     }
@@ -21,7 +21,7 @@
     .scu_project_image_wrapper{
         width: inherit;
         position: relative;
-        background: url("T--SCU_China-2017--project2.jpg") no-repeat 0px 100vh;
+        background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
         background-size: contain;
         height: 200vh;
     }
@@ -59,11 +59,10 @@
         margin-top: -10px;
     }
     .scu_footer{
-        position: relative;
+        position: absolute;
         width: 100%;
-        transform: scale(1.47);
-        margin-top: -50px;
-        margin-left:-2px;
+        overflow: hidden;
+        margin-top: -25px;
     }
     .nav-justified{
 			width:80%;
@@ -81,6 +80,20 @@
         transform: scale(1.5);
         margin-top: -250px;
         margin-left: 30%;
+    }
+    .scu_nav_line_down{
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -140px;
+    }
+    .scu_nav_line_up{
+        position: relative;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -260px;
     }
     .scu_nav_home_text{
         position: relative;
@@ -167,7 +180,7 @@
     }
     .scu_project_image_wrapper{
         position: relative;
-        background: url("T--SCU_China-2017--project2.jpg") no-repeat 0px 100vh;
+        background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
         background-size: contain;
         width: inherit;
         height: 200vh;
