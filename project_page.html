@@ -763,7 +763,7 @@
                         }
 
                         .open::before {
-                            content: "" !important;
+                            content: "-" !important;
                         }
 
                         /* styling for the menu buttons on hover */
@@ -1081,76 +1081,33 @@
 
                 <!-- start of content -->
                 <div class="content_wrapper">
-                    <div class="scu_header_image_wrapper" onclick="click_scroll()">
-                        <div class="scu_title">
-                            <p>iGEM_SCU</p>
-                            <p class="scu_vice_title">special containment university</p>
-                        </div>
-                        <div class="scu_down" id="scu_down" onclick="click_scroll()">
-                            <p>learn more about us</p>
-                            <img id="scu_down_image" class="scu_down_scale" onclick="click_scroll()"
-                                 src="T--SCU-China-2017--down.png"/>
-                        </div>
-                    </div>
+                    <div class="scu_project_wrapper">
+                        <div class="nav nav-justified scu_nav_project" id="scu_project">
 
-                    <div class="scu_project_image_wrapper">
-                        <div class="nav nav-justified scu_nav" id="scu_project">
-                            <img class="scu_nav_background" src="T--SCU_China-2017--bannerBack.png">
+                            <img class="scu_nav_project_background" src="T--SCU_China-2017--bannerBack.png">
                             <img class="scu_nav_line_up" src="T--SCU_China_2017--line.png">
                             <img class="scu_nav_line_down" src="T--SCU_China_2017--line.png">
                             <li><img class="scu_nav_home" src="T--SCU_China_2017--home.png">
-                                <a href="#" class="scu_nav_home_text">Home</a></li>
-
-                            <li class="dropdown">
-                                <img class="scu_nav_home" src="T--SCU_China_2017--project.png">
-                                <a class="dropdown-toggle scu_nav_home_text" data-toggle="dropdown" href="#">Project</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Melatonin</a></li>
-                                    <li><a href="#">Repressilator</a></li>
-                                    <li><a href="#">InterLab</a></li>
-                                    <li><a href="#">Parts</a></li>
-                                </ul></li>
-
-                            <li class="dropdown">
-                                <img class="scu_nav_home" src="T--SCU_China_2017--modeling.png">
-                                <a href="#" class="dropdown-toggle scu_nav_modeling_text" data-toggle="dropdown">Modeling</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Melatonin</a></li>
-                                    <li><a href="#">Repressilator</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <img class="scu_nav_home" src="T--SCU_China_2017--human.png">
-                                <a href="#" class="dropdown-toggle scu_nav_human_text" data-toggle="dropdown">Human</br></br>Practice</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Survey</a></li>
-                                    <li><a href="#">Meet-up</a></li>
-                                    <li><a href="#">Engagement</a></li>
-                                    <li><a href="#">Collaborrations</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="dropdown">
-                                <img class="scu_nav_home" src="T--SCU_China_2017--attri.png">
-                                <a href="#" class="dropdown-toggle scu_nav_attri_text" data-toggle="dropdown">Attribution</a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Team</a></li>
-                                    <li><a href="#">Acknowledgement</a></li>
-                                </ul>
-                            </li>
+                                <p class="scu_nav_home_text">Home</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--project.png">
+                                <p class="scu_nav_home_text">Project</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--modeling.png">
+                                <p class="scu_nav_modeling_text">Modeling</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--human.png">
+                                <p class="scu_nav_human_text">Human Practice</p></li>
+                            <li><img class="scu_nav_home" src="T--SCU_China_2017--attri.png">
+                                <p class="scu_nav_attri_text">Attribution</p></li>
                             <li><img class="scu_nav_home" src="T--SCU_China_2017--gold.png">
-                                <a href="#" class="dropdown-toggle scu_nav_gold_text" data-toggle="dropdown">Gold</br></br>Medal</a>
-
-                            </li>
+                                <p class="scu_nav_gold_text">&nbsp;Gold</br>Medal</p></li>
                             <li><img class="scu_nav_home" src="T--SCU_China_2017--notebook.png">
-                                <a href="#" class="scu_nav_note_text">NoteBook</a></li>
+                                <p class="scu_nav_note_text">NoteBook</p></li>
                         </div>
                     </div>
                     <div class="footer">
-                            <img class="scu_footer_icon" src="T--SCU_China_2017--icon.png">
-                            <img class="scu_footer" src="T--SCU_China_2017--footer.png">
-                            <p class="scu_footer_text">SCU_China-2017@copyright</p>
-                            <p class="scu_footer_text_2">Contact Us</p>
+                        <img class="scu_footer_icon" src="T--SCU_China_2017--icon.png">
+                        <img class="scu_footer" src="T--SCU_China_2017--footer.png">
+                        <p class="scu_footer_text">SCU_China-2017@copyright</p>
+                        <p class="scu_footer_text_2">Contact Us</p>
                     </div>
                 </div>
 
@@ -1174,6 +1131,7 @@
             <div class="visualClear"></div>
         </div>
     </div>
+
 </div>
 
 <!-- Side Menubar -->
