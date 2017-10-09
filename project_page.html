@@ -763,7 +763,7 @@
                         }
 
                         .open::before {
-                            content: "-" !important;
+                            content: "" !important;
                         }
 
                         /* styling for the menu buttons on hover */
@@ -1083,24 +1083,150 @@
                 <div class="content_wrapper">
                     <div class="scu_project_wrapper">
                         <div class="nav nav-justified scu_nav_project" id="scu_project">
-
                             <img class="scu_nav_project_background" src="T--SCU_China-2017--bannerBack.png">
                             <img class="scu_nav_line_up" src="T--SCU_China_2017--line.png">
                             <img class="scu_nav_line_down" src="T--SCU_China_2017--line.png">
                             <li><img class="scu_nav_home" src="T--SCU_China_2017--home.png">
-                                <p class="scu_nav_home_text">Home</p></li>
-                            <li><img class="scu_nav_home" src="T--SCU_China_2017--project.png">
-                                <p class="scu_nav_home_text">Project</p></li>
-                            <li><img class="scu_nav_home" src="T--SCU_China_2017--modeling.png">
-                                <p class="scu_nav_modeling_text">Modeling</p></li>
-                            <li><img class="scu_nav_home" src="T--SCU_China_2017--human.png">
-                                <p class="scu_nav_human_text">Human Practice</p></li>
-                            <li><img class="scu_nav_home" src="T--SCU_China_2017--attri.png">
-                                <p class="scu_nav_attri_text">Attribution</p></li>
-                            <li><img class="scu_nav_home" src="T--SCU_China_2017--gold.png">
-                                <p class="scu_nav_gold_text">&nbsp;Gold</br>Medal</p></li>
+                                <a href="#" class="scu_nav_home_text">Home</a></li>
+
+                            <li class="dropdown">
+                                <img class="scu_nav_home" src="T--SCU_China_2017--project.png">
+                                <a class="dropdown-toggle scu_nav_home_text" data-toggle="dropdown" href="#">Project</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a href="#">Matatonin</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">Background</a></li>
+                                            <li><a href="#">Design</a></li>
+                                            <li><a href="#">Results</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">Repressilator</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">OverView</a></li>
+                                            <li class="dropdown-submenu"><a href="#">Quoram Sensing</a>
+                                                <ul class="dropdown-menu pull-left">
+                                                    <li><a href="#">Design</a></li>
+                                                    <li><a href="#">Results</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">RBS Modification</a>
+                                                <ul class="dropdown-menu pull-left">
+                                                    <li><a href="#">Design</a></li>
+                                                    <li><a href="#">Results</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">Knock out</a>
+                                                <ul class="dropdown-menu pull-left">
+                                                    <li><a href="#">Design</a></li>
+                                                    <li><a href="#">Results</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">InterLab</a></li>
+                                    <li><a href="#">Parts</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <img class="scu_nav_home" src="T--SCU_China_2017--modeling.png">
+                                <a href="#" class="dropdown-toggle scu_nav_modeling_text" data-toggle="dropdown">Modeling</a>
+
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a href="#">Melatonin</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">Aim</a></li>
+                                            <li><a href="#">Design</a></li>
+                                            <li><a href="#">Results</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">Repressilator</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li class="dropdown-submenu"><a href="#">Quoram SenSing</a>
+                                                <ul class="dropdown-menu pull-left">
+                                                    <li><a href="#">Aim</a></li>
+                                                    <li><a href="#">Design</a></li>
+                                                    <li><a href="#">Results</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-submenu"><a href="#">RBS Modification</a>
+                                                <ul class="dropdown-menu pull-left">
+                                                    <li><a href="#">Aim</a></li>
+                                                    <li><a href="#">Design</a></li>
+                                                    <li><a href="#">Results</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <img class="scu_nav_home" src="T--SCU_China_2017--human.png">
+                                <a href="#" class="dropdown-toggle scu_nav_human_text"
+                                   data-toggle="dropdown">Human</br></br>Practices</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu"><a href="#">Survey</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">Census</a></li>
+                                            <li><a href="#">Specific Question</a></li>
+                                            <li><a href="#">Sleep C</a></li>
+                                            <li><a href="#">Drag Administration</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu"><a href="#">Meet-up</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">iSWU</a></li>
+                                            <li><a href="#">CCiC</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">Engagement</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">Community Class</a></li>
+                                            <li><a href="#">Library</a></li>
+                                            <li><a href="#">ACMA</a></li>
+                                            <li><a href="#">Teaching for Freshman</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu"><a href="#">Collaboration</a>
+                                        <ul class="dropdown-menu pull-left">
+                                            <li><a href="#">Team We Helped</a></li>
+                                            <li><a href="#">Team Helped Us</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown">
+                                <img class="scu_nav_home" src="T--SCU_China_2017--attri.png">
+                                <a href="#" class="dropdown-toggle scu_nav_attri_text" data-toggle="dropdown">Attribution</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Team</a></li>
+                                    <li><a href="#">Acknowledgement</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <img class="scu_nav_home" src="T--SCU_China_2017--gold.png">
+                                <a href="#" class="dropdown-toggle scu_nav_gold_text" data-toggle="dropdown">Gold</br></br>Medal</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Integrated HP</a></li>
+                                    <li><a href="#">Improve</a></li>
+                                    <li><a href="#">Model</a></li>
+                                    <li><a href="#">Demonstrate</a></li>
+                                </ul>
+                            </li>
                             <li><img class="scu_nav_home" src="T--SCU_China_2017--notebook.png">
-                                <p class="scu_nav_note_text">NoteBook</p></li>
+                                <a href="#" class="scu_nav_note_text">NoteBook</a></li>
+                        </div>
+                        <div class="scu_nav_side">
+
+                            <div class="scu_nav_side_image">
+                                <img src="T--SCU_China_2017--nav-side.png">
+                            </div>
+
+                        </div>
+                        <div class="scu_content_begin">
+                            <img src="T--SCU_China_2017--content.png">
                         </div>
                     </div>
                     <div class="footer">
