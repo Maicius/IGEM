@@ -248,13 +248,21 @@
     }
     .scu_nav_side{
         position: relative;
-        margin-top: -200px;
-        margin-left: -30%;
+        float: left;
+    }
+    .scu_nav_tree{
+        margin-top: 70px !important;
+        margin-left: 8% !important;
+        font-size: 16px;
+        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+        color: black;
     }
     .scu_nav_side_image{
+
+        margin-top: -550px;
+        margin-left: -30%;
         transform: scale(0.5);
     }
-
 }
 @media screen and (max-width: 1200px) {
 
