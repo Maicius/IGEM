@@ -42,6 +42,9 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+ul {
+    list-style-image: url("T--SCU_China_2017--panda.png");
+}
 
 @media screen and (min-width:1200px){
     .scu_header_image_wrapper{
@@ -242,18 +245,20 @@
     }
     .scu_content_begin{
         position: relative;
-        margin-top: -800px;
+        margin-top: -100px;
         margin-left: 8%;
         transform: scale(0.7);
     }
     .scu_nav_side{
-        position: relative;
-        float: left;
+        position: fixed;
+    }
+    .scu_url{
+        list-style-image: url("T--SCU_China_2017--panda.png");
     }
     .scu_nav_tree{
-        margin-top: 70px !important;
-        margin-left: 8% !important;
-        font-size: 16px;
+        margin-top: -690px !important;
+        margin-left: 10% !important;
+        font-size: 30px;
         font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
         color: black;
     }

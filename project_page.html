@@ -1207,7 +1207,8 @@
                             </li>
                             <li class="dropdown">
                                 <img class="scu_nav_home" src="T--SCU_China_2017--gold.png">
-                                <a href="#" class="dropdown-toggle scu_nav_gold_text" data-toggle="dropdown">Gold</br></br>Medal</a>
+                                <a href="#" class="dropdown-toggle scu_nav_gold_text"
+                                   data-toggle="dropdown">Gold</br></br>Medal</a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Integrated HP</a></li>
                                     <li><a href="#">Improve</a></li>
@@ -1222,27 +1223,21 @@
                             <div class="scu_nav_side_image">
                                 <img src="T--SCU_China_2017--nav-side.png">
                             </div>
-                            <ul class="scu_nav_tree" id="nav_tree">
-                                <li>系统管理
-                                    <ul>
-                                        <li>部门管理</li>
-                                        <li>岗位管理
-                                            <ul>
-                                                <li>岗位添加</li>
-                                                <li>岗位删除</li>
-                                            </ul>
-                                        </li>
-                                        <li>用户管理
-                                            <ul>
-                                                <li>添加用户</li>
-                                                <li>修改用户</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>审批流转</li>
-                            </ul>
-
+                            <div id="nav_tree">
+                                <ul class="scu_nav_tree">
+                                    <li>Matatonin
+                                        <ul>
+                                            <li>Background</li>
+                                            <li>
+                                                Design
+                                            </li>
+                                            <li>
+                                                Results
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
 
                         </div>
                         <div class="scu_content_begin">
@@ -1307,13 +1302,9 @@
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
-<script type="text/javascript" src="T--SCU_China-2017-js.js"></script>
-<link rel="stylesheet" href="./jquery-treeview-1.4.2/jquery.treeview.css"/>
-<script src="jquery-treeview-1.4.2/demo/jquery.cookie.js" type="text/javascript"></script>
-<script src="jquery-treeview-1.4.2/jquery.treeview.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-    $("#nav_tree").treeview();
-</script>
+<link rel="stylesheet" href="jsTree/style.min.css" type="text/css"/>
+<script type="text/javascript" src="jsTree/jstree.min.js"></script>
+<script type="text/javascript" src="T--SCU_China-2017-js.js"></script>
 </div></body>
 </html>

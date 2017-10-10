@@ -18,12 +18,12 @@ $(document).ready(function () {
     }
 );
 
-$('#scu_down_image').bind('mousewheel', function(event, delta, deltaX, deltaY) {
+$('#scu_down_image').bind('mousewheel', function (event, delta, deltaX, deltaY) {
     console.log(delta, deltaX, deltaY);
     console.log("bind")
 });
 
-$('#body').mousewheel(function(event, delta, deltaX, deltaY) {
+$('#body').mousewheel(function (event, delta, deltaX, deltaY) {
     console.log(delta, deltaX, deltaY);
     console.log("event");
 });
