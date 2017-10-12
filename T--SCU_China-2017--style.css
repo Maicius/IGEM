@@ -11,6 +11,7 @@
     -webkit-border-radius: 0 6px 6px 6px;
     -moz-border-radius: 0 6px 6px;
     border-radius: 0 6px 6px 6px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
@@ -70,6 +71,27 @@ ul {
         color: rgba(0, 0, 0, 0);
         padding-top: 20px;
         font-size: 24px;
+    }
+    .dropdown_style{
+        background-color: rgba(0, 0, 0, 0) !important;
+        color: white;
+    }
+    .drop_down_font{
+
+    }
+    .dropdown-menu{
+        background-color: rgba(0, 0,0 ,0) !important;
+    }
+    .dropdown-menu > li > a {
+        color: white !important;
+        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif !important;
+        font-size: 18px !important;
+    }
+    .dropdown-menu > li > a:hover,
+    .dropdown-menu > li > a:focus {
+        color: white !important;
+        text-decoration: none;
+        background-color: #a8ee94 !important;
     }
     .scu_down{
         position: relative;
