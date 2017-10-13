@@ -110,6 +110,15 @@ ul {
         height: 200vh;
     }
 
+    .scu_hide_click{
+        color: white;
+        font-size: 150px;
+        margin-top: -550px;
+        text-align: center;
+        width:100%;
+        height: 400px;
+        opacity: 0;
+    }
     .scu_nav{
         margin-top: 10px;
         position: relative;

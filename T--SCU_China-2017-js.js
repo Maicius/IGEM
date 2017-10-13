@@ -4,12 +4,13 @@
 
 $(document).ready(function () {
         $(window).scroll(function () {
-
             // 隐藏侧边导航栏
             console.log($(window).scrollTop());
             if($(window).scrollTop() >= 200) {
+                //$('#scu_nav_side').animate({marginLeft:"0px"}, 1000);
                 $('#scu_nav_side').css("margin-left", "0px");
             }else {
+                //$('#scu_nav_side').animate({marginLeft:"-700px"}, 1000);
                 $('#scu_nav_side').css("margin-left", "-700px");
             }
 
@@ -20,15 +21,19 @@ $(document).ready(function () {
             else{
                 $('#scu_down').css("opacity", "1.0");
             }
-        })
+        });
+
+
+
 });
 
-$('#scu_down_image').bind('mousewheel', function (event, delta, deltaX, deltaY) {
-    console.log(delta, deltaX, deltaY);
-    console.log("bind")
-});
 
 $('#body').mousewheel(function (event, delta, deltaX, deltaY) {
     console.log(delta, deltaX, deltaY);
     console.log("event");
 });
+
+function click_to_down() {
+    console.log("click to down");
+    $('html,body').animate({scrollTop: 800}, 500);
+}
