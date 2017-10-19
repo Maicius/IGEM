@@ -5,7 +5,6 @@
 $(document).ready(function () {
         $(window).scroll(function () {
             // 隐藏侧边导航栏
-            console.log($(window).scrollTop());
             if($(window).scrollTop() >= 200) {
                 //$('#scu_nav_side').animate({marginLeft:"0px"}, 1000);
                 $('#scu_nav_side').css("margin-left", "0px");
@@ -28,12 +27,7 @@ $(document).ready(function () {
 });
 
 
-$('#body').mousewheel(function (event, delta, deltaX, deltaY) {
-    console.log(delta, deltaX, deltaY);
-    console.log("event");
-});
-
 function click_to_down() {
-    console.log("click to down");
-    $('html,body').animate({scrollTop: 800}, 500);
+    var height = $('#scu_nav_bannerBack').offset();
+    $('html,body').animate({scrollTop: height.top}, 500);
 }

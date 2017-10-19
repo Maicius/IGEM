@@ -1,0 +1,53 @@
+.overview-title {
+    font-size: 48px;
+    color: #2b5d10;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.overview-content {
+    text-align: left;
+    font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto;
+}
+.overview-link {
+    color: #11abb0;
+}
+
+.review_image {
+    width: 50%;
+    height: auto;
+    margin: 20px auto;
+}
+.review_image_style{
+    opacity: 1.0;
+}
+.scu_review_number{
+    font-size: 64px;
+    font-style: italic;
+    float: left;
+    color: #11abb0;
+    opacity: 0.7;
+    padding-right: 10px;
+    font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
+    margin-top: 20px;
+    width: 10%;
+}
+
+.scu_review_content {
+    width: 90%;
+    float: left;
+    font-size: 24px;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 0.8;
+}
+
+.scu_review_content_wrapper {
+    width: 60%;
+    margin: 10px auto;
+    border-top: solid;
+    color: #2b5d10;
+}
