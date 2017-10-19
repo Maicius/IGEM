@@ -3,6 +3,7 @@
 .dropdown-submenu {
     position: relative;
 }
+
 .dropdown-submenu > .dropdown-menu {
     top: 0;
     left: 100%;
@@ -13,9 +14,11 @@
     border-radius: 0 6px 6px 6px;
     background-color: rgba(0, 0, 0, 0);
 }
+
 .dropdown-submenu:hover > .dropdown-menu {
     display: block;
 }
+
 .dropdown-submenu > a:after {
     display: block;
     content: " ";
@@ -29,9 +32,11 @@
     margin-top: 5px;
     margin-right: -10px;
 }
+
 .dropdown-submenu:hover > a:after {
     border-left-color: #fff;
 }
+
 .dropdown-submenu.pull-left {
     float: none;
 }
@@ -43,363 +48,306 @@
     -moz-border-radius: 6px 0 6px 6px;
     border-radius: 6px 0 6px 6px;
 }
+
 ul {
     list-style-image: url("T--SCU_China_2017--ProjectPanda.png");
 }
-.dropdown-menu{
-    background-color: rgba(0, 0,0 ,0) !important;
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0) !important;
 }
+
 .dropdown-menu > li > a {
     color: white !important;
-    font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif !important;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
     font-size: 18px !important;
 }
+
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
     color: white !important;
     text-decoration: none;
     background-color: #a8ee94 !important;
 }
-@media screen and (min-width:1200px){
-    .scu_header_image_wrapper{
-        width: inherit;
-        height: 100vh;
-        position: absolute;
-        background: url('T--SCU_China-2017--mainBack6.jpg') no-repeat top center;
 
-        background-size: cover;
-    }
-    .scu_project_wrapper{
-        position: relative;
-        background: url("T--SCU_China_2017--project_back.jpg") top center;
-        background-size: cover;
-        width: inherit;
-        height: 150vh;
-    }
-    .scu_nav_project{
-        margin-top: 10px;
-        position: relative;
-        transform: scale(1);
-        background-size: cover;
-        color: rgba(0, 0, 0, 0);
-        padding-top: 20px;
-        font-size: 24px;
-    }
-    .dropdown_style{
-        background-color: rgba(0, 0, 0, 0) !important;
-        color: white;
-    }
-    .drop_down_font{
-
-    }
-
-    .scu_down{
-        position: relative;
-        margin: -50px auto 20px auto;
-        text-align: center;
-        font-size: 16px;
-        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
-        color:white;
-        padding-top: 20px;
-    }
-    .scu_project_image_wrapper{
-        width: inherit;
-        position: relative;
-        background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
-        background-size: contain;
-        height: 200vh;
-    }
-
-    .scu_hide_click{
-        color: white;
-        font-size: 150px;
-        margin-top: -550px;
-        text-align: center;
-        width:100%;
-        height: 400px;
-        opacity: 0;
-    }
-    .scu_nav{
-        margin-top: 10px;
-        position: relative;
-        transform: scale(1);
-        padding-top: 100vh;
-        background-size: cover;
-        color: rgba(0, 0, 0, 0);
-        font-size: 24px;
-    }
-    .scu_nav_background{
-        position: relative;
-        transform: scale(1.25);
-        width: 100%;
-        margin-top: -10%;
-
-    }
-    .scu_nav_project_background{
-        position: relative;
-        transform: scale(1.25);
-        width: 100%;
-    }
-    .scu_footer_text{
-        text-align: center;
-        font-size: 16px;
-        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
-        position: relative;
-        margin-top: -40px;
-        color: white;
-    }
-    .scu_footer_text_2{
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
-        position: relative;
-        margin-top: -10px;
-    }
-    .scu_footer{
-        position: absolute;
-        width: 100%;
-        overflow: hidden;
-        margin-top: -25px;
-    }
-    .scu_footer_icon{
-        position: relative;
-        width: 16%;
-        margin-right: 10px;
-        margin-top: -90px;
-        float: right;
-    }
-    .nav-justified{
-			width:80%;
-        margin: 0 auto;
-	}
-	.nav-justified > li {
-    		display: table-cell;
-    		width: 1%;
-    		float:none;
-    }
-    .scu_nav_home{
-        position: relative !important;
-        padding-left: 0px !important;
-        opacity: 0.8 !important;
-        transform: scale(1.5) !important;
-        margin-top: -295px !important;
-        margin-left: 30% !important;
-
-    }
-    .scu_nav_line_down{
-        position: relative;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -190px;
-    }
-    .scu_nav_line_up{
-        position: relative;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: -310px
-    }
-    .scu_nav_home_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -175px;
-        margin-left: -18%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_modeling_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -175px;
-        margin-left: -16%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_human_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -190px;
-        margin-left: -16%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_attri_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -175px;
-        margin-left: -16%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_gold_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -190px;
-        margin-left: -16%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_note_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-        margin-top: -175px;
-        margin-left: -16%;
-        color: white !important;
-        background-color: rgba(0, 0, 0, 0) !important;
-    }
-    .scu_nav_home > p{
-        opacity: 1.0;
-    }
-    .scu_down_scale{
-        transform: scale(0.1);
-        text-align: center;
-        margin: -90px auto;
-    }
-    .scu_title {
-        position: relative;
-        margin: 30% auto 100px auto;
-        text-align: center;
-        font-size: 60px;
-        color: white;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-    }
-    .scu_vice_title{
-        font-size: 40px;
-    }
-    .scu_content_begin{
-        position: relative;
-        margin-top: -100px;
-        margin-left: 8%;
-        transform: scale(0.7);
-    }
-    .scu_nav_side{
-        position: fixed;
-        margin-left: -600px;
-    }
-    .scu_url{
-        list-style-image: url("T--SCU_China_2017--panda.png");
-    }
-    .scu_nav_tree{
-        margin-top: -690px !important;
-        margin-left: 10% !important;
-        font-size: 30px;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        color: black;
-    }
-    .scu_nav_side_image{
-
-        margin-top: -550px;
-        margin-left: -30%;
-        transform: scale(0.5);
-    }
+.scu_header_image_wrapper {
+    width: inherit;
+    height: 100vh;
+    position: absolute;
+    background: url('T--SCU_China-2017--mainBack6.jpg') no-repeat top center;
+    background-size: cover;
 }
-@media screen and (max-width: 1200px) {
 
-    .scu_header_image_wrapper{
-        width: inherit;
-        height: 100vh;
-        position: absolute;
-        background: url('T--SCU_China-2017--mainBack5.jpg') no-repeat top center;
-
-        background-size: cover;
-    }
-    .scu_project_wrapper{
-        position: absolute;
-        background: url("T--SCU_China-2017--project.jpg") no-repeat top center;
-        background-size: cover;
-        width: inherit;
-        height: 100vh;
-    }
-
-    .scu_down{
-        position: relative;
-        margin: 50px auto 20px auto;
-        text-align: center;
-        font-size: 16px;
-        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
-        color:white;
-        padding-top: 20px;
-        opacity: 1.0;
-    }
-    .scu_project_image_wrapper{
-        position: relative;
-        background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
-        background-size: contain;
-        width: inherit;
-        height: 200vh;
-    }
-    .scu_nav{
-        position: relative;
-        transform: scale(1);
-        padding-top: 100vh;
-        background-size: cover;
-        color: white;
-        font-size: 24px;
-
-    }
-    .scu_nav_background{
-        transform: scale(0.1);
-    }
-    .scu_footer_text{
-        text-align: center;
-        color: white;
-        font-size: 16px;
-        font-family: "cambria","Times New Roman", Georgia, Serif, sans-serif;
-        position: relative;
-        margin-top: -40px;
-    }
-    .nav-justified{
-        width:80%;
-        margin: 0 auto;
-    }
-    .nav-justified > li {
-        display: table-cell;
-        width: 1%;
-        float:none;
-    }
-    .scu_nav_home{
-        position: relative;
-        padding-left: 0px;
-        opacity: 0.5;
-        background-size: 56px 56px;
-    }
-    .scu_nav_home_text{
-        position: relative;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-        opacity: 1.0;
-    }
-    .scu_nav_home > p{
-        opacity: 1.0;
-        margin-top: 60px;
-    }
-    .scu_down_scale{
-        transform: scale(0.1);
-        text-align: center;
-        margin: -90px auto;
-
-    }
-    .scu_title {
-        position: relative;
-        margin: 30% auto 100px auto;
-        text-align: center;
-        font-size: 60px;
-        color: white;
-        font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-    }
-    .scu_vice_title{
-        font-size: 40px;
-
-    }
+.scu_project_wrapper {
+    position: relative;
+    background: url("T--SCU_China_2017--project.jpg") repeat-y top center;
+    width: 100%;
+    height: 400vh;
 }
-@media screen and (min-width:1200px) {
+
+.scu_nav_project {
+    margin-top: 10px;
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    color: rgba(0, 0, 0, 0);
+    padding-top: 20px;
+    font-size: 24px;
+}
+
+.dropdown_style {
+    background-color: rgba(0, 0, 0, 0) !important;
+    color: white;
+}
+
+.drop_down_font {
+
+}
+
+.scu_down {
+    position: relative;
+    margin: -50px auto 20px auto;
+    text-align: center;
+    font-size: 16px;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    color: white;
+    padding-top: 20px;
+}
+
+.scu_project_image_wrapper {
+    width: inherit;
+    position: relative;
+    background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
+    background-size: contain;
+    height: 200vh;
+}
+
+.scu_hide_click {
+    color: white;
+    font-size: 150px;
+    margin-top: -550px;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    opacity: 0;
+}
+
+.scu_nav {
+    margin-top: 10px;
+    position: relative;
+    transform: scale(1);
+    padding-top: 100vh;
+    background-size: cover;
+    color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+}
+
+.scu_nav_background {
+    position: relative;
+    transform: scale(1.25);
+    width: 100%;
+    margin-top: -10%;
+
+}
+
+.scu_nav_project_background {
+    position: relative;
+    transform: scale(1.25);
+    width: 100%;
+    margin-top: -500px;
+}
+
+.scu_nav_project_black {
+    position: relative;
+    width: 100%;
+    transform: scale(1.25);
+}
+
+.scu_footer_text {
+    text-align: center;
+    font-size: 16px;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    position: relative;
+    margin-top: -40px;
+    color: white;
+}
+
+.scu_footer_text_2 {
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    position: relative;
+    margin-top: -10px;
+}
+
+.scu_footer {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -25px;
+}
+
+.scu_footer_icon {
+    position: relative;
+    width: 16%;
+    margin-right: 10px;
+    margin-top: -90px;
+    float: right;
+}
+
+.nav-justified {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.scu_nav_home {
+    position: relative !important;
+    padding-left: 0px !important;
+    opacity: 0.8 !important;
+    transform: scale(1.5) !important;
+    margin-top: -545px !important;
+    margin-left: 30% !important;
+
+}
+
+.scu_nav_line_down {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -430px;
+}
+
+.scu_nav_line_up {
+    position: relative;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -550px
+}
+
+.scu_nav_home_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -300px;
+    margin-left: -18%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_modeling_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -295px;
+    margin-left: -18%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_human_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -315px;
+    margin-left: -16%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_attri_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -300px;
+    margin-left: -16%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_gold_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -315px;
+    margin-left: -16%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_note_text {
+    position: relative;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 1.0;
+    margin-top: -300px;
+    margin-left: -16%;
+    color: white !important;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_home > p {
+    opacity: 1.0;
+}
+
+.scu_down_scale {
+    transform: scale(0.1);
+    text-align: center;
+    margin: -90px auto;
+}
+
+.scu_title {
+    position: relative;
+    margin: 30% auto 100px auto;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+
+.scu_vice_title {
+    font-size: 40px;
+}
+
+.scu_content_begin {
+    position: relative;
+    margin-top: -100px;
+    margin-left: 8%;
+    transform: scale(0.7);
+}
+
+.scu_nav_side {
+    position: fixed;
+    margin-left: -600px;
+}
+
+.scu_url {
+    list-style-image: url("T--SCU_China_2017--panda.png");
+}
+
+.scu_nav_tree {
+    margin-top: -690px !important;
+    margin-left: 10% !important;
+    font-size: 30px;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    color: black;
+}
+
+.scu_nav_side_image {
+
+    margin-top: -550px;
+    margin-left: -30%;
+    transform: scale(0.5);
+}
+
+@media screen and (min-width: 1200px) {
     .scu_logo {
         position: absolute;
         display: block;
@@ -410,7 +358,8 @@ ul {
         height: auto;
     }
 }
-@media screen and (max-width:1200px) {
+
+@media screen and (max-width: 1200px) {
     .scu_logo {
         /*position: fixed;*/
         position: relative;
