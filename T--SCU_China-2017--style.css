@@ -81,7 +81,8 @@ ul {
 .scu_project_wrapper {
     position: relative;
     background: url("T--SCU_China_2017--project.jpg") repeat-y top center;
-    width: 100%;
+    background-size: contain;
+    width: inherit;
     height: 400vh;
 }
 

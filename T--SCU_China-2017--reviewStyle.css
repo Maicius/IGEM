@@ -3,7 +3,7 @@
     color: #2b5d10;
     font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
     text-align: center;
-    margin: 0 auto 10px auto;
+    margin: -100px auto 10px auto;
 }
 
 .overview-content {
@@ -11,16 +11,19 @@
     font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
     font-size: 24px;
     width: 60%;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
+    border-bottom: solid 5px;
+    border-radius: 10px;
+    color: #2b5d10;
 }
 .overview-link {
     color: #11abb0;
 }
 
 .review_image {
-    width: 50%;
+    width: 80%;
     height: auto;
-    margin: 20px auto;
+    margin: 50px auto 10px auto;
 }
 .review_image_style{
     opacity: 1.0;
@@ -29,12 +32,24 @@
     font-size: 64px;
     font-style: italic;
     float: left;
-    color: #11abb0;
+    color: #2b5d10;
     opacity: 0.7;
     padding-right: 10px;
     font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
     margin-top: 20px;
     width: 10%;
+}
+
+.scu_review_background{
+    position: relative;
+    width: 80%;
+    margin:20px auto;
+}
+
+.scu_split {
+    border-top: dotted 10px;
+    border-radius: 10px;
+    margin: 250px auto 10px auto;
 }
 
 .scu_review_content {
@@ -43,11 +58,17 @@
     font-size: 24px;
     font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
     opacity: 0.8;
+
+
+}
+.scu_review_content > h4 {
+    color: #2b5d10;
 }
 
 .scu_review_content_wrapper {
     width: 60%;
-    margin: 10px auto;
-    border-top: solid;
+    margin: -10px auto;
     color: #2b5d10;
+    border-top: solid 5px;
+    border-radius: 10px;
 }
