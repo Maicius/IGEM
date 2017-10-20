@@ -28,6 +28,7 @@ $(document).ready(function () {
 
 
 function click_to_down() {
+    console.log("enter");
     var height = $('#scu_nav_bannerBack').offset();
     $('html,body').animate({scrollTop: height.top}, 500);
 }

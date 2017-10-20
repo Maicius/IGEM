@@ -74,8 +74,6 @@ ul {
     width: inherit;
     height: 100vh;
     position: absolute;
-    background: url('T--SCU_China-2017--mainBack6.jpg') no-repeat top center;
-    background-size: cover;
 }
 
 .scu_project_wrapper {
@@ -118,15 +116,16 @@ ul {
 .scu_project_image_wrapper {
     width: inherit;
     position: relative;
-    background: url("T--SCU_China-2017--project.jpg") no-repeat 0px 100vh;
+    background: url("T--SCU_China_2017--project.jpg") repeat-y;
     background-size: contain;
-    height: 200vh;
+    height: 400vh;
 }
 
 .scu_hide_click {
+    position: relative;
     color: white;
     font-size: 150px;
-    margin-top: -550px;
+    margin-top: -750px;
     text-align: center;
     width: 100%;
     height: 400px;
@@ -134,7 +133,7 @@ ul {
 }
 
 .scu_nav {
-    margin-top: 10px;
+    margin-top: -9% !important;
     position: relative;
     transform: scale(1);
     padding-top: 100vh;
@@ -147,7 +146,7 @@ ul {
     position: relative;
     transform: scale(1.25);
     width: 100%;
-    margin-top: -10%;
+    margin-top: -500px;
 
 }
 
@@ -213,7 +212,7 @@ ul {
     padding-left: 0px !important;
     opacity: 0.8 !important;
     transform: scale(1.5) !important;
-    margin-top: -545px !important;
+    margin-top: -500px !important;
     margin-left: 30% !important;
 
 }
@@ -223,7 +222,7 @@ ul {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: -430px;
+    margin-top: -448px;
 }
 
 .scu_nav_line_up {
@@ -238,8 +237,8 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -300px;
-    margin-left: -18%;
+    margin-top: -275px;
+    margin-left: -20%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
 }
@@ -248,7 +247,7 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -295px;
+    margin-top: -275px;
     margin-left: -18%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
@@ -258,7 +257,7 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -315px;
+    margin-top: -290px;
     margin-left: -16%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
@@ -268,7 +267,7 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -300px;
+    margin-top: -275px;
     margin-left: -16%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
@@ -278,7 +277,7 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -315px;
+    margin-top: -290px;
     margin-left: -16%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
@@ -288,7 +287,7 @@ ul {
     position: relative;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     opacity: 1.0;
-    margin-top: -300px;
+    margin-top: -275px;
     margin-left: -16%;
     color: white !important;
     background-color: rgba(0, 0, 0, 0) !important;
@@ -306,7 +305,7 @@ ul {
 
 .scu_title {
     position: relative;
-    margin: 30% auto 100px auto;
+    margin: -500px auto 100px auto;
     text-align: center;
     font-size: 60px;
     color: white;
