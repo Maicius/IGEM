@@ -1,3 +1,10 @@
+.scu_overview_wrapper {
+    position: relative;
+    background: url("T--SCU_China_2017--project.jpg") repeat-y top center;
+    background-size: contain;
+    width: inherit;
+    height: 420vh;
+}
 .overview-title {
     font-size: 48px;
     color: #2b5d10;
@@ -11,7 +18,7 @@
     font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
     font-size: 24px;
     width: 60%;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 15px auto;
     border-bottom: solid 5px;
     border-radius: 10px;
     color: #2b5d10;
@@ -51,6 +58,9 @@
     border-radius: 10px;
     margin: 250px auto 10px auto;
 }
+.scu_split2 {
+
+}
 
 .scu_review_content {
     width: 90%;
@@ -71,4 +81,9 @@
     color: #2b5d10;
     border-top: solid 5px;
     border-radius: 10px;
+}
+.scu_review_content_wrapper2 {
+    width: 60%;
+    margin: -10px auto;
+    color: #2b5d10;
 }
