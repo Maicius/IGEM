@@ -21,9 +21,6 @@ $(document).ready(function () {
                 $('#scu_down').css("opacity", "1.0");
             }
         });
-
-
-
 });
 
 

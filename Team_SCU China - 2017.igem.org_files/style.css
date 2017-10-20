@@ -1,0 +1,121 @@
+/* tables */
+table.tablesorter {
+	font-family:arial;
+	width: 100%;
+	text-align: left;
+}
+table.tablesorter thead th {
+	text-align:left;
+}
+table.tablesorter thead tr th, table.tablesorter tfoot tr th {
+}
+table.tablesorter thead tr .header {
+	background-image: url(bg.gif);
+	background-repeat: no-repeat;
+	background-position: center right;
+	cursor: pointer;
+}
+table.tablesorter tbody td {
+	vertical-align: top;
+}
+table.tablesorter tbody tr.odd td {
+}
+table.tablesorter thead tr .headerSortUp {
+	background-image: url(asc.gif);
+}
+table.tablesorter thead tr .headerSortDown {
+	background-image: url(desc.gif);
+}
+table.tablesorter thead tr .headerSortDown, table.tablesorter thead tr .headerSortUp {
+background-color: #ccc;
+}
+.heart13 {
+        background-image: url(heart13.gif);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.content_wrapper{
+	width: 100%;
+}
+
+
+/*@media screen and (min-width:1200px){*/
+	/*.header_image_wrapper{*/
+		/*width: inherit;*/
+		/*height: 50vh;*/
+		/*background: url("../T--Team_SCU_China-2017--header.jpg") no-repeat top center;*/
+		/*background-size: cover;*/
+
+	/*}*/
+	/*.scu_content_text{*/
+		/*width:100%;*/
+		/*height: 50vh;*/
+	/*}*/
+	/*.scu_title {*/
+		/*margin-top: 10px;*/
+		/*text-align: center;*/
+		/*font-size: 36px;*/
+		/*font-family: "Times New Roman", Georgia,Serif, sans-serif;*/
+	/*}*/
+	/*.scu_content{*/
+		/*width: 80%;*/
+		/*margin: 0 auto;*/
+		/*font-size: 24px;*/
+		/*line-height: 28px;*/
+		/*text-align:justify;*/
+		/*text-align-last:justify;*/
+		/*font-family: "Times New Roman", Georgia,Serif, sans-serif;*/
+	/*}*/
+/*}*/
+/*@media screen and (max-width: 1200px) {*/
+	/*.header_image_wrapper{*/
+		/*width: inherit;*/
+		/*height: 50vh;*/
+		/*background: url("../T--Team_SCU_China-2017--header-small.jpg") no-repeat top center;*/
+		/*background-size: cover;*/
+
+	/*}*/
+	/*.scu_content_text {*/
+		/*width: 100%;*/
+		/*height: auto;*/
+	/*}*/
+	/*.scu_title {*/
+		/*margin-top: 10px;*/
+		/*text-align: center;*/
+		/*font-size: 36px;*/
+		/*font-family: "Times New Roman", Georgia, Serif, sans-serif;*/
+	/*}*/
+	/*.scu_content{*/
+		/*width: 90%;*/
+		/*margin: 0 auto;*/
+		/*font-size: 24px;*/
+		/*line-height: 28px;*/
+		/*text-align:left;*/
+		/*!*text-align-last:left;*!*/
+		/*font-family: "Times New Roman", Georgia,Serif, sans-serif;*/
+	/*}*/
+/*}*/
+/*@media screen and (min-width:1200px) {*/
+	/*.scu_logo {*/
+		/*position: absolute;*/
+		/*display: block;*/
+		/*!*right: 25px;*!*/
+		/*!*bottom: 25px;*!*/
+		/*left: 23%;*/
+		/*width: 6%;*/
+		/*height: auto;*/
+	/*}*/
+/*}*/
+/*@media screen and (max-width:1200px) {*/
+	/*.scu_logo {*/
+		/*!*position: fixed;*!*/
+		/*position: relative;*/
+		/*display: block;*/
+		/*!*right: 25px;*!*/
+		/*!*bottom: 25px;*!*/
+		/*left: 41%;*/
+		/*width: 18%;*/
+		/*height: auto;*/
+	/*}*/
+/*}*/
