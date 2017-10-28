@@ -7,17 +7,17 @@
 }
 .overview-title {
     font-size: 48px !important;
-    color: #2b5d10 !important;
+    color: #2b5d10;
     font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif !important;
     text-align: center !important;
-    margin: 20vh auto 10px auto !important;
+    margin: -100px auto 10px auto;
 }
 
 .overview-content {
     text-align: left !important;
     font-family: cambria,Times New Roman, Georgia, Serif, sans-serif !important;
     font-size: 24px !important;
-    width: 60% !important;
+    width: 60%;
     margin: 0 auto 15px auto;
     border-bottom: solid 5px;
     border-radius: 10px;
@@ -26,24 +26,20 @@
 .overview-link {
     color: #11abb0;
 }
-.scu_review_part_title{
-    color: #2b5d10 !important;
-    font-size: 48px !important;
-}
 
 .review_image {
-    width: 60% !important;
-    height: auto !important;
-    margin: 10px auto 10px auto;
+    width: 80%;
+    height: auto;
+    margin: 50px auto 10px auto;
 }
 .review_image_style{
     opacity: 1.0;
 }
 .scu_review_number{
-    font-size: 64px !important;
-    font-style: italic !important;
-    float: left !important;
-    color: #2b5d10 !important;
+    font-size: 64px;
+    font-style: italic;
+    float: left;
+    color: #2b5d10;
     opacity: 0.7;
     padding-right: 10px;
     font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
@@ -56,39 +52,19 @@
     width: 80%;
     margin:20px auto;
 }
-.overview_author {
-    float: right;
-    position: relative;
-    color: #2b5d10;
-}
 
-.scu_review_black {
-    color: black !important;
-    font-size: 24px !important;
-    font-family:raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
-}
-.scu_review_part_title {
-    text-align: center !important;
-    font-size: 36px !important;
-    color: #2b5d10 !important;
-    margin-top: 30px;
-}
-.margin-top-20vh {
-    height: 20vh !important;
-}
 .scu_split {
     border-top: dotted 10px;
     border-radius: 10px;
-    margin: 10px auto 10px auto;
+    margin: 250px auto 10px auto;
 }
 .scu_split2 {
-    border-top: solid 10px;
-    border-radius: 10px;
-    margin: 10px auto 10px auto;
+
 }
 
 .scu_review_content {
     width: 90%;
+    float: left;
     font-size: 24px;
     font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
     opacity: 0.8;

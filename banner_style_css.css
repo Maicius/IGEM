@@ -1,0 +1,325 @@
+/* Team-scu-style */
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu > .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -18%;
+    margin-left: 100%;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu > a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover > a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left > .dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+
+ul {
+    list-style-image: url("http://2017.igem.org/wiki/images/0/00/Panda.png");
+}
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.dropdown-menu > li > a {
+    color: white !important;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
+    font-size: 18px !important;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    color: white !important;
+    text-decoration: none;
+    background-color: #a8ee94 !important;
+}
+.scu_overview_wrapper {
+    position: relative;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y top center;
+    background-size: contain;
+    width: inherit;
+    height: auto;
+}
+.overview-title {
+    font-size: 48px;
+    color: #2b5d10;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    text-align: center;
+    margin: 20vh auto 10px auto;
+}
+
+.scu_footer_text {
+    text-align: center !important;
+    font-size: 16px !important;;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;;
+    position: relative;
+    margin-top: -40px;
+    color: white;
+}
+
+
+.scu_footer_text_2 {
+    text-align: center !important;;
+    color: white !important;;
+    font-size: 16px !important;;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;;
+    position: relative;
+    margin-top: -10px;
+}
+
+.scu_footer {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    margin-top: -25px;
+}
+
+.scu_footer_icon {
+    position: relative;
+    width: 16%;
+    margin-right: 10px;
+    margin-top: -90px;
+    float: right;
+}
+
+.overview-content {
+    text-align: left;
+    font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
+    font-size: 24px;
+    width: 60%;
+    margin: 0 auto 15px auto;
+    border-bottom: solid 5px;
+    border-radius: 10px;
+    color: #2b5d10;
+}
+.overview-link {
+    color: #11abb0;
+}
+
+.review_image {
+    width: 60%;
+    height: auto;
+    margin: 50px auto 10px auto;
+}
+.review_image_style{
+    opacity: 1.0;
+}
+.scu_review_number{
+    font-size: 64px;
+    font-style: italic;
+    float: left;
+    color: #2b5d10;
+    opacity: 0.7;
+    padding-right: 10px;
+    font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
+    margin-top: 20px;
+    width: 10%;
+}
+
+.scu_review_background{
+    position: relative;
+    width: 80%;
+    margin:20px auto;
+}
+
+.scu_split {
+    border-top: dotted 10px;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+}
+.scu_split2 {
+    border-top: solid 10px;
+    border-radius: 10px;
+    margin: 10px auto 10px auto;
+}
+
+.scu_review_content {
+    width: 100%;
+    font-size: 24px;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 0.8;
+
+
+}
+.scu_review_content > h4 {
+    color: #2b5d10;
+}
+
+.scu_review_content_wrapper {
+    width: 60%;
+    margin: -10px auto;
+    color: #2b5d10;
+    border-top: solid 5px;
+    border-radius: 10px;
+}
+.scu_review_content_wrapper2 {
+    width: 60%;
+    margin: -10px auto;
+    color: #2b5d10;
+}
+
+.scu_nav_background {
+    position: absolute;
+    transform: scale(1);
+    width: 100%;
+    margin-top: 0;
+
+}
+.nav-justified {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav-justified > li {
+    display: table-cell;
+    width: 1%;
+    float: none;
+}
+
+.lee_nav_image{
+
+}
+.scu_nav {
+    position: relative;
+    transform: scale(1);
+    background-size: cover;
+    color: rgba(0, 0, 0, 0);
+    font-size: 24px;
+    margin: 0 auto 0 auto !important;
+    padding-top: 10%;
+}
+.scu_nav_tree {
+    margin-top: -690px !important;
+    margin-left: 10% !important;
+    font-size: 30px;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    color: black;
+}
+
+.scu_nav > li > a {
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.scu_nav_project_background {
+    position: relative;
+    transform: scale(1.25);
+    width: 100%;
+}
+
+.scu_nav_project_black {
+    position: absolute;
+    width: 100%;
+    transform: scale(1);
+}
+
+.lee_article{
+    background-image: url(./T--SCU_China-2017--mainBack6.jpg);
+    height: 100vh;
+    background-size: cover;
+
+}
+.lee_article_content{
+    width: 75%;
+    margin: 0 auto;
+}
+.lee_article_topic{
+    width: 100%;
+}
+.lee_article_topic p{
+    text-align: center;
+}
+.lee_nav_home{
+    background-image: url("http://2017.igem.org/wiki/images/1/14/T--SCU_China--home.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_project{
+    background-image: url("http://2017.igem.org/wiki/images/d/d7/T--SCU_China--project.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_modeling{
+    background-image: url("http://2017.igem.org/wiki/images/2/21/T--SCU_China--modeling.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_gold{
+    background-image: url("http://2017.igem.org/wiki/images/5/5b/T--SCU_China--gold.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_attri{
+    background-image: url("http://2017.igem.org/wiki/images/0/09/T--SCU_China--attri.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_note{
+    background-image: url("http://2017.igem.org/wiki/images/a/af/T--SCU_China--notebook.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_human{
+    background-image: url("http://2017.igem.org/wiki/images/6/6f/T--SCU_China--human.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.nav > li{
+    /*    justify-content: center;
+        align-items: center;*/
+
+    border-top: solid #a8ee94;
+    border-bottom: solid #a8ee94;
+    height: 70px;
+    padding-top: 20px;
+    background-size:40px 40px;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+.scu_nav_side {
+    position: fixed;
+    margin-left: -600px;
+}
+.scu_nav_side_image {
+
+    margin-top: -40%;
+    margin-left: -30%;
+    transform: scale(0.5);
+}

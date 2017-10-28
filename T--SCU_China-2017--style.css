@@ -81,7 +81,7 @@ ul {
 }
 .scu_project_wrapper {
     position: relative;
-    background: url("T--SCU_China_2017--project.jpg") repeat-y top center;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y top center;
     background-size: contain;
     width: inherit;
     height: 400vh;
@@ -108,19 +108,18 @@ ul {
 
 .scu_down {
     position: relative;
-    margin: -20px auto 20px auto;
-    text-align: center;
-    font-size: 22px;571187782
-    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
-    color: white;
+    margin: -20px auto 20px auto !important;
+    text-align: center !important;
+    font-size: 22px !important;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
+    color: white ;
     padding-top: 20px;
-    font-style: italic;
 }
 
 .scu_project_image_wrapper {
     width: inherit;
     position: relative;
-    background: url("T--SCU_China_2017--project.jpg") repeat-y;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y;
     background-size: contain;
     height: 400vh;
 }
@@ -135,22 +134,30 @@ ul {
 }
 
 .scu_nav {
-    margin-top: -50% !important;
     position: relative;
     transform: scale(1);
-    padding-top: 100vh;
     background-size: cover;
     color: rgba(0, 0, 0, 0);
     font-size: 24px;
+    margin: 10% auto 0 auto !important;
+}
+
+.scu_nav > li > a {
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.lee_nav_image{
+
 }
 
 
-
 .scu_nav_background {
-    position: relative;
-    transform: scale(1.25);
+    position: absolute;
+    transform: scale(1);
     width: 100%;
-    margin-top: -50%;
+    margin-top: -20px;
 
 }
 
@@ -158,29 +165,29 @@ ul {
     position: relative;
     transform: scale(1.25);
     width: 100%;
-    margin-top: -50%;
 }
 
 .scu_nav_project_black {
-    position: relative;
+    position: absolute;
     width: 100%;
-    transform: scale(1.25);
+    transform: scale(1);
 }
 
+
 .scu_footer_text {
-    text-align: center;
-    font-size: 16px;
-    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    text-align: center !important;
+    font-size: 16px !important;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
     position: relative;
     margin-top: -40px;
     color: white;
 }
 
 .scu_footer_text_2 {
-    text-align: center;
+    text-align: center !important;
     color: white;
-    font-size: 16px;
-    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    font-size: 16px !important;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
     position: relative;
     margin-top: -10px;
 }
@@ -211,86 +218,6 @@ ul {
     float: none;
 }
 
-.scu_nav_home {
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -50% !important;
-    margin-left: 30% !important;
-
-}
-.scu_nav_home_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -360% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_project_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -342% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_modeling_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -305% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_human_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -315% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_attri_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -289% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_gold_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -355% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_note_icon{
-    position: relative !important;
-    padding-left: 0px !important;
-    opacity: 0.8 !important;
-    transform: scale(1.5) !important;
-    margin-top: -299% !important;
-    margin-left: 30% !important;
-}
-.scu_nav_line_down {
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -42%;
-}
-
-.scu_nav_line_up {
-    position: relative;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: -50%
-}
 
 .scu_nav_home_text {
     position: relative;
@@ -374,7 +301,7 @@ ul {
 
 .scu_title {
     position: relative;
-    margin: -50% auto 10px auto !important;
+    padding-top: 50vh;
     text-align: center !important;
     font-size: 48px !important;
     color: white !important;
@@ -383,11 +310,11 @@ ul {
 
 .scu_vice_title {
     width: 70%;
-    font-size: 16px;
+    font-size: 16px !important;
     margin: 0 auto 30px auto;
     text-align: center;
     color: white !important;
-    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
 }
 
 .scu_content_begin {
@@ -403,7 +330,7 @@ ul {
 }
 
 .scu_url {
-    list-style-image: url("T--SCU_China_2017--panda.png");
+    list-style-image: url("http://2017.igem.org/wiki/images/0/00/Panda.png");
 }
 
 .scu_nav_tree {
@@ -415,6 +342,7 @@ ul {
 }
 
 .scu_nav_side_image {
+
     margin-top: -550px;
     margin-left: -30%;
     transform: scale(0.5);
@@ -432,15 +360,66 @@ ul {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .scu_logo {
-        /*position: fixed;*/
-        position: relative;
-        display: block;
-        /*right: 25px;*/
-        /*bottom: 25px;*/
-        left: 41%;
-        width: 18%;
-        height: auto;
-    }
+.lee_article{
+    background-image: url("http://2017.igem.org/wiki/images/9/90/T--SCU_China--mainBack6.jpg");
+    height: 100vh;
+    background-size: cover;
+
+}
+.lee_article_content{
+    width: 75%;
+    margin: 0 auto;
+}
+.lee_article_topic{
+    width: 100%;
+}
+.lee_article_topic p{
+    text-align: center;
+}
+.lee_nav_home{
+    background-image: url("http://2017.igem.org/wiki/images/1/14/T--SCU_China--home.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_project{
+    background-image: url("http://2017.igem.org/wiki/images/d/d7/T--SCU_China--project.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_modeling{
+    background-image: url("http://2017.igem.org/wiki/images/2/21/T--SCU_China--modeling.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_gold{
+    background-image: url("http://2017.igem.org/wiki/images/5/5b/T--SCU_China--gold.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_attri{
+    background-image: url("http://2017.igem.org/wiki/images/0/09/T--SCU_China--attri.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_note{
+    background-image: url("http://2017.igem.org/wiki/images/a/af/T--SCU_China--notebook.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.lee_nav_human{
+    background-image: url("http://2017.igem.org/wiki/images/6/6f/T--SCU_China--human.png");
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+.nav > li{
+    /*    justify-content: center;
+        align-items: center;*/
+
+    border-top: solid #a8ee94;
+    border-bottom: solid #a8ee94;
+    height: 70px;
+    padding-top: 20px;
+    background-size:40px 40px;
+    background-repeat:no-repeat;
+    background-position: center;
 }
