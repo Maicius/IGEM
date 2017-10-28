@@ -376,7 +376,7 @@ ul {
 .scu_sub_title {
     margin-top: 60px !important;
     margin-bottom: 60px !important;
-    font-size: 48px !important;
+    font-size: 30px !important;
     color: #2b5d10 !important;
     opacity: 0.8;
 }
@@ -419,9 +419,38 @@ ul {
 
 }
 .scu_acma_title {
-    font-size: 36px !important;
-    font-style: italic;
+    margin:20px auto !important;
+    font-size: 28px !important;
+    font-style: italic !important;
+    font-weight: 600;
 }
 .scu_acma_subtitle {
     font-size: 24px !important;
+    font-weight: 600;
+}
+
+/*Integrated Human Practice*/
+
+.scu_hp_image_single {
+    width: 80%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+}
+.scu_hp_image_single2 {
+    width: 80%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+}
+.scu_hp_image_single2 > img {
+    width: 80%;
+    height: auto;
+}
+.scu_padding-10 {
+    padding: 40px;
 }
