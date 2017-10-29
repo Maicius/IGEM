@@ -228,7 +228,7 @@ ul {
 .scu_nav_tree {
     margin-top: 100px !important;
     margin-left: 20% !important;
-    font-size: 25px;
+    font-size: 22px;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     color: black;
     width: 290px;
@@ -329,6 +329,7 @@ ul {
     margin-left: -30%;
     transform: scale(0.5);
 }
+
  /*css for note*/
 .scu_note_wrapper {
     position: relative;
@@ -408,12 +409,14 @@ ul {
     padding: 5px 5px;
 }
 .scu_img_index {
+    width: 80%;
     position: relative;
     padding-top: 5px !important;
     text-align: center !important;
     font-style: italic !important;
     color: black;
     font-size: 16px !important;
+    margin: 0 auto;
 }
 .margin-left-20 {
 
@@ -470,7 +473,7 @@ ul {
 }
 
 .table > thead > tr > th {
-    background-color: black !important;
+    background-color: #2b5d10 !important;
     color: white;
 }
 .table > tbody > tr > td {
@@ -480,4 +483,44 @@ ul {
     color: white;
     text-align: center;
     font-size: 18px;
+}
+
+/*css for InterLab Study*/
+.scu_parts_wrapper{
+    position: relative;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y top center;
+    background-size: contain;
+    width: 100%;
+    height: auto;
+}
+.scu_smile_panda > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/e/e7/T-SCU_China-2017_panda5.png");
+}
+.scu_smile_panda > ul > li > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/e/e7/T-SCU_China-2017_panda5.png");
+}
+.scu_smoke_panda > ul {
+    list-style-image: url("http://2017.igem.org/wiki/images/8/86/T-SCU_China-2017_panda2.png");
+}
+.scu_smoke_panda > ul > li > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/8/86/T-SCU_China-2017_panda2.png");
+}
+
+.scu_panda_2 > ul {
+    list-style-image: url("http://2017.igem.org/wiki/images/a/a5/T-SCU_China-2017_panda3.png");
+}
+.scu_panda_2 > ul > li > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/a/a5/T-SCU_China-2017_panda3.png");
+}
+.scu_panda_3 > ul {
+    list-style-image: url("http://2017.igem.org/wiki/images/6/61/T-SCU_China-2017_panda6.png");
+}
+.scu_panda_3 > ul > li > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/6/61/T-SCU_China-2017_panda6.png");
+}
+.scu_panda_4 > ul {
+    list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
+}
+.scu_panda_4 > ul > li > ul{
+    list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
 }
