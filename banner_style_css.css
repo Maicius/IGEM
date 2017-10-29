@@ -454,3 +454,30 @@ ul {
 .scu_padding-10 {
     padding: 40px;
 }
+/*css for parts*/
+.scu_parts_wrapper{
+    position: relative;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y top center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+.scu_table_container{
+    width: 60% !important;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 16px;
+}
+
+.table > thead > tr > th {
+    background-color: black !important;
+    color: white;
+}
+.table > tbody > tr > td {
+    background-color: #f1f4ff !important;
+}
+.scu_table_style > tr > th {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
