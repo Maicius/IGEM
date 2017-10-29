@@ -50,3 +50,11 @@ $(window).resize(function(){
         $('#scu_nav_side').css("margin-left", "-700px");
     }
 });
+
+function click_nav() {
+    console.log()
+    var id = $(this).data("name");
+    var str = "'#" + id + "'";
+    var height = $(str).offset();
+    $('html,body').animate({scrollTop: height.top}, 500);
+}
