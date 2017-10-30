@@ -241,6 +241,8 @@ ul {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
+
+
 .scu_nav_project_background {
     position: relative;
     transform: scale(1.25);
@@ -303,6 +305,31 @@ ul {
     background-image: url("http://2017.igem.org/wiki/images/6/6f/T--SCU_China--human.png");
     color: white;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+}
+
+.lee_nav_human:hover{
+    transform: scale(1.05);
+}
+.lee_nav_note:hover{
+    transform: scale(1.05);
+}
+.lee_nav_project:hover{
+    transform: scale(1.05);
+}
+.lee_nav_attri:hover{
+    transform: scale(1.05);
+}
+.lee_nav_gold:hover{
+    transform: scale(1.05);
+}
+.lee_nav_modeling:hover{
+    transform: scale(1.05);
+}
+.lee_nav_home:hover{
+    transform: scale(1.05);
+}
+.scu_nav > li:hover{
+    box-shadow:1px 1px 1000px 1000px rgba(0,0,0,0.4),0px 0px 20px 4px rgba(0,0,0,0.4);
 }
 .nav > li{
     /*    justify-content: center;

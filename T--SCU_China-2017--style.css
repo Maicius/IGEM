@@ -142,10 +142,20 @@ ul {
     margin: 10% auto 0 auto !important;
 }
 
+.scu_nav > li:hover{
+    box-shadow:1px 1px 1000px 1000px rgba(0,0,0,0.4),0px 0px 20px 4px rgba(0,0,0,0.4);
+}
+
 .scu_nav > li > a {
     color: white;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
     background-color: rgba(0, 0, 0, 0) !important;
+}
+.scu_nav > li > a:hover {
+    color: white;
+    font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
+    background-color: rgba(0, 0, 0, 0) !important;
+    transform: scale(1.1);
 }
 
 .lee_nav_image{
@@ -412,6 +422,7 @@ ul {
     color: white;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif;
 }
+
 .nav > li{
     /*    justify-content: center;
         align-items: center;*/
