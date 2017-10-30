@@ -628,452 +628,6 @@
                     </script>
 
 
-                    <style>
-
-
-                        /***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
-
-                        /* Clear the default wiki settings */
-
-                        /********************************** DEFAULT WIKI SETTINGS  *********************************/
-                        #top_menu_inside #bars_item {
-                            position: absolute;
-                            top: -30px !important;
-                            left: -100px !important;
-                            z-index: -1 !important;
-                            cursor: pointer;
-                        }
-
-                        #sideMenu,
-                        #top_title {
-                            display: none;
-                        }
-
-                        #content {
-                            padding: 0px;
-                            width: 100%;
-                        }
-
-                        body {
-                            background-color: white;
-                            margin: 0px;
-                        }
-
-                        #bodyContent h1 {
-                            font-weight: 300 !important;
-                        }
-
-                        #bodyContent h1,
-                        #bodyContent h2,
-                        #bodyContent h3,
-                        #bodyContent h4,
-                        #bodyContent h5 {
-                            margin-bottom: 0px;
-                            border-bottom: none;
-                        }
-
-                        #bodyContent {
-                            padding-right: 0px;
-                        }
-
-                        #globalWrapper {
-                            font-size: 100%;
-                            padding: 0px;
-                            margin: -10px -20px -20px -20px;
-                        }
-
-                        .navbar-collapse {
-                            padding-left: 0px;
-                        }
-
-                        #banner {
-                            margin-top: 50px;
-                        }
-
-                        #sideMenu {
-                            margin-top: 10px;
-                        }
-
-                        .navbar-nav .dropdown-menu,
-                        .navbar .dropdown-menu {
-                            margin-top: 0;
-                        }
-
-                        /**************************************************************** MENU ***************************************************************/
-                        /* Wrapper for the menu */
-                        .igem_2017_menu_wrapper {
-                            width: 15%;
-                            height: 100vh;
-                            position: fixed;
-                            right: 0%;
-                            padding: 0px;
-                            float: right;
-                            border-left: 1px solid #d3d3d3;
-                            background-color: #dddddd;
-                            text-align: left;
-                            font-family: Tahoma, Geneva, sans-serif;
-                            overflow-y: auto;
-                            overflow-x: hidden;
-                        }
-
-                        /* this hides the scrollbar to keep view consistency */
-                        .igem_2017_menu_wrappe::-webkit-scrollbar {
-                            display: none;
-                        }
-
-                        /* styling for links in the menu, removes the line under text */
-                        .igem_2017_menu_wrapper a {
-                            text-decoration: none;
-                        }
-
-                        /* styling for the images in the menu */
-                        .igem_2017_menu_wrapper img {
-                            width: 100%;
-                        }
-
-                        /* styling for the menu buttons */
-                        .igem_2017_menu_wrapper .menu_button {
-                            width: 100%;
-                            padding: 10px 0px 10px 15px;
-                            float: left;
-                            border-bottom: 1px solid #d3d3d3;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #5e5f5f;
-                            cursor: pointer;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_bottom_padding {
-                            width: 100%;
-                            height: 30px;
-                            float: left;
-                        }
-
-                        .menu_button.direct_to_page {
-                            padding-left: 36px;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_button .expand_collapse_icon {
-                            width: 10%;
-                            float: left;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_button .expand_collapse_icon::before {
-                            content: "+";
-                        }
-
-                        .open::before {
-                            content: "" !important;
-                        }
-
-                        /* styling for the menu buttons on hover */
-                        .igem_2017_menu_wrapper .menu_button:hover, .igem_2017_menu_wrapper .submenu_button:hover, .submenu_button.current_page:hover {
-                            background-color: #3399ff;
-                            text-decoration: none;
-                            color: #ffffff;
-                        }
-
-                        /* styling for the menu button when it is the current page */
-                        .current_page {
-                            background-color: #7fc1f7 !important;
-                            color: #5e5f5f !important;
-                        }
-
-                        /* styling for the submenu buttons */
-                        .igem_2017_menu_wrapper .submenu_button {
-                            width: 100%;
-                            padding: 10px 0px 10px 34px;
-                            float: left;
-                            background-color: #f2f2f2;
-                            border-bottom: 1px solid #d3d3d3;
-                            font-size: 12px;
-                            color: #5e5f5f;
-                            cursor: pointer;
-                        }
-
-                        /* wrapper for the submenu items, they are hidden by default*/
-                        .igem_2017_menu_wrapper .submenu_wrapper {
-                            display: none;
-                        }
-
-                        /* when the page size is bigger than 800px, this show/hide control is hidden by default */
-                        .igem_2017_menu_wrapper #display_menu_control {
-                            display: none;
-                            text-align: center;
-                        }
-
-                        /***************************************************** CONTENT OF THE PAGE ****************************************************/
-
-                        /* Wrapper for the content */
-                        .igem_2017_content_wrapper {
-                            width: 81%;
-                            margin: 2%;
-                            display: block;
-                            float: left;
-                            background-color: white;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /********************************* HTML STYLING  *********************************/
-
-                        /* styling for the titles h1 h2 */
-                        .igem_2017_content_wrapper h1, .igem_2017_content_wrapper h2 {
-                            padding: 5px 15px;
-                            border-bottom: 0px;
-                            color: #3399ff;
-                        }
-
-                        /* styling for the titles  h3 h4 h5 h6*/
-                        .igem_2017_content_wrapper h3, .igem_2017_content_wrapper h4, .igem_2017_content_wrapper h5, .igem_2017_content_wrapper h6 {
-                            padding: 5px 15px;
-                            border-bottom: 0px;
-                            color: #000000;
-                        }
-
-                        /* font and text */
-                        .igem_2017_content_wrapper p {
-                            padding: 0px 15px;
-                            font-size: 13px;
-                        }
-
-                        /* Links */
-                        .igem_2017_content_wrapper a {
-                            font-weight: bold;
-                            text-decoration: underline;
-                            text-decoration-color: #3399ff;
-                            color: #3399ff;
-                            -webkit-transition: all 0.4s ease;
-                            -moz-transition: all 0.4s ease;
-                            -ms-transition: all 0.4s ease;
-                            -o-transition: all 0.4s ease;
-                            transition: all 0.4s ease;
-                        }
-
-                        /* hover for the links */
-                        .igem_2017_content_wrapper a:hover {
-                            text-decoration: none;
-                            color: #000000;
-                        }
-
-                        /* non numbered lists */
-                        .igem_2017_content_wrapper ul {
-                            padding: 0px 20px;
-                            font-size: 13px;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /* numbered lists */
-                        .igem_2017_content_wrapper ol {
-                            padding: 0px;
-                            font-size: 13px;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /* Table */
-                        .igem_2017_content_wrapper table {
-                            width: 97%;
-                            margin: 15px 10px;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                        }
-
-                        /* table cells */
-                        .igem_2017_content_wrapper td {
-                            padding: 10px;
-                            vertical-align: text-top;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                        }
-
-                        /* table headers */
-                        .igem_2017_content_wrapper th {
-                            padding: 10px;
-                            vertical-align: text-top;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                            background-color: #f2f2f2;
-                        }
-
-                        /**********************************LAYOUT CLASSES **********************************/
-
-                        /* general class for column divs */
-                        .igem_2017_content_wrapper .column {
-                            padding: 10px 0px;
-                            float: left;
-                        }
-
-                        /* class for a full width column */
-                        .column .full_size {
-                            width: 100%;
-                        }
-
-                        /* styling for images in a full width column*/
-                        .column.full_size img {
-                            width: 97%;
-                            padding: 10px 15px;
-                        }
-
-                        /* class for a half width column */
-                        .column.half_size {
-                            width: 50%;
-                        }
-
-                        /* styling for images in a half width column*/
-                        .column.half_size img {
-                            width: 94.5%;
-                            padding: 10px 15px;
-                        }
-
-                        /********************************* SUPPORT CLASSES ********************************/
-
-                        /* class that clears content below*/
-                        .igem_2017_content_wrapper .clear {
-                            clear: both;
-                        }
-
-                        /* adds extra spacing when clearing content */
-                        .igem_2017_content_wrapper .clear.extra_space {
-                            height: 30px;
-                        }
-
-                        /* highlight class, makes content slightly smaller */
-                        .igem_2017_content_wrapper .highlight {
-                            margin: 0px 15px;
-                            padding: 15px 0px;
-                        }
-
-                        /* highlight class, adds a gray background */
-                        .igem_2017_content_wrapper .highlight.gray {
-                            background-color: #f2f2f2;
-                        }
-
-                        /* highlight with decoration blue line on top */
-                        .igem_2017_content_wrapper .highlight.blue_top {
-                            border-top: 4px solid #3399ff;
-                        }
-
-                        /* highlight with a full blue border decoration */
-                        .igem_2017_content_wrapper .highlight.blue_border {
-                            border: 4px solid #3399ff;
-                        }
-
-                        /* button class */
-                        .igem_2017_content_wrapper .button {
-                            max-width: 35%;
-                            margin: 30px auto;
-                            padding: 12px 10px;
-                            background-color: #3399ff;
-                            text-align: center;
-                            color: #ffffff;
-                            -webkit-transition: all 0.4s ease;
-                            -moz-transition: all 0.4s ease;
-                            -ms-transition: all 0.4s ease;
-                            -o-transition: all 0.4s ease;
-                            transition: all 0.4s ease;
-                        }
-
-                        /* styling for button on hover */
-                        .igem_2017_content_wrapper .button:hover {
-                            background-color: #3399ff;
-                            color: #000000;
-                        }
-
-                        /***************************************************** RESPONSIVE STYLING ****************************************************/
-
-                        /* IF THE SCREEN IS LESS THAN 1200PX */
-                        @media only screen and (max-width: 1200px) {
-
-                            #content {
-                                width: 100%;
-                            }
-
-                            .igem_2017_menu_wrapper {
-                                width: 15%;
-                                right: 0;
-                            }
-
-                            .highlight {
-                                padding: 10px 0px;
-                            }
-
-                            .igem_2017_menu_wrapper #display_menu_control {
-                                display: none;
-                            }
-
-                            #menu_content {
-                                display: block;
-                            }
-
-                            .menu_button.direct_to_page {
-                                padding-left: 17px;
-                            }
-
-                        }
-
-                        /* IF THE SCREEN IS LESS THAN 800PX */
-                        @media only screen and (max-width: 800px) {
-
-                            .igem_2017_menu_wrapper {
-                                width: 100%;
-                                height: 15%;
-                                position: relative;
-                                left: 0%;
-                            }
-
-                            .igem_2017_content_wrapper {
-                                width: 100%;
-                                margin-left: 0px;
-                            }
-
-                            .column.half_size {
-                                width: 100%;
-                            }
-
-                            .column.full_size img, .column.half_size img {
-                                width: 100%;
-                                padding: 10px 0px;
-                            }
-
-                            .highlight {
-                                padding: 15px 5px;
-                            }
-
-                            .igem_2017_menu_wrapper #display_menu_control {
-                                display: block;
-                            }
-
-                            #menu_content {
-                                display: none;
-                            }
-
-                            .igem_2017_menu_wrapper .menu_button .expand_collapse_icon {
-                                width: 5%;
-                            }
-
-                            .menu_bottom_padding {
-                                display: none;
-                            }
-
-                            .menu_button.direct_to_page {
-                                padding-left: 36px;
-                            }
-                        }
-
-                        /* special class that the system uses to make sure the team wants a page to be evaluated */
-                        .judges-will-not-evaluate {
-                            width: 96.6%;
-                            margin: 5px 15px;
-                            display: block;
-                            border: 4px solid #3399ff;
-                            font-weight: bold;
-                        }
-
-                        .content_wrapper {
-                            width: 100%;
-                            height: 100vh;
-                        }
-
-                    </style>
                     <!--- THIS IS WHERE THE HTML BEGINS --->
                     <!-- This tells the browser that your page is responsive -->
                     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1081,7 +635,7 @@
 
                 <!-- start of content -->
                 <div class="content_wrapper">
-                    <div class="scu_parts_wrapper">
+                    <div class="scu_detail_wrapper">
                         <div class="lee_nav_image">
                             <img class="scu_nav_project_black"
                                  src="http://2017.igem.org/wiki/images/2/27/T--SCU_China--bannerBlack.png">
@@ -1177,256 +731,220 @@
                                 </a>
                             </li>
                         </div>
-                        <div>
-                            <div id="overview">
+                        <div class="scu_nav_side" id="scu_nav_side">
+                            <!--<div class="scu_nav_side_image">-->
+                            <!--<img src="http://2017.igem.org/wiki/images/b/b6/T&#45;&#45;SCU_China&#45;&#45;nav-side.png">-->
+                            <!--</div>-->
+                            <div id="nav_tree">
+                                <ul class="scu_nav_tree">
+                                    <li>Meet Up
+                                        <ul>
+                                            <li><a href="#iSWU">iSWU</a></li>
+                                            <li><a href="#CCiC">CCiC</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="scu_content_wrapper">
+                            <div class="overview-title scu_detail_title" id="determination">Repressilator
+                            </div>
+                            <div class="scu_split2"></div>
+                            <div class="scu_sub_wrapper">
+                                <div class="scu_sub_title" id="iSWU"><i>01</i>&nbsp;&nbsp;Introduction
+                                </div>
+                                <p class="scu_content_p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SWU meet-up was held in
+                                    the beginning of project determination this year, which was aimed at enhancing
+                                    allied communication and cooperation on project design. In the iSWU meet-up, each
+                                    iGEM team gave a presentation of respective project, and after the presentations
+                                    there would be a panel session, where audiences could ask questions about the
+                                    projects which they are interested in. Via these communications, we knew what others
+                                    had done, what challenges they had
+                                </p>
+                                <div class="scu_split"></div>
+                                <div class="scu_sub_title" id="basic"><i>02 </i>&nbsp;&nbsp;Derivation of Basic Equations
+                                </div>
                                 <div>
-                                    <p class="overview-title">OVERVIEW</p>
-                                    <p class="overview-content ">The SCU iGEM 2016 has been focusing on current
-                                        treatments of uranium
-                                        pollution worldwide and how to solve the pollution using synthetic biology.
-                                        <br>
-                                        Besides the Uranium Reaper project, we did a lot of human practices as well.
-                                        This page is a quick overview. If you are interested in any work, click <a
-                                                style="color:#11abb0" href="#">"learn more…"
-                                            button for results and more details.</a>
-                                        <br>
-                                        <br>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
+                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
+                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
+                                        help from others and solved some problems we had met.
                                     </p>
-
-                                </div>
-                            </div>
-
-                            <div class="scu_review_content_wrapper">
-                                <div class="scu_review_part_title"><i>Melatonin</i></div>
-                                <div id="myCarousel" class="carousel slide scu_svg_review_image">
-                                    <!-- 轮播（Carousel）指标 -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner review_image_style">
-                                        <div class="item active">
-                                            <embed src="http://2017.igem.org/wiki/images/2/2f/T--SCU_China--SVG_TEST.svg" width="auto" height="600"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
-                                        <div class="item">
-                                            <embed src="http://2017.igem.org/wiki/images/2/2f/T--SCU_China--SVG_TEST.svg" width="auto" height="600"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
-                                        <div class="item">
-                                            <embed src="http://2017.igem.org/wiki/images/2/2f/T--SCU_China--SVG_TEST.svg" width="auto" height="600"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
+                                        <p class="scu_img_index"> Fig.1 </p>
                                     </div>
-                                    <!-- 轮播（Carousel）导航 -->
-                                    <a class="carousel-control left" href="#myCarousel"
-                                       data-slide="prev">&lsaquo;</a>
-                                    <a class="carousel-control right" href="#myCarousel"
-                                       data-slide="next">&rsaquo;</a>
-                                </div>
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content2">
-                                        <h4>1.Why we did this model?</h4>
-                                        <ul class="scu_panda_4">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>2.How was our model constructed?</h4>
-                                        <ul class="scu_panda_2">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>3.What did the modeling tell us?
-                                        </h4>
-                                        <ul class="scu_panda_3">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <a style="color:#11abb0" href="#">"learn more…"</a>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.2 </p>
                                     </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.3 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we introduced our project, we attracted
+                                        people’s attention successfully. Many people showed their interest in our
+                                        project in the panel session and they also gave us some good suggestions.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/7/76/T-SCU_China_2017-HP_CCIC_fig4.jpg">
+                                        <p class="scu_img_index"> Fig.4 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After our presentation, Dr. Zhang (Haoqian
+                                        Zhang) showed his appreciation to our idea, and he also told us it was better to
+                                        knockout the enzymes rather than cut off the tag if we wanted to make
+                                        repressilators more stable.
+                                    </p>
                                 </div>
                                 <div class="scu_split"></div>
+                                <div class="scu_sub_title" id="system"><i>02 </i>&nbsp;&nbsp;Quorum Sensing System for Synchronizing
+                                    <div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
+                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
+                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
+                                        help from others and solved some problems we had met.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
+                                        <p class="scu_img_index"> Fig.1 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.2 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.3 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we introduced our project, we attracted
+                                        people’s attention successfully. Many people showed their interest in our
+                                        project in the panel session and they also gave us some good suggestions.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/7/76/T-SCU_China_2017-HP_CCIC_fig4.jpg">
+                                        <p class="scu_img_index"> Fig.4 </p>
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After our presentation, Dr. Zhang (Haoqian
+                                        Zhang) showed his appreciation to our idea, and he also told us it was better to
+                                        knockout the enzymes rather than cut off the tag if we wanted to make
+                                        repressilators more stable.
+                                    </p>
+                                </div>
                             </div>
-
-                            <div class="scu_review_content_wrapper2">
-                                <div class="scu_review_part_title"><i>Repressilator</i></div>
-                                <div id="myCarousel2" class="carousel slide scu_svg_review_image">
-                                    <!-- 轮播（Carousel）指标 -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel2" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner review_image_style">
-                                        <div class="item active">
-                                            <img src="211.png" alt="First slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="211.png" alt="Second slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="211.png" alt="Third slide">
-                                        </div>
+                                <div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
+                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
+                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
+                                        help from others and solved some problems we had met.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
+                                        <p class="scu_img_index"> Fig.1 </p>
                                     </div>
-                                    <!-- 轮播（Carousel）导航 -->
-                                    <a class="carousel-control left" href="#myCarousel2"
-                                       data-slide="prev">&lsaquo;</a>
-                                    <a class="carousel-control right" href="#myCarousel2"
-                                       data-slide="next">&rsaquo;</a>
-                                </div>
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content2">
-                                        <h4>1.Why we did this model?</h4>
-                                        <ul class="scu_panda_4">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>2.How was our model constructed?</h4>
-                                        <ul class="scu_panda_2">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>3.What did the modeling tell us?
-                                        </h4>
-                                        <ul class="scu_panda_3">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <a style="color:#11abb0" href="#">"learn more…"</a>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.2 </p>
                                     </div>
-                                </div>
-                                <div class="scu_split"></div>
-                            </div>
-
-                            <div class="scu_review_content_wrapper2">
-                                <div class="scu_review_part_title"><i>RBS Modification</i></div>
-                                <div id="myCarousel3" class="carousel slide scu_svg_review_image">
-                                    <!-- 轮播（Carousel）指标 -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel3" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel3" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner review_image_style">
-                                        <div class="item active">
-                                            <img src="211.png" alt="First slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="211.png" alt="Second slide">
-                                        </div>
-                                        <div class="item">
-                                            <img src="211.png" alt="Third slide">
-                                        </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
+                                        iGEMers which is aimed at dealing with the conflict between the longing for
+                                        doing something great in synthetic biology and the lack of
+                                        technology research resources. Each year, many iGEM teams from different
+                                        provinces of China will get together in CCiC to communicate with each other and
+                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
+                                        technology, scientific supports, bacterial species and other available
+                                        resources.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
+                                        <p class="scu_img_index"> Fig.3 </p>
                                     </div>
-                                    <!-- 轮播（Carousel）导航 -->
-                                    <a class="carousel-control left" href="#myCarousel3"
-                                       data-slide="prev">&lsaquo;</a>
-                                    <a class="carousel-control right" href="#myCarousel3"
-                                       data-slide="next">&rsaquo;</a>
-                                </div>
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content3">
-                                        <h4>1.Why we did this model?</h4>
-                                        <ul class="scu_panda_4">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>2.How was our model constructed?</h4>
-                                        <ul class="scu_panda_2">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <h4>3.What did the modeling tell us?
-                                        </h4>
-                                        <ul class="scu_panda_3">
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                            <li>
-                                                Zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
-                                            </li>
-                                        </ul>
-                                        <a style="color:#11abb0" href="#">"learn more…"</a>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we introduced our project, we attracted
+                                        people’s attention successfully. Many people showed their interest in our
+                                        project in the panel session and they also gave us some good suggestions.
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/7/76/T-SCU_China_2017-HP_CCIC_fig4.jpg">
+                                        <p class="scu_img_index"> Fig.4 </p>
                                     </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After our presentation, Dr. Zhang (Haoqian
+                                        Zhang) showed his appreciation to our idea, and he also told us it was better to
+                                        knockout the enzymes rather than cut off the tag if we wanted to make
+                                        repressilators more stable.
+                                    </p>
                                 </div>
-                                <div class="scu_split"></div>
-                            </div>
 
                         </div>
                         <div class="margin-top-20vh"></div>
                     </div>
+
                     <div class="footer">
                         <img class="scu_footer_icon" src="http://2017.igem.org/wiki/images/4/47/T--SCU_China--icon.png">
                         <img class="scu_footer" src="http://2017.igem.org/wiki/images/8/89/T--SCU_China--footer.png">
                         <p class="scu_footer_text">SCU_China-2017@copyright</p>
-                        <p class="scu_footer_text_2">Contact Us</p>
+                        <p class="scu_footer_text_2">Contact Us: SCU_China2017@126.com</p>
                     </div>
+
                 </div>
-
-
                 <p></p>
                 <!--
                 NewPP limit report
@@ -1471,12 +989,13 @@
 </div>
 
 </div>
+<link rel="stylesheet" href="T--SCU_China-2017--wikiStyle.css" type="text/css">
 <link rel="stylesheet" href="T--SCU_China-2017--style.css" type="text/css">
-<link rel="stylesheet" href="T--SCU_China-2017--reviewStyle.css" type="text/css">
-<link rel="stylesheet" href="banner_style_css.css" type="text/css">
+<link rel="stylesheet" href="banner_style_css.css">
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="T--SCU_China-2017-js.js"></script>
-</div></body>
+</div>
+</body>
 </html>
