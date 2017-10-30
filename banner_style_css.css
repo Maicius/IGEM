@@ -134,7 +134,7 @@ ul {
 }
 
 .review_image {
-    width: 60%;
+    width: 80%;
     height: auto;
     margin: 50px auto 10px auto;
 }
@@ -175,8 +175,6 @@ ul {
     font-size: 24px;
     font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
     opacity: 0.8;
-
-
 }
 .scu_review_content > h4 {
     color: #2b5d10;
@@ -560,4 +558,51 @@ ul {
 .scu_panda_4 > ul > li > ul{
     list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
     font-size: 20px;
+}
+
+/*css for model*/
+.scu_model_review_num{
+    font-size: 36px;
+    font-style: italic;
+    float: left;
+    color: #2b5d10;
+    opacity: 0.7;
+    padding-right: 10px;
+    font-family: cambria,Times New Roman, Georgia, Serif, sans-serif;
+    margin-top: 20px;
+    width: 10%;
+}
+.scu_review_content2 {
+    width: 100%;
+    font-size: 24px;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 0.8;
+}
+.scu_review_content3 {
+    width: 100%;
+    font-size: 24px;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    opacity: 0.8;
+}
+.scu_review_content > ul{
+    width: 100%;
+    list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
+}
+.scu_review_content2 > ul{
+    width: 100%;
+    list-style-image: url("http://2017.igem.org/wiki/images/e/e7/T-SCU_China-2017_panda5.png");
+}
+.scu_review_content3 > ul{
+    width: 100%;
+    list-style-image: url("http://2017.igem.org/wiki/images/a/a5/T-SCU_China-2017_panda3.png");
+}
+ul > li {
+    word-break: break-all;
+}
+
+.scu_svg_review_image {
+    background-color: #ffffff;
+    width: 90% !important;
+    height: auto !important;
+    margin: 10px auto 10px auto;
 }
