@@ -611,9 +611,6 @@ ul {
     width: 100%;
     list-style-image: url("http://2017.igem.org/wiki/images/a/a5/T-SCU_China-2017_panda3.png");
 }
-ul > li {
-    word-break: break-all;
-}
 
 .scu_svg_review_image {
     width: 90% !important;
