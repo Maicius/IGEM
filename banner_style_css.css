@@ -518,6 +518,9 @@ ul {
     width: 100%;
     height: auto;
 }
+.scu_smile_panda {
+
+}
 .scu_smile_panda > ul{
     list-style-image: url("http://2017.igem.org/wiki/images/e/e7/T-SCU_China-2017_panda5.png");
     font-size: 20px;
@@ -625,4 +628,30 @@ ul > li {
     text-align: center;
     vertical-align: middle;
     display:table-cell;
+}
+
+/*attribution*/
+.scu_content_attri {
+    position: relative;
+    font-size: 16px !important;
+    text-align: justify !important;
+    color: black !important;
+    line-height: 1.5em !important;
+}
+.scu_ack_subtitle {
+    font-size: 20px !important;
+    font-weight: 600;
+}
+
+.scu_hp_image_single3 {
+    width: 60%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+    display:table-cell;
+}
+.scu_hp_image_single3 > img {
+    width: 40%;
+    height: auto;
 }
