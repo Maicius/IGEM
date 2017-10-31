@@ -730,245 +730,418 @@
                             <!--<div class="scu_nav_side_image">-->
                             <!--<img src="http://2017.igem.org/wiki/images/b/b6/T&#45;&#45;SCU_China&#45;&#45;nav-side.png">-->
                             <!--</div>-->
-                            <div id="nav_tree">
+                            <div id="nav_tree" class="scu_panda_4">
                                 <ul class="scu_nav_tree">
                                     <li>Meet Up
                                         <ul>
-                                            <li><a href="#iSWU">Introduction</a></li>
-                                            <li><a href="#CCiC">Derivation of Basic Equations.</a></li>
-                                            <li><a href="#CCiC">Quorum Sensing System for Synchronizing</a></li>
-                                            <li><a href="#CCiC">The Numerical Result of Quorum Sensing Synchronization without Time Delay</a></li>
-                                            <li><a href="#iSWU">Determine the Time to Reach QSSA</a></li>
-                                            <li><a href="#iSWU">What is the Effect of Delay Time</a></li>
-                                            <li><a href="#iSWU">How to Increase the Period</a></li>
-                                            <li><a href="#iSWU">Simulation of Melatonin expression with fluorescence
-                                            </a></li>
-                                            <li><a href="#iSWU">Summary</a></li>
+                                            <li><a href="#introduction">Introduction</a></li>
+                                            <li><a href="#traditional">Overview of Traditional<br> Michaelis-Menten
+                                                Theory </a></li>
+                                            <li><a href="#reversible">Derivation of Reversible<br> M-M Theory</a></li>
+                                            <li><a href="#reversibleMM">Reversible M-M Theory <br>in Complex Enzyme
+                                                System</a></li>
+                                            <li><a href="#summary">Summary</a></li>
+                                            <li><a href="#reference">References</a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="scu_content_wrapper">
-                            <div class="overview-title scu_detail_title" id="determination">Repressilator
+                            <div class="overview-title scu_detail_title" id="determination">Part 2. Enzyme Kinetic
                             </div>
-                            <div class="scu_split2"></div>
+                            <div class="scu_split2" id="introduction"></div>
                             <div class="scu_sub_wrapper">
-                                <div class="scu_sub_title" id="iSWU"><i>01</i>&nbsp;&nbsp;Introduction
+                                <div class="scu_sub_title"><i>2.1</i>&nbsp;&nbsp;Introduction
                                 </div>
-                                <p class="scu_content_p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SWU meet-up was held in
-                                    the beginning of project determination this year, which was aimed at enhancing
-                                    allied communication and cooperation on project design. In the iSWU meet-up, each
-                                    iGEM team gave a presentation of respective project, and after the presentations
-                                    there would be a panel session, where audiences could ask questions about the
-                                    projects which they are interested in. Via these communications, we knew what others
-                                    had done, what challenges they had
+                                <p class="scu_content_p">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Given that the extra energy
+                                    consumption of heterologous expression is not conducive to cell growth, we do not
+                                    want to allow all the expression of first three enzymes to be controlled by strong
+                                    promoters. Instead, we want to use mathematical modelling to obtain the optimal
+                                    proportion of enzymes with a higher yield of NAS, and to select the appropriate
+                                    combination of constitutive promoters according to the modeling results.
+                                    In a plan of our project, there are two kinds of cells in our design. The first
+                                    cells can express the first three enzymes in the biosynthesis pathway of melatonin,
+                                    including TDC, T5H and SNAT. Thus, in this kind of cells, tryptophan is catalyzed
+                                    into tryptamine by TDC; next, tryptamine is converted into serotonin by T5H;
+                                    sequentially, N-acetylserotonin (NAS) is synthesized from serotonin by SNAT. The
+                                    last enzyme of this biosynthesis pathway, COMT which catalyze NAS to melatonin, is
+                                    expressed in the second cell. The function of each cell is shown in Fig.1.
                                 </p>
-                                <div class="scu_split"></div>
-                                <div class="scu_sub_title" id="basic"><i>02 </i>&nbsp;&nbsp;Derivation of Basic Equations
+                                <div class="scu_hp_image_single2">
+                                    <img src="http://2017.igem.org/wiki/images/4/4a/T-SCU_China-2017_melatonion_model_1.png">
+                                    <p class="scu_img_index"> Fig.1. This figure shows the design of our project. Cell A
+                                        contains 3 process of enzyme catalysis, and Cell B contains the last part of
+                                        synthesizing Melatonin. </p>
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When it comes to the field of enzyme kinetic,
+                                    the most famous theory to describe the
+                                    behavior of enzyme reaction must be the Michaelis-Menten theory. In the following
+                                    chapters, we will start with traditional M-M theory. However, we will modify this
+                                    theory since it’s far from reliable when it comes to a complex reaction system. The
+                                    reasons and results will be shown in the following chapters.
+                                </p>
+                                <div class="scu_split" id="traditional"></div>
+                                <div class="scu_sub_title"><i>2.2 </i>&nbsp;&nbsp;Overview of Traditional
+                                    Michaelis-Menten Theory
                                 </div>
                                 <div>
                                     <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
-                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
-                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
-                                        help from others and solved some problems we had met.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Before the improved version, let’s take a
+                                        quick look at the traditional one. In 1913, Leonor Michaelis and Maud Menten
+                                        proposed a mathematical model of the reaction. It involves an enzyme, E, binding
+                                        to a substrate, S, to form a complex, ES, which in turn releases a product, P,
+                                        regenerating the original enzyme. This may be represented schematically as:
                                     </p>
                                     <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
-                                        <p class="scu_img_index"> Fig.1 </p>
+                                        <img src="http://2017.igem.org/wiki/images/9/94/T-SCU_China-2017_2.1.png">
                                     </div>
                                     <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
-                                        iGEMers which is aimed at dealing with the conflict between the longing for
-                                        doing something great in synthetic biology and the lack of
-                                        technology research resources. Each year, many iGEM teams from different
-                                        provinces of China will get together in CCiC to communicate with each other and
-                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
-                                        technology, scientific supports, bacterial species and other available
-                                        resources.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where k<sub>1</sub> (forward rate),k
+                                        <sub>2</sub> (reverse rate),
+                                        and k<sub>3</sub> (catalytic rate) denote the rate constants, the double arrows
+                                        between S
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(substrate) and ES (enzyme-substrate
+                                        complex) represents the fact that
+                                        enzyme-substrate binding is a reversible process, and the single forward arrow
+                                        represents the formation of P (product).<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By applying the law of mass action (the rate
+                                        of a reaction is proportional to
+                                        the product of the concentrations of the reactants), we can write down four
+                                        non-linear ordinary differential equations and a conservation condition.
                                     </p>
                                     <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
-                                        <p class="scu_img_index"> Fig.2 </p>
+                                        <img src="http://2017.igem.org/wiki/images/2/29/T-SCU_China-2017_2.2-5.png">
+                                        <img src="http://2017.igem.org/wiki/images/a/a0/T-SCU_China-2017_2.6.png">
                                     </div>
                                     <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
-                                        iGEMers which is aimed at dealing with the conflict between the longing for
-                                        doing something great in synthetic biology and the lack of
-                                        technology research resources. Each year, many iGEM teams from different
-                                        provinces of China will get together in CCiC to communicate with each other and
-                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
-                                        technology, scientific supports, bacterial species and other available
-                                        resources.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here, C<sub>E</sub>, C<sub>E0</sub>,
+                                        C<sub>S</sub>, C<sub>ES</sub> and C<sub>P</sub> represent the
+                                        concentration of enzyme, total enzyme, substrate, the complex, and the product,
+                                        respectively. To solve these equations, the traditional way here is to apply
+                                        quasi-steady-state approximation (QSSA) that we assume the substrate is in
+                                        instantaneous chemical equilibrium with the complex. Therefore, we can let
+                                        equation (2.4) equals to 0 as:
                                     </p>
                                     <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
-                                        <p class="scu_img_index"> Fig.3 </p>
+                                        <img src="http://2017.igem.org/wiki/images/b/b8/T-SCU_China-2017_2.7.png">
                                     </div>
                                     <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we introduced our project, we attracted
-                                        people’s attention successfully. Many people showed their interest in our
-                                        project in the panel session and they also gave us some good suggestions.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, we get the reaction velocity:
                                     </p>
                                     <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/7/76/T-SCU_China_2017-HP_CCIC_fig4.jpg">
-                                        <p class="scu_img_index"> Fig.4 </p>
+                                        <img src="http://2017.igem.org/wiki/images/a/aa/T-SCU_China-2017_2.8.png">
                                     </div>
                                     <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After our presentation, Dr. Zhang (Haoqian
-                                        Zhang) showed his appreciation to our idea, and he also told us it was better to
-                                        knockout the enzymes rather than cut off the tag if we wanted to make
-                                        repressilators more stable.
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/0/05/T-SCU_China-2017_2.9-10.png">
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;K<sub>cat</sub> the turn-over number is the
+                                        maximum
+                                        number of substrate molecules converted to product per enzyme molecule per
+                                        second. The Michaelis constant KM is the CS at which the reaction rate is at
+                                        half-maximum. Thus, the concentration of production will be
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/d/d9/T-SCU_China-2017_2.11.png">
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Both parameters can be measured by measuring
+                                        a single enzyme reaction with Lineweaver-Burk plot. The idea is to rewrite the
+                                        equation as:
+                                    </p>
+                                    <div class="scu_hp_image_single2">
+                                        <img src="http://2017.igem.org/wiki/images/5/5b/T-SCU_China-2017_2.12.png">
+                                    </div>
+                                    <p class="scu_content_p">
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With equation (2.11) and experimental data,
+                                        we can easily get the parameters of
+                                        the system by fitting the slope, y-intercept and x-intercept. The y-intercept of
+                                        this graph is equivalent to the inverse of V<sub>max</sub>. The x-intercept of
+                                        this graph
+                                        represents -1/K<sub>M</sub>. However, we can only get 2 values from the
+                                        Lineweaver-Burk
+                                        plot, which is not enough to determine this system. The system contains 3
+                                        parameters, and 2 equations cannot help us solve the value of k<sub>1</sub>,
+                                        k<sub>-1</sub> and k<sub>2</sub>.
                                     </p>
                                 </div>
-                                <div class="scu_split"></div>
-                                <div class="scu_sub_title" id="system"><i>03 </i>&nbsp;&nbsp;Quorum Sensing System for Synchronizing
+                                <div class="scu_split" id="reversible"></div>
+                                <div class="scu_sub_title"><i>2.3</i>&nbsp;&nbsp;Derivation of Reversible
+                                    M-M Theory
                                     <div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
-                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
-                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
-                                        help from others and solved some problems we had met.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
-                                        <p class="scu_img_index"> Fig.1 </p>
-                                    </div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
-                                        iGEMers which is aimed at dealing with the conflict between the longing for
-                                        doing something great in synthetic biology and the lack of
-                                        technology research resources. Each year, many iGEM teams from different
-                                        provinces of China will get together in CCiC to communicate with each other and
-                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
-                                        technology, scientific supports, bacterial species and other available
-                                        resources.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
-                                        <p class="scu_img_index"> Fig.2 </p>
+                                        <p class="scu_content_p">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;TTraditional M-M Theory seems OK on a
+                                            single enzyme reaction. However, the whole theory fails on complex enzyme
+                                            reaction system.<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Why is that? Let’s take a look back at
+                                            the very basic assumptions of M-M
+                                            Theory first. <strong>One of the basic assumption is that the concentration
+                                            of
+                                            substrate is much larger than the concentration of enzyme, which yields
+                                            CS>>CE</strong>. Therefore, the complex can quickly enter the steady state
+                                            quickly
+                                            enough for us to omit the variation of the complex and use the equation
+                                            (2.7).<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hence, what is the restriction of
+                                            traditional M-M Theory? In a complex
+                                            enzyme reaction, things are different. This restriction might be OK during
+                                            the first enzyme reaction of TDC, but it will be poor in the reaction of T5H
+                                            and more poor in the reaction of SNAT. <strong>The substrate of the
+                                            intermediate
+                                            product Tryptamine and Serotonin is zero while the whole reaction
+                                            starts</strong>.
+                                            Therefore, we cannot use the M-M theory on a complex system.<br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;How do we fix this? Our method is to
+                                            abandon this irreversibility character
+                                            of the traditional M-M Theory by adding the reversibility between the
+                                            product and the complex. We can rewrite the equation (2.1) as:
+                                        </p>
+                                        <div class="scu_hp_image_single2">
+                                            <img src="http://2017.igem.org/wiki/images/2/2e/T-SCU_China-2017_2.13.png">
+                                        </div>
+                                        <p class="scu_content_p">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The difference between equation (2.1)
+                                            and (2.12) lies in the parameter k-2. This parameter may be small but
+                                            crucial to the limitation of reaction velocity. Then we can rewrite the
+                                            equation system (2.2-2.5) as
+                                        </p>
+                                        <div class="scu_hp_image_single2">
+                                            <img src="http://2017.igem.org/wiki/images/1/10/T-SCU_China-2017_2.14-17.png">
+                                        </div>
+                                        <p class="scu_content_p">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Although we cannot get a simple
+                                            expression like equation (2.11) but we can numerically solve the equation
+                                            system. Here, as is shown in Fig.2. we can see the dynamical difference
+                                            between equations (2.2-2.5) and equations (2.14-2.17).
+                                        </p>
+                                        <div class="scu_svg_imgage">
+                                            <embed src="http://2017.igem.org/wiki/images/4/4c/T-SCU_China-2017_melatonin_enzyme_kinetic_fig2.svg"
+                                                   width="100%" height="600"
+                                                   type="image/svg+xml"></embed>
+                                            <p class="scu_img_index"> Fig.2. Here is the difference of two kinds of
+                                                model. Both the lines are the concentration of the product P. The yellow
+                                                line represents the result of equation (2.11) and the blue line is the
+                                                result of numerically solving the equations (2.14-2.17). It’s obvious to
+                                                find out that the traditional function means the product will linearly
+                                                increase without limit. In real situation, it is absolutely not. The
+                                                concentration of product won’t be larger than the initial concentration
+                                                of substrate and the velocity will decrease as time pass by. Therefore,
+                                                in our project, we use the reversible M-M equations. The parameters are
+                                                chosen as C<sub>S0</sub>=5, C<sub>E0</sub>=1, k<sub>1</sub>,
+                                                k<sub>-1</sub>, k<sub>2</sub> and k<sub>-2</sub> all equals to 0.1 for
+                                                simplicity. </p>
+                                        </div>
                                     </div>
                                 </div>
+                                <div class="scu_split" id="reversibleMM"></div>
+                                <div class="scu_sub_title"><i>2.4</i> &nbsp;&nbsp;Reversible M-M Theory in Complex
+                                    Enzyme System
+                                </div>
+                                <p class="scu_content_p"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The chapter 2.3 analyzed
+                                    the dynamical character of 2 kinds of
+                                    equations, but that only applies on single-enzyme situation. The reaction in cell A
+                                    contains 3 enzymes. How do we model this complex enzyme reaction system? In fact,
+                                    our idea is to firstly write down the system as Fig.3. With Fig.3, we know how to
+                                    list our equations.
+                                </p>
+                                <div class="scu_hp_image_single2">
+                                    <img src="http://2017.igem.org/wiki/images/c/cf/T-SCU_China-2017_melatonin_3.png">
+                                    <p class="scu_img_index"> Fig.3. This is the whole reaction system in cell A. E<sub>1</sub>,
+                                        E<sub>2</sub>
+                                        and E<sub>3</sub> are the TDC, T5H and SNAT. S is the substrate Tryptophan.
+                                        P<sub>1</sub>, P<sub>2</sub> and P<sub>3</sub>
+                                        are the Tryptamine, Serotonin and N-acetyl Serotonin. ES<sub>i</sub> with
+                                        i=1,2,3
+                                        represents the enzyme complex. We assume that there is no other inhibition
+                                        between P<sub>i</sub> with E<sub>j</sub> (i≠j). Therefore, we totally have 12
+                                        parameters to be
+                                        measured. Note that the main difference with single-enzyme equations is that
+                                        P<sub>1</sub>
+                                        is involved in the reaction with E<sub>2</sub> and P<sub>2</sub> is involved in
+                                        the reaction with
+                                        E<sub>3</sub>
+                                    </p>
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Following chapter 2.3, we can easily derive
+                                    the
+                                    equations as
+                                </p>
+                                <div class="scu_hp_image_single2">
+                                    <img src="http://2017.igem.org/wiki/images/9/92/T-SCU_China-2017_2.18.png">
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To solve the equations above, we need to get
+                                    the
+                                    kinetic constant k in every step of reaction. But how to determine the different
+                                    parameters? Lineweaver-Burk plot can only yields 2 equations, whereas we have 4
+                                    parameters in a single reaction step. Given this situation, we figured out a
+                                    unique
+                                    way to measure it. The key to the problem is to draw Lineweaver-Burk plot
+                                    forwadly
+                                    and reversely. That is to say, we can reverse the role of S and P, since every
+                                    enzyme reaction is a reversible reaction. Then, we can get the equation (2.19):
+                                </p>
+                                <div class="scu_hp_image_single2">
+                                    <img src="http://2017.igem.org/wiki/images/a/a3/T-SCU_China-2017_2.19.png">
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Beyond (2.19), we can even include the
+                                    chemical
+                                    equilibrium constant equation (2.20)
+                                </p>
+                                <div class="scu_hp_image_single2">
+                                    <img src="http://2017.igem.org/wiki/images/2/2c/T-SCU_China-2017_2.20.png">
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In this way, we could be able to determine
+                                    the
+                                    whole parameters in one enzyme reaction instead of reduce the equation just to
+                                    get a
+                                    simple but not practical equation (2.8). Also, we get an extra equation (2.20)
+                                    to
+                                    test the result of our experiment.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aiming to measure the relative parameters
+                                    (there
+                                    are totally 12 parameters in this
+                                    complex system), our team measured the activity of enzymes in vivo
+                                    quantitatively.
+                                    Honestly, the result is not satisfying, but we strongly believe that our method
+                                    is
+                                    still applicable given enough time and energy. Hence, we would show the
+                                    numerical
+                                    result Fig.4. with equation (2.18), and the parameters are set optionally.
+                                    Still,
+                                    it’s good way to see the advantages of reversible M-M theory in complex
+                                    system.scientific supports, bacterial species and other available
+                                    resources.
+                                </p>
+                                <div class="scu_svg_imgage">
+                                    <embed src="http://2017.igem.org/wiki/images/9/98/T-SCU_China-2017_fig2.4%E6%94%BE%E5%9C%A8melatonin%E9%83%A8%E5%88%86%E6%9C%80%E5%90%8E%E7%9A%84fig4%E4%BD%8D%E7%BD%AE.svg"
+                                           width="100%" height="600"
+                                           type="image/svg+xml"></embed>
+                                    <p class="scu_img_index"> Fig.4.The Blue line represents Tryptamine, the orange
+                                        line
+                                        represents Serotonin and the green line represents the N-acetylserotonin
+                                        that is
+                                        what we want in the final step of cell A. The parameters are k<sub>i</sub>=1mmol/L
+                                        (i=1,2,3…12 except i=4,i=8,i=12) and k<sub>4</sub>=0.1mmol/L, k<sub>8</sub>=0.2mmol/L,
+                                        k<sub>12</sub>=0.3mmol/L.
+                                        They are all chosen optionally, but the model itself is still general.
+                                    </p>
+                                </div>
+                                <div class="scu_split" id="summary"></div>
+                                <div class="scu_sub_title"><i>2.5</i>&nbsp;&nbsp;Summary</div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;With all the above mentioned, we believe
+                                    that we have derived a unique way of modeling a complex enzyme system.
+                                    Although
+                                    the relative parameters are sometime hard to measure (especially reversely
+                                    measure the reaction), but it still is a much more accurate and effective
+                                    way
+                                    compared with traditional way. Besides, there are still some more details to
+                                    add
+                                    to the model. For instance, enzymes won’t diffuse through cell membrane, but
+                                    Tryptamine, Serotonin and NAS do. Therefore, if we add some diffusion terms
+                                    in
+                                    equation (2.18) like what we did in the modeling of repressilator, maybe we
+                                    will
+                                    get some interesting results. All in all, we hope our work can be helpful in
+                                    relative enzyme reaction system in cells.
+                                </p>
+                                <div class="scu_split" id="reference"></div>
+                                <div class="scu_sub_title"><i>2.6</i>&nbsp;&nbsp; References</div>
+                                <p class="scu_content_p">
+                                    1. Cermak N. Fundamentals of enzyme kinetics
+                                    Michaelis-Menten and deviations. 2009.<br>
+                                    2. Chaplin M. Enzyme Technology Reversible reactions.<a
+                                        href="http://www1lsbuacuk/water/enztech/reversiblehtml - eq1_47">
+                                    http://www1lsbuacuk/water/enztech/reversiblehtml - eq1_47</a>. 2004.<br>
+                                    3. Gheorghe Craciun YT, and Martin Feinberg. Understanding bistability in
+                                    complex enzyme driven reaction networks. PNAS. 2006.<br>
+                                    4. Grima R. An effective rate equation approach to reaction kinetics in small
+                                    volumes: theory and application to biochemical reactions in nonequilibrium
+                                    steady-state conditions. J Chem Phys. 2010;133(3):035101.<br>
+                                    5. Imperial S, Centelles JJ. Enzyme Kinetic Equations of Irreversible and
+                                    Reversible Reactions in Metabolism. Journal of Biosciences and Medicines.
+                                    2014;02(04):24-9.<br>
+                                    6. Min W, Jiang L, Xie XS. Complex kinetics of fluctuating enzymes: phase
+                                    diagram characterization of a minimal kinetic scheme. Chem Asian J.
+                                    2010;5(5):1129-38.<br>
+                                    7. Moe O, Cornelius R. Enzyme kinetics. Journal of Chemical Education.
+                                    1988;65(2):137.<br>
+                                    8. Nelson P. Biological Physics: Energy, Information, Life. 2002.<br>
+                                    9. Qi F, Dash RK, Han Y, Beard DA. Generating rate equations for complex enzyme
+                                    systems by a computer-assisted systematic method. BMC Bioinformatics.
+                                    2009;10:238.<br>
+                                    10. Reytor Gonzalez ML, Cornell-Kennon S, Schaefer E, Kuzmic P. An algebraic
+                                    model to determine substrate kinetic parameters by global nonlinear fit of
+                                    progress curves. Anal Biochem. 2017;518:16-24.<br>
+                                    11. Wong MK, Krycer JR, Burchfield JG, James DE, Kuncic Z. A generalised enzyme
+                                    kinetic model for predicting the behaviour of complex biochemical systems. FEBS
+                                    Open Bio. 2015;5:226-39.
+                                </p>
                             </div>
-                                <div class="scu_split"></div>
-                                <div class="scu_sub_title">
-                                    <p class="scu_content_p">xxxxxxxxxxxxxxx</p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
-                                        <p class="scu_img_index"> Fig.5 </p>
-                                    </div>
-
-                                </div>
-                                <div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To communicate with other iGEM teams and get
-                                        more reliable resources, we attended 2017 Conference of China iGEMer Community
-                                        (CCiC) hosted by team “FAFU-China” in Fuzhou. During the meeting, we got much
-                                        help from others and solved some problems we had met.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/3/32/T-SCU_China_2017-HP_CCIC_fig1.jpg">
-                                        <p class="scu_img_index"> Fig.1 </p>
-                                    </div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
-                                        iGEMers which is aimed at dealing with the conflict between the longing for
-                                        doing something great in synthetic biology and the lack of
-                                        technology research resources. Each year, many iGEM teams from different
-                                        provinces of China will get together in CCiC to communicate with each other and
-                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
-                                        technology, scientific supports, bacterial species and other available
-                                        resources.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
-                                        <p class="scu_img_index"> Fig.2 </p>
-                                    </div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CCiC is a large conference for Chinese
-                                        iGEMers which is aimed at dealing with the conflict between the longing for
-                                        doing something great in synthetic biology and the lack of
-                                        technology research resources. Each year, many iGEM teams from different
-                                        provinces of China will get together in CCiC to communicate with each other and
-                                        get more basic knowledge, innovative ideas, useful experiences, leading– edge
-                                        technology, scientific supports, bacterial species and other available
-                                        resources.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/5/54/T-SCU_China_2017-HP_CCIC_fig2.jpg">
-                                        <p class="scu_img_index"> Fig.3 </p>
-                                    </div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When we introduced our project, we attracted
-                                        people’s attention successfully. Many people showed their interest in our
-                                        project in the panel session and they also gave us some good suggestions.
-                                    </p>
-                                    <div class="scu_hp_image_single2">
-                                        <img src="http://2017.igem.org/wiki/images/7/76/T-SCU_China_2017-HP_CCIC_fig4.jpg">
-                                        <p class="scu_img_index"> Fig.4 </p>
-                                    </div>
-                                    <p class="scu_content_p">
-                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;After our presentation, Dr. Zhang (Haoqian
-                                        Zhang) showed his appreciation to our idea, and he also told us it was better to
-                                        knockout the enzymes rather than cut off the tag if we wanted to make
-                                        repressilators more stable.
-                                    </p>
-                                </div>
+                            <div class="margin-top-20vh"></div>
                         </div>
-                        <div class="margin-top-20vh"></div>
-                    </div>
 
-                    <div class="footer">
-                        <img class="scu_footer_icon" src="http://2017.igem.org/wiki/images/4/47/T--SCU_China--icon.png">
-                        <img class="scu_footer" src="http://2017.igem.org/wiki/images/8/89/T--SCU_China--footer.png">
-                        <p class="scu_footer_text">SCU_China-2017@copyright</p>
-                        <p class="scu_footer_text_2">Contact Us: SCU_China2017@126.com</p>
-                    </div>
+                        <div class="footer">
+                            <img class="scu_footer_icon"
+                                 src="http://2017.igem.org/wiki/images/4/47/T--SCU_China--icon.png">
+                            <img class="scu_footer"
+                                 src="http://2017.igem.org/wiki/images/8/89/T--SCU_China--footer.png">
+                            <p class="scu_footer_text">SCU_China-2017@copyright</p>
+                            <p class="scu_footer_text_2">Contact Us: SCU_China2017@126.com</p>
+                        </div>
 
+                    </div>
+                    <p></p>
+                    <!--
+                    NewPP limit report
+                    CPU time usage: 0.008 seconds
+                    Real time usage: 0.009 seconds
+                    Preprocessor visited node count: 9/1000000
+                    Preprocessor generated node count: 42/1000000
+                    Post‐expand include size: 41/2097152 bytes
+                    Template argument size: 0/2097152 bytes
+                    Highest expansion depth: 2/40
+                    Expensive parser function count: 0/100
+                    -->
+
+                    <!-- Saved in parser cache with key 2017_igem_org:pcache:idhash:602-0!*!*!*!*!*!* and timestamp 20170626055012 and revision id 5276
+                     -->
                 </div>
-                <p></p>
-                <!--
-                NewPP limit report
-                CPU time usage: 0.008 seconds
-                Real time usage: 0.009 seconds
-                Preprocessor visited node count: 9/1000000
-                Preprocessor generated node count: 42/1000000
-                Post‐expand include size: 41/2097152 bytes
-                Template argument size: 0/2097152 bytes
-                Highest expansion depth: 2/40
-                Expensive parser function count: 0/100
-                -->
-
-                <!-- Saved in parser cache with key 2017_igem_org:pcache:idhash:602-0!*!*!*!*!*!* and timestamp 20170626055012 and revision id 5276
-                 -->
+                <div class="visualClear"></div>
             </div>
-            <div class="visualClear"></div>
         </div>
+
     </div>
 
-</div>
+    <!-- Side Menubar -->
+    <div id="sideMenu">
+        <a href="http://2017.igem.org/">
+            <div id="home_logo">
+                <img src="./Team_SCU China - 2017.igem.org_files/HQ_menu_logo.jpg">
+            </div>
+        </a>
 
-<!-- Side Menubar -->
-<div id="sideMenu">
-    <a href="http://2017.igem.org/">
-        <div id="home_logo">
-            <img src="./Team_SCU China - 2017.igem.org_files/HQ_menu_logo.jpg">
-        </div>
-    </a>
+        <div style="clear:both; height:5px;"></div>
 
-    <div style="clear:both; height:5px;"></div>
+        <div id="menuDisplay"></div>  <!--- Menu will be loaded here --->
+    </div>
 
-    <div id="menuDisplay"></div>  <!--- Menu will be loaded here --->
-</div>
+    <!-- Pop_Why Div is definded here -->
+    <div class="pop_why_cover"></div>
 
-<!-- Pop_Why Div is definded here -->
-<div class="pop_why_cover"></div>
-
-<div class="pop_why_box">
-    <div class="pop_close">×</div>
-    <div class="pop_why_content"><h3> Loading ... </h3></div>
-</div>
+    <div class="pop_why_box">
+        <div class="pop_close">×</div>
+        <div class="pop_why_content"><h3> Loading ... </h3></div>
+    </div>
 
 </div>
 <link rel="stylesheet" href="T--SCU_China-2017--wikiStyle.css" type="text/css">
