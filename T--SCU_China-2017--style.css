@@ -435,3 +435,84 @@ ul {
     background-repeat:no-repeat;
     background-position: center;
 }
+
+/*css for main page*/
+.overview-sub-title {
+    font-size: 36px !important;
+    color: #2b5d10 !important;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif !important;
+    text-align: center !important;
+    margin: 30px auto !important;
+    opacity: 0.8;
+}
+.scu_main_page_wrapper{
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+.scu_main_page_title2 {
+    font-size: 48px;
+    color: #2b5d10;
+    font-family: raleway-bold, cambria,"Times New Roman", Georgia, Serif, sans-serif;
+    text-align: center;
+    margin: 20px auto 20px auto;
+    opacity: 1.0;
+    line-height: 1.0em;
+}
+.scu_main_page_title {
+    margin-top: 20vh;
+    border-top: solid 10px;
+    border-bottom: solid 10px;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    border-radius: 20px;
+    border-color: #4cae4c;
+    -moz-box-shadow: 0px 0px 10px #888888; /* 老的 Firefox */
+    box-shadow: 0px 0px 10px #888888;
+    opacity: 0.9;
+}
+.scu_main_page_content {
+    margin-top: 50px;
+    height: auto;
+}
+.scu_main_page_content:hover {
+    box-shadow:1px 1px 2000px 2000px rgba(0,0,0,0.4),0 0 10px 10px rgba(0,0,0,0.4);
+    transform: scale(1.02);
+}
+.scu_main_page_gold {
+    width: 100%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.scu_main_page_gold > img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+.scu_main_page_content_wrapper {
+    border-top: solid 10px;
+    border-bottom: solid 10px;
+    border-left: solid 10px;
+    border-right: solid 10px;
+    border-radius: 20px;
+    border-color: #4cae4c;
+    -moz-box-shadow: 0px 0px 10px #888888; /* 老的 Firefox */
+    box-shadow: 0px 0px 10px #888888;
+}
+.scu_main_page_content_p {
+    font-size: 22px !important;
+    line-height: 2.0em !important;
+    text-align: justify !important;
+    padding: 10px !important;
+    height: auto !important;
+}
+.scu_project_image_wrapper_wide {
+    width: 100%;
+    position: relative;
+    background: url("http://2017.igem.org/wiki/images/8/85/T-SCU_China-2017_small_wide_background.jpg") repeat-y;
+    background-size: contain;
+    height: 300vh;
+}

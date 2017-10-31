@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function () {
+    resize_window();
         $(window).scroll(function () {
             if(window.innerWidth > 1400) {
                 // 隐藏侧边导航栏
@@ -57,4 +58,23 @@ function click_nav() {
     var str = "'#" + id + "'";
     var height = $(str).offset();
     $('html,body').animate({scrollTop: height.top}, 500);
+}
+
+$(window).resize(function () {
+   resize_window();
+});
+function resize_window() {
+    console.log("resize");
+    var left = $('#left').height();
+    var right = $('#middle').height();
+    var middle = $('#right').height();
+    var newHeight = left > right ? left : right;
+    var Height = newHeight > middle ? newHeight: middle;
+    // console.log(newHeight);
+    $('#left_wrapper').css("height", Height + 30);
+    $('#right_wrapper').css("height", Height + 30);
+    $('#middle_wrapper').css("height", Height + 30);
+
+    var windowHeight = $(document).outerHeight();
+    $('#scu_nav_wrapper').css("height", windowHeight);
 }
