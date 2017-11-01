@@ -888,3 +888,23 @@ ul {
     width: 100%;
     height: 100vh;
 }
+.scu_svg_image_middle_2_fixed {
+
+}
+.scu_svg_image_middle_2_fixed > img {
+    width: 48%;
+    height: 450px;
+}
+
+.scu_hp_image_single_fix {
+    width: 60%;
+    height: 400px;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+.scu_hp_image_single_fix > img {
+    width: 100%;
+    height: 450px;
+}

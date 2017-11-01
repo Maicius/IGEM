@@ -653,10 +653,11 @@
                                     Project
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://2017.igem.org/Team:SCU_China/Malatonion">Melatonin</a>
-                                    </li>
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Repressilator">Repressilator</a>
                                     </li>
+                                    <li><a href="http://2017.igem.org/Team:SCU_China/Malatonion">Melatonin</a>
+                                    </li>
+
                                     <li><a href="http://2017.igem.org/Team:SCU_China/InterLab">InterLab</a></li>
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Parts">Parts</a></li>
                                 </ul>
@@ -669,10 +670,10 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Model">Overview</a>
                                     </li>
-                                    <li><a href="http://2017.igem.org/Team:SCU_China/Model/Melatonin">Melatonin</a>
-                                    </li>
                                     <li>
                                         <a href="http://2017.igem.org/Team:SCU_China/Model/Repressilator">Repressilator</a>
+                                    </li>
+                                    <li><a href="http://2017.igem.org/Team:SCU_China/Model/Melatonin">Melatonin</a>
                                     </li>
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Model/RBSModification">RBS
                                         Modification</a>
@@ -732,14 +733,12 @@
                             </li>
                         </div>
                         <div class="scu_nav_side" id="scu_nav_side">
-                            <!--<div class="scu_nav_side_image">-->
-                            <!--<img src="http://2017.igem.org/wiki/images/b/b6/T&#45;&#45;SCU_China&#45;&#45;nav-side.png">-->
-                            <!--</div>-->
                             <div id="nav_tree" class="scu_panda_4">
                                 <ul class="scu_nav_tree">
                                     <li>Repressilator
                                         <ul>
                                             <li><a href="#background">Background</a></li>
+                                            <li><a href="#design">Results</a></li>
                                             <li><a href="#results">Results</a></li>
                                             <li><a href="#future">Future Work</a></li>
                                             <li><a href="#reference">Reference</a></li>
@@ -763,9 +762,11 @@
                                     allowed quorum sensing systems to be exquisitely adapted for their varied uses,
                                     enabling bacteria to architect complex community structures. <sup>[2]</sup><br>
                                 </p>
+                                <div class="scu_split" id="design"></div>
                                 <div class="scu_sub_title"><i>02</i>&nbsp;&nbsp;Design</div>
                                 <p class="scu_content_attri">
-                                    Quorum sensing is first integrated into our circuit to solve three main problems:
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quorum sensing is first integrated into our
+                                    circuit to solve three main problems:
                                     1. The plasmid (pLPT107) we get is totally 9800bp three reporters (CFP/YFP/RFP)
                                     contained and if we insert the four melatonin synthases (5800bp) into pLPT107, the
                                     whole plasmid will ultimately reach 15600bp which is too big to transform
@@ -780,28 +781,71 @@
                                     computational modeling work in 2000<sup>[1]</sup>.
                                     It is predicted that diverse and noisy community of such genetic oscillators
                                     interacting through a quorum-sensing mechanism could self-synchronize in a robust
-                                    way, leading to a substantially improved global rhythmicity in the system.(mechanism
-                                    is illustrated in modelling parts and video.[1]
-                                </p>
+                                    way, leading to a substantially improved global rhythmicity in the system.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To illustrate the QS function in synchronizing
+                                    repressilator network, we used three GIF to help understand this process and
+                                    relative logic.
 
-                                <div class="scu_svg_image_middle_2">
+                                </p>
+                                <div class="scu_hp_image_single_mid">
                                     <img src="http://2017.igem.org/wiki/images/8/8e/T-SCU_China-2017_project_Repressilator01.gif">
-                                    <img src="http://2017.igem.org/wiki/images/c/cd/T-SCU_China-2017_project_Repressilator02.gif">
-                                    <div class="scu_svg_index">A</div>
-                                    <div class="scu_svg_index">B</div>
+                                    <div class="scu_img_index">GIF1. Normal repressilator without QS
+                                    </div>
                                 </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;As shown in the curves, the concentration of
+                                    three repressors varies alternatively
+                                    and the peak for each one is followed by the peak of the other one that repress it.
+                                    So in the time scale if taking TetR into account at the very beginning, the adjacent
+                                    peak must belong to LacI because just LacI inhibits the expression of TetR and once
+                                    TetR protein concentration decreases, it indicts that increasing LacI protein level
+                                    has exceeded the pLac promoter threshold and tetR gene has been repressed. In other
+                                    words TetR decrease because LacI increase and this logical order are able to be
+                                    transferred to the concentration peak order in time scale. This logic is applicable
+                                    for all three repressors because they are logically symmetry.
+
+                                </p>
+                                <div class="scu_hp_image_single_mid">
+                                    <img src="http://2017.igem.org/wiki/images/c/cd/T-SCU_China-2017_project_Repressilator02.gif">
+                                    <div class="scu_img_index">GIF.2 AHL synthesis period</div>
+                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ultimate QS circuit is pCI LuxI-J23106
+                                    LuxR-pTet/Lux pR Hybrid promoter CI as shown in part2. And LuxI (controlled by pCI
+                                    promoter) is expressed when CI lambda repressor concentration is low enough
+                                    (threshold) and this situation only appear when cellular TetR concentration is over
+                                    threshold/TetR dominant in a oscillating period. Then LuxI will catalyze AHL
+                                    synthesis and AHL can defuse freely in and out of the cell as a small nonpolar
+                                    molecule.
+                                </p>
                                 <div class="scu_hp_image_single_mid">
                                     <img src="http://2017.igem.org/wiki/images/0/0a/T-SCU_China-2017_project_Repressilator03.gif">
-                                    <div class="scu_img_index">C</div>
+                                    <div class="scu_img_index">GIF.3 Synchronous repressilator with QS</div>
                                 </div>
-                                <div class="scu_img_index">Figure 1. Scheme of the repressilator network coupled to
-                                    a quorum-sensing mechanism in the paper 2000[1]. The original repressilator
-                                    module is located at the left of the vertical dashed line, and the coupling QS
-                                    module appears at the right. The letters A, B, and C correspond to the LacI,
-                                    TetR, CI respectively. As reported, with the increasing of the cellular AI(AHL)
-                                    the whole system, especially oscillation will reach a more and more stable
-                                    state.
-                                </div>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Part 3 displays the impact of quorum sensing on
+                                    repressilator. LuxR is constitutively expressed in the cell and in the early
+                                    nonsynchronous stage different cells may produce AHL at different phase so Quorum
+                                    Sensing especially in some limited area could initiate at any time corresponding to
+                                    any repressilator phase and may have various impact. According to our design
+                                    pTet/Lux pR hybrid promoter should have a basic property that once TetR protein
+                                    concentration exceeds threshold downstream CI transcription will be inhibited no
+                                    matter QS happen or not. This property remove the QS impact on repressilator’s TetR
+                                    dominant stage. As for CI dominant phase the actual effective period is between TetR
+                                    concentration early increasing state to peak (accurately shortly before peak because
+                                    central dogma lead to a time delay, which means although gene is repressed but
+                                    protein concentration still increase for the mRNA remaining) and if additive CI is
+                                    expressed the whole CI dominant phase will not elongate for the reason that CI
+                                    protein half-life is determined by itself.
+                                </p>
+                                <p class="scu_content_p">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Summarily, the QS have the most obvious impact on LacI rapid increasing phase in one
+                                    oscillating period. Because at this period of time if QS activate additive CI
+                                    expression, LacI gene will be repressed simultaneously and quickly ‘jump’ to CI
+                                    dominant phase after a short period of time. Comparing with normal repressilator
+                                    circuit, QS inserted one give the coherent a only LacI phase shift every QS happens,
+                                    which render those bacteria ‘chase’ to achieve a much more synchronous stage.
+                                </p>
                                 <p class="scu_content_attri">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on this modelling work, two circuit named
                                     4p0＆3p1 are designed to provide a theoretically feasible solution and achieve the
@@ -812,7 +856,30 @@
                                     and pTet-LuxpR hybrid promoter (BBa_K176000) for QS CI repressor, because pLac
                                     (LacO1 promoter) exists leak expression phenomenon.<br>
 
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cell A-Repressilator cell
+                                </p>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/5/51/T-SCU_China-2017_QS_fig2a1.png">
+                                    <img src="http://2017.igem.org/wiki/images/a/af/T-SCU_China-2017_QS_fig2a2.png">
+                                </div>
+                                <div class="scu_img_index">Fig.2a 3p1 circuit</div>
+                                <p class="scu_content_attri">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In “4p0” system, luxI gene of the “enzyme cell”
+                                    is replaced by COMT
+                                    (rate-controlling enzyme of melatonin synthesis pathway) gene. Therefore, with high
+                                    level of repressor TetR in “repressilator cells”, COMT will be expressed in “enzyme
+                                    cells”. In this way, QS circuit can transfer and modulate the rhythmic signal from
+                                    “repressilator cells” to “enzyme cells” via AHL concentration fluctuation and then
+                                    ‘enzyme cells’ receive the signal and modulate the COMT expression with periodical
+                                    pattern. In this system QS functions not only as ‘synchronizor’ but also ‘modulator’
+                                    assist the whole working steadily and efficiently.
+                                </p>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/5/50/T-SCU_China-2017_QS_fig2b1.png">
+                                    <img src="http://2017.igem.org/wiki/images/5/59/T-SCU_China-2017_QS_fig2b2.png">
+                                </div>
+                                <div class="scu_img_index">Fig.2a 4p0 circuit</div>
+                                <p class="scu_content_attri">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cell A-Repressilator cell</strong>
                                     For “repressilator cells”, circuit can be seen as two system (QS and Repressilator)
                                     inner-related with each other via pCI controlled LuxI and additive hybrid promoter
                                     induced CI lamba. pCI-LuxI is thought as the Repressilator output/QS input, matching
@@ -820,7 +887,7 @@
                                     negative feedback pattern in QS circuit increases the potential balance or synchrony
                                     of whole system.<br>
 
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cell B-Enzyme cell
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<strong>Cell B-Enzyme cell</strong>
                                     Two similar gene circuit consists of following parts-constitutively expressed luxR,
                                     tetR (+LVA tag target for its quick degradation) controlled by luxpL promoter,
                                     fluorescent protein mOrange controlled by pTet promoter (These three are identical
@@ -852,32 +919,14 @@
                                     population. As a result, it will take less time to reach stable stage, with
                                     fluorescent protein mOrange indicting whether the circuit works as expected. And we
                                     rename QS system ‘synchronizor’.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In “4p0” system, luxI gene of the “enzyme cell”
-                                    is replaced by COMT
-                                    (rate-controlling enzyme of melatonin synthesis pathway) gene. Therefore, with high
-                                    level of repressor TetR in “repressilator cells”, COMT will be expressed in “enzyme
-                                    cells”. In this way, QS circuit can transfer and modulate the rhythmic signal from
-                                    “repressilator cells” to “enzyme cells” via AHL concentration fluctuation and then
-                                    ‘enzyme cells’ receive the signal and modulate the COMT expression with periodical
-                                    pattern. In this system QS functions not only as ‘synchronizor’ but also ‘modulator’
-                                    assist the whole working steadily and efficiently.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </p>
-                                <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/5/51/T-SCU_China-2017_QS_fig2a1.png">
-                                    <img src="http://2017.igem.org/wiki/images/a/af/T-SCU_China-2017_QS_fig2a2.png">
-                                    <div class="scu_img_index">a</div>
-                                </div>
-                                <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/5/50/T-SCU_China-2017_QS_fig2b1.png">
-                                    <img src="http://2017.igem.org/wiki/images/5/59/T-SCU_China-2017_QS_fig2b2.png">
-                                    <div class="scu_img_index">b</div>
-                                </div>
-                                <div class="scu_img_index">Fig 2. a, 4p0＆b, 3p1 circuit.</div>
+
                             </div>
                             <div class="scu_split" id="results"></div>
                             <div>
-                                <div class="scu_sub_title"><i>02</i>&nbsp;&nbsp;Results</div>
-                                <div class="scu_acma_subtitle">2.1 Quorum sensing basic property</div>
+                                <div class="scu_sub_title"><i>03</i>&nbsp;&nbsp;Results</div>
+                                <div class="scu_acma_subtitle">3.1 Quorum sensing basic property</div>
                                 <div><p class="scu_content_attri">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To confirm QS function
                                     in architect cell-cell communication we build LuxpR-GFP-constitutive (J23106)
                                     LuxR-pSB1C3, pTet-LuxI/pCI-LuxI-pSB1C3 and pTet/LuxpR hybrid promoter-J23106
@@ -931,7 +980,7 @@
                                     pTet-LuxI BL21+DHL708/UHP-aTc+ DHL708. BL21 growths slower than DHL708 so its OD
                                     threshold for QS may be 0.25-0.3.<br><br>
                                 </div>
-                                <div class="scu_acma_subtitle">2.2 pTet/LuxpR Hybrid promoter confirmation</div>
+                                <div class="scu_acma_subtitle">3.2 pTet/LuxpR Hybrid promoter confirmation</div>
                                 <div class="scu_hp_image_single_mid" style="width: 35%">
                                     <img src="http://2017.igem.org/wiki/images/f/f3/T-SCU_China-2017_QS_fig4a.png">
                                     <div class="scu_img_index">a</div>
@@ -948,7 +997,7 @@
                                     no obvious influence on fluorescence, indicting Hybrid promoter may not be such a
                                     solid circuit.
                                 </div>
-                                <div class="scu_acma_subtitle">2.3 iPTG imitation</div>
+                                <div class="scu_acma_subtitle">3.3 iPTG imitation</div>
                                 <p class="scu_content_attri">
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the computational modelling
                                     results, we find QS system function like iPTG synchronize in the early state
@@ -974,20 +1023,29 @@
                                     we hope after QS system is inserted into the repressilator, the oscillation could be
                                     urged into a much more steadily synchronous stage.
                                 </p>
-                                <div class="scu_svg_imgage_array_3">
+                                <div class="scu_svg_image_middle_2_fixed">
                                     <img src="http://2017.igem.org/wiki/images/9/98/T-SCU_China-2017_project_rep_fig4c.png">
                                     <img src="http://2017.igem.org/wiki/images/8/87/T-SCU_China-2017_QS_fig5d.png">
-                                    <img src="http://2017.igem.org/wiki/images/7/79/T-SCU_China-2017_QS_fig5e.png">
-                                    <div class="scu_svg_index_3">a</div>
-                                    <div class="scu_svg_index_3">b</div>
-                                    <div class="scu_svg_index_3">c</div>
+                                    <div class="scu_svg_index">a</div>
+                                    <div class="scu_svg_index">b</div>
                                 </div>
+                                <br>
+                                <div class="scu_hp_image_single_fix">
+                                    <img src="http://2017.igem.org/wiki/images/7/79/T-SCU_China-2017_QS_fig5e.png">
+                                    <div class="scu_img_index">c</div>
+                                </div>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
                                 <div class="scu_img_index">Figure 5. Three measurements for DHL708ΔclpXP and MC4100
                                     (repressilator pLPT107+), RFP fluorescence shown.
                                 </div>
                             </div>
                             <div class="scu_split" id="future"></div>
-                            <div class="scu_sub_title"><i>03</i>&nbsp;&nbsp;future</div>
+                            <div class="scu_sub_title"><i>04</i>&nbsp;&nbsp;future</div>
                             <p class="scu_content_attri">
                                 1. Repeat DHL708ΔclpXP and MC4100 repressilator measurement for more than 30 hours to
                                 confirm oscillation.<br>
@@ -998,7 +1056,7 @@
 
                             </p>
                             <div class="scu_split" id="reference"></div>
-                            <div class="scu_sub_title"><i>04</i>&nbsp;&nbsp;Reference</div>
+                            <div class="scu_sub_title"><i>05</i>&nbsp;&nbsp;Reference</div>
                             <p class="scu_content_attri">
                                 1. Garcia-Ojalvo J, Elowitz M B, Strogatz S H. Modeling a synthetic multicellular clock:
                                 Repressilators coupled by quorum sensing[J]. Proceedings of the National Academy of
