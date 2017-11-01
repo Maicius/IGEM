@@ -601,26 +601,21 @@ ul {
     list-style-image: url("http://2017.igem.org/wiki/images/a/a5/T-SCU_China-2017_panda3.png");
     font-size: 20px;
 }
+.scu_panda_3{
 
+}
 .scu_panda_3 > ul {
     list-style-image: url("http://2017.igem.org/wiki/images/6/61/T-SCU_China-2017_panda6.png");
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.0em;
 }
 
 .scu_panda_3 > ul > li > ul {
     list-style-image: url("http://2017.igem.org/wiki/images/6/61/T-SCU_China-2017_panda6.png");
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 1.0em;
 }
 
-.scu_panda_4 > ul {
-    list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
-    font-size: 20px;
-}
-
-.scu_panda_4 > ul > li > ul {
-    list-style-image: url("http://2017.igem.org/wiki/images/9/9b/T-SCU_China-2017_panda1.png");
-    font-size: 20px;
-}
 
 .scu_panda_4 {
 
