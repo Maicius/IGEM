@@ -628,452 +628,6 @@
                     </script>
 
 
-                    <style>
-
-
-                        /***************************************************** DEFAULT WIKI SETTINGS  ****************************************************/
-
-                        /* Clear the default wiki settings */
-
-                        /********************************** DEFAULT WIKI SETTINGS  *********************************/
-                        #top_menu_inside #bars_item {
-                            position: absolute;
-                            top: -30px !important;
-                            left: -100px !important;
-                            z-index: -1 !important;
-                            cursor: pointer;
-                        }
-
-                        #sideMenu,
-                        #top_title {
-                            display: none;
-                        }
-
-                        #content {
-                            padding: 0px;
-                            width: 100%;
-                        }
-
-                        body {
-                            background-color: white;
-                            margin: 0px;
-                        }
-
-                        #bodyContent h1 {
-                            font-weight: 300 !important;
-                        }
-
-                        #bodyContent h1,
-                        #bodyContent h2,
-                        #bodyContent h3,
-                        #bodyContent h4,
-                        #bodyContent h5 {
-                            margin-bottom: 0px;
-                            border-bottom: none;
-                        }
-
-                        #bodyContent {
-                            padding-right: 0px;
-                        }
-
-                        #globalWrapper {
-                            font-size: 100%;
-                            padding: 0px;
-                            margin: -10px -20px -20px -20px;
-                        }
-
-                        .navbar-collapse {
-                            padding-left: 0px;
-                        }
-
-                        #banner {
-                            margin-top: 50px;
-                        }
-
-                        #sideMenu {
-                            margin-top: 10px;
-                        }
-
-                        .navbar-nav .dropdown-menu,
-                        .navbar .dropdown-menu {
-                            margin-top: 0;
-                        }
-
-                        /**************************************************************** MENU ***************************************************************/
-                        /* Wrapper for the menu */
-                        .igem_2017_menu_wrapper {
-                            width: 15%;
-                            height: 100vh;
-                            position: fixed;
-                            right: 0%;
-                            padding: 0px;
-                            float: right;
-                            border-left: 1px solid #d3d3d3;
-                            background-color: #dddddd;
-                            text-align: left;
-                            font-family: Tahoma, Geneva, sans-serif;
-                            overflow-y: auto;
-                            overflow-x: hidden;
-                        }
-
-                        /* this hides the scrollbar to keep view consistency */
-                        .igem_2017_menu_wrappe::-webkit-scrollbar {
-                            display: none;
-                        }
-
-                        /* styling for links in the menu, removes the line under text */
-                        .igem_2017_menu_wrapper a {
-                            text-decoration: none;
-                        }
-
-                        /* styling for the images in the menu */
-                        .igem_2017_menu_wrapper img {
-                            width: 100%;
-                        }
-
-                        /* styling for the menu buttons */
-                        .igem_2017_menu_wrapper .menu_button {
-                            width: 100%;
-                            padding: 10px 0px 10px 15px;
-                            float: left;
-                            border-bottom: 1px solid #d3d3d3;
-                            font-size: 12px;
-                            font-weight: bold;
-                            color: #5e5f5f;
-                            cursor: pointer;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_bottom_padding {
-                            width: 100%;
-                            height: 30px;
-                            float: left;
-                        }
-
-                        .menu_button.direct_to_page {
-                            padding-left: 36px;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_button .expand_collapse_icon {
-                            width: 10%;
-                            float: left;
-                        }
-
-                        .igem_2017_menu_wrapper .menu_button .expand_collapse_icon::before {
-                            content: "+";
-                        }
-
-                        .open::before {
-                            content: "" !important;
-                        }
-
-                        /* styling for the menu buttons on hover */
-                        .igem_2017_menu_wrapper .menu_button:hover, .igem_2017_menu_wrapper .submenu_button:hover, .submenu_button.current_page:hover {
-                            background-color: #3399ff;
-                            text-decoration: none;
-                            color: #ffffff;
-                        }
-
-                        /* styling for the menu button when it is the current page */
-                        .current_page {
-                            background-color: #7fc1f7 !important;
-                            color: #5e5f5f !important;
-                        }
-
-                        /* styling for the submenu buttons */
-                        .igem_2017_menu_wrapper .submenu_button {
-                            width: 100%;
-                            padding: 10px 0px 10px 34px;
-                            float: left;
-                            background-color: #f2f2f2;
-                            border-bottom: 1px solid #d3d3d3;
-                            font-size: 12px;
-                            color: #5e5f5f;
-                            cursor: pointer;
-                        }
-
-                        /* wrapper for the submenu items, they are hidden by default*/
-                        .igem_2017_menu_wrapper .submenu_wrapper {
-                            display: none;
-                        }
-
-                        /* when the page size is bigger than 800px, this show/hide control is hidden by default */
-                        .igem_2017_menu_wrapper #display_menu_control {
-                            display: none;
-                            text-align: center;
-                        }
-
-                        /***************************************************** CONTENT OF THE PAGE ****************************************************/
-
-                        /* Wrapper for the content */
-                        .igem_2017_content_wrapper {
-                            width: 81%;
-                            margin: 2%;
-                            display: block;
-                            float: left;
-                            background-color: white;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /********************************* HTML STYLING  *********************************/
-
-                        /* styling for the titles h1 h2 */
-                        .igem_2017_content_wrapper h1, .igem_2017_content_wrapper h2 {
-                            padding: 5px 15px;
-                            border-bottom: 0px;
-                            color: #3399ff;
-                        }
-
-                        /* styling for the titles  h3 h4 h5 h6*/
-                        .igem_2017_content_wrapper h3, .igem_2017_content_wrapper h4, .igem_2017_content_wrapper h5, .igem_2017_content_wrapper h6 {
-                            padding: 5px 15px;
-                            border-bottom: 0px;
-                            color: #000000;
-                        }
-
-                        /* font and text */
-                        .igem_2017_content_wrapper p {
-                            padding: 0px 15px;
-                            font-size: 13px;
-                        }
-
-                        /* Links */
-                        .igem_2017_content_wrapper a {
-                            font-weight: bold;
-                            text-decoration: underline;
-                            text-decoration-color: #3399ff;
-                            color: #3399ff;
-                            -webkit-transition: all 0.4s ease;
-                            -moz-transition: all 0.4s ease;
-                            -ms-transition: all 0.4s ease;
-                            -o-transition: all 0.4s ease;
-                            transition: all 0.4s ease;
-                        }
-
-                        /* hover for the links */
-                        .igem_2017_content_wrapper a:hover {
-                            text-decoration: none;
-                            color: #000000;
-                        }
-
-                        /* non numbered lists */
-                        .igem_2017_content_wrapper ul {
-                            padding: 0px 20px;
-                            font-size: 13px;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /* numbered lists */
-                        .igem_2017_content_wrapper ol {
-                            padding: 0px;
-                            font-size: 13px;
-                            font-family: Tahoma, Geneva, sans-serif;
-                        }
-
-                        /* Table */
-                        .igem_2017_content_wrapper table {
-                            width: 97%;
-                            margin: 15px 10px;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                        }
-
-                        /* table cells */
-                        .igem_2017_content_wrapper td {
-                            padding: 10px;
-                            vertical-align: text-top;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                        }
-
-                        /* table headers */
-                        .igem_2017_content_wrapper th {
-                            padding: 10px;
-                            vertical-align: text-top;
-                            border: 1px solid #d3d3d3;
-                            border-collapse: collapse;
-                            background-color: #f2f2f2;
-                        }
-
-                        /**********************************LAYOUT CLASSES **********************************/
-
-                        /* general class for column divs */
-                        .igem_2017_content_wrapper .column {
-                            padding: 10px 0px;
-                            float: left;
-                        }
-
-                        /* class for a full width column */
-                        .column .full_size {
-                            width: 100%;
-                        }
-
-                        /* styling for images in a full width column*/
-                        .column.full_size img {
-                            width: 97%;
-                            padding: 10px 15px;
-                        }
-
-                        /* class for a half width column */
-                        .column.half_size {
-                            width: 50%;
-                        }
-
-                        /* styling for images in a half width column*/
-                        .column.half_size img {
-                            width: 94.5%;
-                            padding: 10px 15px;
-                        }
-
-                        /********************************* SUPPORT CLASSES ********************************/
-
-                        /* class that clears content below*/
-                        .igem_2017_content_wrapper .clear {
-                            clear: both;
-                        }
-
-                        /* adds extra spacing when clearing content */
-                        .igem_2017_content_wrapper .clear.extra_space {
-                            height: 30px;
-                        }
-
-                        /* highlight class, makes content slightly smaller */
-                        .igem_2017_content_wrapper .highlight {
-                            margin: 0px 15px;
-                            padding: 15px 0px;
-                        }
-
-                        /* highlight class, adds a gray background */
-                        .igem_2017_content_wrapper .highlight.gray {
-                            background-color: #f2f2f2;
-                        }
-
-                        /* highlight with decoration blue line on top */
-                        .igem_2017_content_wrapper .highlight.blue_top {
-                            border-top: 4px solid #3399ff;
-                        }
-
-                        /* highlight with a full blue border decoration */
-                        .igem_2017_content_wrapper .highlight.blue_border {
-                            border: 4px solid #3399ff;
-                        }
-
-                        /* button class */
-                        .igem_2017_content_wrapper .button {
-                            max-width: 35%;
-                            margin: 30px auto;
-                            padding: 12px 10px;
-                            background-color: #3399ff;
-                            text-align: center;
-                            color: #ffffff;
-                            -webkit-transition: all 0.4s ease;
-                            -moz-transition: all 0.4s ease;
-                            -ms-transition: all 0.4s ease;
-                            -o-transition: all 0.4s ease;
-                            transition: all 0.4s ease;
-                        }
-
-                        /* styling for button on hover */
-                        .igem_2017_content_wrapper .button:hover {
-                            background-color: #3399ff;
-                            color: #000000;
-                        }
-
-                        /***************************************************** RESPONSIVE STYLING ****************************************************/
-
-                        /* IF THE SCREEN IS LESS THAN 1200PX */
-                        @media only screen and (max-width: 1200px) {
-
-                            #content {
-                                width: 100%;
-                            }
-
-                            .igem_2017_menu_wrapper {
-                                width: 15%;
-                                right: 0;
-                            }
-
-                            .highlight {
-                                padding: 10px 0px;
-                            }
-
-                            .igem_2017_menu_wrapper #display_menu_control {
-                                display: none;
-                            }
-
-                            #menu_content {
-                                display: block;
-                            }
-
-                            .menu_button.direct_to_page {
-                                padding-left: 17px;
-                            }
-
-                        }
-
-                        /* IF THE SCREEN IS LESS THAN 800PX */
-                        @media only screen and (max-width: 800px) {
-
-                            .igem_2017_menu_wrapper {
-                                width: 100%;
-                                height: 15%;
-                                position: relative;
-                                left: 0%;
-                            }
-
-                            .igem_2017_content_wrapper {
-                                width: 100%;
-                                margin-left: 0px;
-                            }
-
-                            .column.half_size {
-                                width: 100%;
-                            }
-
-                            .column.full_size img, .column.half_size img {
-                                width: 100%;
-                                padding: 10px 0px;
-                            }
-
-                            .highlight {
-                                padding: 15px 5px;
-                            }
-
-                            .igem_2017_menu_wrapper #display_menu_control {
-                                display: block;
-                            }
-
-                            #menu_content {
-                                display: none;
-                            }
-
-                            .igem_2017_menu_wrapper .menu_button .expand_collapse_icon {
-                                width: 5%;
-                            }
-
-                            .menu_bottom_padding {
-                                display: none;
-                            }
-
-                            .menu_button.direct_to_page {
-                                padding-left: 36px;
-                            }
-                        }
-
-                        /* special class that the system uses to make sure the team wants a page to be evaluated */
-                        .judges-will-not-evaluate {
-                            width: 96.6%;
-                            margin: 5px 15px;
-                            display: block;
-                            border: 4px solid #3399ff;
-                            font-weight: bold;
-                        }
-
-                        .content_wrapper {
-                            width: 100%;
-                            height: 100vh;
-                        }
-
-                    </style>
                     <!--- THIS IS WHERE THE HTML BEGINS --->
                     <!-- This tells the browser that your page is responsive -->
                     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1089,6 +643,7 @@
                                  src="http://2017.igem.org/wiki/images/d/d8/T--SCU_China--bannerBack.png"
                                  id="scu_nav_bannerBack">
                         </div>
+
                         <div class="nav nav-justified scu_nav" id="scu_welcome">
 
                             <li class="lee_nav_home">
@@ -1099,10 +654,11 @@
                                     Project
                                 </a>
                                 <ul class="dropdown-menu">
-                                    <li><a href="http://2017.igem.org/Team:SCU_China/Malatonion">Melatonin</a>
-                                    </li>
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Repressilator">Repressilator</a>
                                     </li>
+                                    <li><a href="http://2017.igem.org/Team:SCU_China/Malatonion">Melatonin</a>
+                                    </li>
+
                                     <li><a href="http://2017.igem.org/Team:SCU_China/InterLab">InterLab</a></li>
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Parts">Parts</a></li>
                                 </ul>
@@ -1115,11 +671,12 @@
                                 <ul class="dropdown-menu">
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Model">Overview</a>
                                     </li>
-                                    <li><a href="http://2017.igem.org/Team:SCU_China/Model/Melatonin">Melatonin</a>
-                                    </li>
                                     <li>
                                         <a href="http://2017.igem.org/Team:SCU_China/Model/Repressilator">Repressilator</a>
                                     </li>
+                                    <li><a href="http://2017.igem.org/Team:SCU_China/Model/Melatonin">Melatonin</a>
+                                    </li>
+
                                     <li><a href="http://2017.igem.org/Team:SCU_China/Model/RBSModification">RBS
                                         Modification</a>
 
@@ -1177,261 +734,160 @@
                                 </a>
                             </li>
                         </div>
-                        <div>
-                            <div id="overview">
-                                <div>
-                                    <p class="overview-title">OVERVIEW</p>
-                                    <p class="overview-content ">
-                                        <br>
-                                    </p>
-                                </div>
+                        <div class="scu_nav_side" id="scu_nav_side">
+                            <!--<div class="scu_nav_side_image">-->
+                            <!--<img src="http://2017.igem.org/wiki/images/b/b6/T&#45;&#45;SCU_China&#45;&#45;nav-side.png">-->
+                            <!--</div>-->
+                            <div id="nav_tree" class="scu_panda_4">
+                                <ul class="scu_nav_tree">
+                                    <li>RBS Modification
+                                        <ul>
+                                            <li><a href="#design">Desgin</a></li>
+                                            <li><a href="#results">Results</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="scu_review_content_wrapper">
-                                <div class="scu_review_part_title"><i>Repressilator</i></div>
-                                <!--<div id="myCarousel2" class="carousel slide scu_svg_review_image">-->
-                                    <!--&lt;!&ndash; 轮播（Carousel）指标 &ndash;&gt;-->
-                                    <!--<ol class="carousel-indicators">-->
-                                        <!--<li data-target="#myCarousel2" data-slide-to="0" class="active"></li>-->
-                                        <!--<li data-target="#myCarousel2" data-slide-to="1"></li>-->
-                                    <!--</ol>-->
-                                    <!--&lt;!&ndash; 轮播（Carousel）项目 &ndash;&gt;-->
-                                    <!--<div class="carousel-inner review_image_style">-->
-                                        <!--<div class="item active">-->
-                                            <!--<img width="auto" height="400px" src="">-->
-                                        <!--</div>-->
-                                        <!--<div class="item">-->
-                                            <!--<img width="auto" height="400px" src="http://2017.igem.org/wiki/images/b/b6/T-SCU_China-2017_Repressilator_2016.png">-->
-                                        <!--</div>-->
-                                    <!--</div>-->
-                                    <!--&lt;!&ndash; 轮播（Carousel）导航 &ndash;&gt;-->
-                                    <!--<a class="carousel-control left" href="#myCarousel2"-->
-                                       <!--data-slide="prev">&lsaquo;</a>-->
-                                    <!--<a class="carousel-control right" href="#myCarousel2"-->
-                                       <!--data-slide="next">&rsaquo;</a>-->
-                                <!--</div>-->
-                                <div class="scu_hp_image_single5">
-                                    <img src="http://2017.igem.org/wiki/images/7/73/T-SCU_China-2017_Fig5b.png">
-                                </div>
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content2">
-                                        <h4>1.Background</h4>
-                                        <p class="scu_content_p">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repressilator is a tripartite device
-                                            consisting of 3 repressors that can
-                                            form a closed negative feedback loop and generate periodically oscillation.
-                                            It is artificially designed and put into E.coli for functional tests which
-                                            was proved for successful oscillation in vivo. Well-defined repressilator is
-                                            thought to possess the precision that rivals nature systems which can be put
-                                            into various practical application.
-                                        </p>
-                                        <h4>2.Aim</h4>
-
-                                        <p class="scu_content_p">
-
-                                            Our manipulations on repressilator are as follows:
-                                        </p>
-                                        <ul class="scu_panda_4">
-                                            <li><p class="scu_content_p">1) synchronize the repressilator coherently to achieve a precise population scale oscillation.</p>
-                                            </li>
-                                            <li><p class="scu_content_p">2) send and modulate periodic signal with enzyme (COMT) expression and  coupling melatonin synthesis.
-                                            </p></li>
-                                        </ul>
-                                        <h4>3.Achievement</h4>
-                                        <ul class="scu_panda_4">
-                                            <li><p class="scu_content_p">1) Constructed bacteria strains obeyed a 2 hour
-                                                period in experimental
-                                                condition.<br></p>
-                                            </li>
-                                            <li><p class="scu_content_p">2) iPTG addition could help direct a more
-                                                robust synchronization in colony
-                                                by amplify the oscillating amplitude.
-                                            </p></li>
-                                            <li><p class="scu_content_p">3) Engineered strains could colonize stably
-                                                in artificial intestinal fluid
-                                                and the oscillation pattern kept uniformity as in culture media.
-                                            </p></li>
-                                            <li><p class="scu_content_p">4) We successfully knocked out clpXP gene in
-                                                position, however residual of
-                                                pKD46 made our modified strain fail to select for ampicillin resistance
-                                                of
-                                                pLPT107.
-                                            </p></li>
-                                        </ul>
-                                        <a style="color:#11abb0"
-                                           href="http://2017.igem.org/Team:SCU_China/Model/Repressilator">"learn
-                                            more…"</a>
-                                    </div>
-                                </div>
-                                <div class="scu_split"></div>
-                            </div>
-
-                            <div class="scu_review_content_wrapper2">
-                                <div class="scu_review_part_title"><i>Repressilator Coupled with Quorum Sensing</i>
-                                </div>
-                                <div id="myCarousel" class="carousel slide scu_svg_review_image">
-                                    <!-- 轮播（Carousel）指标 -->
-                                    <ol class="carousel-indicators">
-                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                                    </ol>
-                                    <!-- 轮播（Carousel）项目 -->
-                                    <div class="carousel-inner review_image_style">
-                                        <div class="item active">
-                                            <embed src="http://2017.igem.org/wiki/images/4/4a/T-SCU_China-2017_melatonion_model_1.png"
-                                                   width="100%" height="500"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
-                                        <div class="item">
-                                            <embed src="http://2017.igem.org/wiki/images/4/4c/T-SCU_China-2017_melatonin_enzyme_kinetic_fig2.svg"
-                                                   width="auto" height="500"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
-                                        <div class="item">
-                                            <embed src="http://2017.igem.org/wiki/images/2/2f/T--SCU_China--SVG_TEST.svg"
-                                                   width="auto" height="500"
-                                                   type="image/svg+xml"></embed>
-                                        </div>
-                                    </div>
-                                    <!-- 轮播（Carousel）导航 -->
-                                    <a class="carousel-control left" href="#myCarousel"
-                                       data-slide="prev">&lsaquo;</a>
-                                    <a class="carousel-control right" href="#myCarousel"
-                                       data-slide="next">&rsaquo;</a>
-                                </div>
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content2">
-                                        <h4>1. Background</h4>
-                                        <p class="scu_content_p">
-                                            Quorum sensing (QS) is a well-known natural system of prokaryotes in order
-                                            to sense the population density with in a community. Recently, increasing
-                                            researches begin paying close attention to QS system for extended use. QS
-                                            can build connections among population in not only quorum density but also
-                                            other information of intracellular status if coupled with signals from
-                                            another system, which makes it a feasible and convenient tool for
-                                            intercellular communication.
-                                        </p>
-                                        <h4>2. Aim</h4>
-                                        <p class="scu_content_p">
-                                            Quorum sensing is first added into our circuit to solve three main problems:
-                                        </p>
-                                        <ul class="scu_panda_3">
-                                            <li>
-                                                <p class="scu_content_p">1） the ultimate whole plasmid is too big to
-                                                    transform efficiently into bacteria.</p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">2） Three repressors, four enzymes and at least
-                                                    one reporter give the cell such a heavy protein synthesis pressure.
-                                                    And it may greatly influence the growth rate of E.coli. So it is
-                                                    better to divide two system into two cells and combine each other
-                                                    with inner-related QS. </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">3） QS have been settled on as a cell-cell
-                                                    communication pathway to urge the bacteria synchronize in a coherent
-                                                    oscillatory state, according to a computational modeling work in
-                                                    2000. </p>
-                                            </li>
-                                        </ul>
-                                        <h4>2. Achievement</h4>
-                                        <ul class="scu_panda_2">
-                                            <li>
-                                                <p class="scu_content_p">1) Optimize the modelling work in 2000 and
-                                                    complete design 4p0, 3p1 system.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">2) Confirm quorum sensing in our circuit.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">3) Successfully build the
-                                                    represillator-combined QS circuit. And cell B in 4p0 system.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                        <a style="color:#11abb0"
-                                           href="http://2017.igem.org/Team:SCU_China/Model/Melatonin">"learn more…"</a>
-                                    </div>
-                                </div>
-                                <div class="scu_split"></div>
-                            </div>
-
-
-                            <div class="scu_review_content_wrapper2">
-                                <div class="scu_review_part_title"><i>RBS Modification</i></div>
-                                <br>
-                                <div class="scu_hp_image_single_mid">
-                                    <img src="http://2017.igem.org/wiki/images/9/90/T-SCU_China-2017_model_fig1.png">
-                                </div>
-
-                                <div class="scu_review_background">
-                                    <div class="scu_review_content3">
-                                        <h4>1.Background</h4>
-                                        <p class="scu_content_p">
-                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Modeling results of repressilator
-                                            indicated that faster translation is
-                                            helpful to the period elongation, which is necessary to mimic the process of
-                                            melatonin production in human. Translation initiation is the rate-limiting
-                                            step of translation. Its rate is determined by multiple molecular
-                                            interactions, including the hybridization of the 16S rRNA to the RBS
-                                            sequence. Thus, we can change the translation rate via the modification of
-                                            RBS.
-                                        </p>
-                                        <h4>2. Aim</h4>
-                                        <ul class="scu_panda_3">
-                                            <li>
-                                                <p class="scu_content_p">1) We want to improve the translation rate of
-                                                    the original device (BBa_I13521) by modifing its ribosome binding
-                                                    site.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">2) We want to confirm the methods of RBS
-                                                    prediction and plasmid construction could be credible.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                        <h4>3. Achievement</h4>
-                                        <ul class="scu_panda_2">
-                                            <li>
-                                                <p class="scu_content_p">1) We have designed 3 synthetic RBS with
-                                                    different strength by RBS Calculator.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">2) We have replaced the RBS in the original
-                                                    reporter part (BBa_I13521).
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">3) We have measured the strength of our
-                                                    designed RBS, and confirmed the increase of translation rate.
-                                                </p>
-                                            </li>
-                                            <li>
-                                                <p class="scu_content_p">4) We have confirmed that the methods we used were credible.
-                                                </p>
-                                            </li>
-                                        </ul>
-                                        <a style="color:#11abb0" href="#">"learn more…"</a>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
-                        <div class="margin-top-20vh"></div>
+                        <div class="scu_content_wrapper">
+                            <div class="overview-title scu_detail_title">RBS Modification</div>
+                            <div class="scu_split2" id="design"></div>
+                            <div class="scu_sub_title"><i>01</i> Design</div>
+                            <p class="scu_content_attri">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because we want to mimic the process of melatonin
+                                production in human, we need to
+                                elongate the period cycle of repressilator. According to the modeling results of
+                                repressilator, faster translation is helpful to the period elongation; thus, a strong
+                                ribosome binding site may be required. Then, we scanned the iGEM registry, finding that
+                                we only have a small number of ribosome binding sites whose strengths have been
+                                determined. Therefore, we decided to modify an existing RBS in iGEM registry by
+                                ourselves to obtain a series of stronger ribosome binding sites.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Random mutation of RBS will generate a huge library,
+                                which will increase our workload
+                                grandly with numbers of useless mutations. Thus, we turned to a bioinformatics method to
+                                predict the sequence of a synthetic RBS with a target translation initiation rate on a
+                                proportional scale. We designed our RBS via the modeling in the website
+                                (https://salislab.net/software/doForwardRBS)1, which was based on the theory that build
+                                on previous work that characterized the free energies of key molecular interactions
+                                involved in translation initiation and on measurements of the sequence-dependent
+                                energetic changes that occur during RNA folding and hybridization.<sup></sup>1<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the modeling results of RBS
+                                modification, we chose three designed RBS,
+                                whose translation rate is predicted to be stronger than the original part: BBa_B0034.
+                                The existing Part (BBa_I13521) is a reporter device constitute of TetR repressible
+                                promoter (BBa_R0040), RBS (BBa_B0034), mRFP1 (BBa_E1010) and double terminator
+                                (BBa_B0015). In our project, we managed to alternate the RBS region with our designed
+                                RBS and to construct new part named Part:BBa_K2276007,Part:BBa_K2276008,
+                                Part:BBa_K2276010 separately.
+                            </p>
+                            <div class="scu_split" id="results"></div>
+                            <div class="scu_sub_title"><i>02</i> Results</div>
+                            <p class="scu_content_attri">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the mathematical modeling result of RBS
+                                prediction by the RBS Calculator,
+                                the predicted translation initiation rate of BBa_B0034 was 2297.59au. And we chose three
+                                designed RBS，which was predicted to be 5、10、50 times stronger than B0034，and was
+                                separately designated as P1, P2,P3. (Table 1)
+                            </p>
+                            <div class="scu_table_container">
+                                <table class="table table-striped table-hover table-bordered">
+                                    <thead class="scu_table_style">
+                                    <tr>
+                                        <th>Synthetic RBS</th>
+                                        <th>Sequence</th>
+                                        <th>Translation Initiation Rate</th>
+                                        <th>Relative Prediction Strength</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>P1 (BBa_K2276007)</td>
+                                        <td>TATAAGGAGTAAATACC</td>
+                                        <td>11153.91 au</td>
+                                        <td>4.86</td>
+                                    <tr>
+                                        <td>P2 (BBa_K2276008)</td>
+                                        <td>AAATAAGGAGG</td>
+                                        <td>25075.0 au</td>
+                                        <td>10.91</td>
+                                    <tr>
+                                        <td>P3 (BBa_K2276010)</td>
+                                        <td>AAATAATAAGGGGTTTAC</td>
+                                        <td>41213.03 au</td>
+                                        <td>17.94</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="scu_img_index">Table 1. Table of designed synthetic RBS. “Relative
+                                    prediction strength” was the the ratio of the predicted translation initiation rate
+                                    the synthetic sequence to the predicted translation initiation rate BBa_B0034.
+                                </div>
+                                <br>
+                            </div>
+                            <p class="scu_content_attri">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then, we constructed the plasmid containing pTet,
+                                synthetic RBS, CDS of mRFP and double
+                                terminator. (Fig.1) The only difference between the different constructed plasmids and
+                                the pSB1C3-BBa_I13521 plasmid is RBS.(Fig.2) And these plasmids were characterized via
+                                sequencing.
+                            </p>
+                            <div class="scu_hp_image_single_mid">
+                                <img src="http://2017.igem.org/wiki/images/6/6e/T-SCU_China-2017_project_RBS_fig1.png">
+                                <div class="scu_img_index">Fig.1 Scheme of the device.</div>
+                                <br>
+                                <img src="http://2017.igem.org/wiki/images/9/9c/T-SCU_China-2017_project_RBS_fig2.png">
+                                <div class="scu_img_index">Fig.2 Alignment result of BBa_B0034, P1, P2 and P3.</div>
+                            </div>
+                            <p class="scu_content_attri">
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, we measured the fluorescence intensity and the absorption the absorption value in
+                                OD600nm of these cultures with different plasmids according to the following methods:<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. Streaked the plate with Bacterial Glycerol containing the constructed plasmid.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. Picked single clones from the plate and incubate overnight<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. 12ml tubes containing 1ml liquid LB was inoculated with the overnight cultures using
+                                a 1:100 dilution.<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4. Tested the fluoresce strength every 2 hours after inoculation sampled from different
+                                tubes via plate reader.<br>
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We can see that those strains have similar growth pattern，which indicated that the
+                                fluorescence discrepancy had nothing to do with the quantity of the bacteria and the
+                                growth conditions. (Fig.3)<br>
+                            </p>
+                            <div class="scu_hp_image_single_mid">
+                                <img src="http://2017.igem.org/wiki/images/2/26/T-SCU_China-2017_project_RBS_fig3.png">
+                                <div class="scu_img_index">Fig.3</div>
+                            </div>
+                            <p class="scu_content_attri">
+
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;And the fluorecent measurement results showed that synthetic RBS P1 and P3 were
+                                obviously strong than RBS BBa_B0034. The drop at 16hours of P3 strain may result from
+                                the self-quenching which will happen when the concentration is too high. The cause may
+                                be the overlap of the emission spectrum and the absorb spectrum or the interaction
+                                between stimulated molecule.However, the experimental results of synthetic RBS P2 was
+                                not consistent with the prediction results; that is, the synthetic RBS P2 was weaken
+                                than the original RBS. In addition, the relative strength of these three synthetic RBS
+                                were less than the prediction results (Fig.4). Nevertheless, the qualitative results was
+                                consistent between RBS prediction results and experimental results in most cases. Thus,
+                                the results convinced us that the design method was reliable so that we can anticipate
+                                if we apply the method in our project, and we could increase the translation rate of
+                                interested protein and elongate the periodic cycle.(Fig.4)<br>
+                            </p>
+                            <div class="scu_hp_image_single_mid">
+                                <img src="http://2017.igem.org/wiki/images/2/20/T-SCU_China-2017_project_RBS_fig5.png">
+                            </div>
+                            <div class="margin-top-20vh"></div>
+                        </div>
+
+
                     </div>
                     <div class="footer">
-                        <img class="scu_footer_icon" src="http://2017.igem.org/wiki/images/4/47/T--SCU_China--icon.png">
-                        <img class="scu_footer" src="http://2017.igem.org/wiki/images/8/89/T--SCU_China--footer.png">
+                        <img class="scu_footer_icon"
+                             src="http://2017.igem.org/wiki/images/4/47/T--SCU_China--icon.png">
+                        <img class="scu_footer"
+                             src="http://2017.igem.org/wiki/images/8/89/T--SCU_China--footer.png">
                         <p class="scu_footer_text">SCU_China-2017@copyright</p>
-                        <p class="scu_footer_text_2">Contact Us</p>
+                        <p class="scu_footer_text_2">Contact Us: SCU_China2017@126.com</p>
                     </div>
                 </div>
-
-
                 <p></p>
                 <!--
                 NewPP limit report
@@ -1476,14 +932,13 @@
 </div>
 
 </div>
+<link rel="stylesheet" href="T--SCU_China-2017--wikiStyle.css" type="text/css">
 <link rel="stylesheet" href="T--SCU_China-2017--style.css" type="text/css">
-<link rel="stylesheet" href="T--SCU_China-2017--reviewStyle.css" type="text/css">
-<link rel="stylesheet" href="banner_style_css.css" type="text/css">
+<link rel="stylesheet" href="banner_style_css.css">
 <script type="text/javascript" src="bootstrap.min.js"></script>
 <script type="text/javascript" src="jquery.min.js"></script>
 <script type="text/javascript" src="jquery.mousewheel.min.js"></script>
 <script type="text/javascript" src="T--SCU_China-2017-js.js"></script>
-<script type="text/javascript"
-        src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-</div></body>
+</div>
+</body>
 </html>
