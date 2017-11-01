@@ -773,6 +773,7 @@ ul {
     width: 30.33%;
     height: 200px;
 }
+
 .scu_svg_imgage_array > embed {
     width: 48%;
     height: 300px;
@@ -839,4 +840,41 @@ ul {
     font-weight: 700;
     line-height: 1.0em;
     padding: 20px;
+}
+.scu_hp_image_single5 {
+    width: 80%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.scu_hp_image_single5 > img {
+    width: 80%;
+    height: auto;
+}
+/*css for rep*/
+
+.scu_svg_image_middle_2 {
+
+}
+.scu_svg_image_middle_2 > img {
+    width: 48%;
+    height: auto;
+}
+.scu_svg_imgage_array_3_auto > embed {
+    width: 30%;
+    height: auto;
+}
+.scu_svg_imgage_array_3_auto > img {
+    width: 32.33%;
+    height: auto;
+}
+.scu_svg_imgage_array_3_fix > embed {
+    width: 30%;
+    height: 400px;
+}
+.scu_svg_imgage_array_3_fix > img {
+    width: 32.33%;
+    height: 450px;
 }
