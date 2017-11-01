@@ -770,7 +770,7 @@ ul {
      height: 200px;
  }
 .scu_svg_imgage_array_3 > img {
-    width: 30.33%;
+    width: 32.33%;
     height: 200px;
 }
 
@@ -787,18 +787,20 @@ ul {
     width: 48%;
     text-align: center;
     float: left;
+    font-size: 16px !important;
 }
 .scu_svg_index_3 {
     width: 30%;
     text-align: center;
     float: left;
+    font-size: 16px !important;
 }
 .scu_svg_index2 {
     margin-top: 10px;
     width: 48%;
     text-align: center;
     float: left;
-    font-size: 16px;
+    font-size: 16px !important;
 }
 
 /*@media screen and (max-width: 1200px) {*/
@@ -822,7 +824,7 @@ ul {
 /*}*/
 /*css for melatonin*/
 .scu_hp_image_single_mid {
-    width: 50%;
+    width: 70%;
     position: relative;
     margin: 10px auto;
     text-align: center;
@@ -877,4 +879,12 @@ ul {
 .scu_svg_imgage_array_3_fix > img {
     width: 32.33%;
     height: 450px;
+}
+
+.scu_100vh_wrapper {
+    position: relative;
+    background: url("http://2017.igem.org/wiki/images/7/7a/T--SCU_China--bakcground.jpg") repeat-y top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
 }

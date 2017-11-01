@@ -741,6 +741,7 @@
                                         <ul>
                                             <li><a href="#background">Background</a></li>
                                             <li><a href="#results">Results</a></li>
+                                            <li><a href="#future">Future Work</a></li>
                                             <li><a href="#reference">Reference</a></li>
                                         </ul>
                                     </li>
@@ -749,389 +750,263 @@
                         </div>
                         <div class="scu_content_wrapper">
                             <div>
-                                <div class="overview-title scu_detail_title">Repressilator</div>
+                                <div class="overview-title scu_detail_title">Quorum Sensing(QS)</div>
                                 <div class="scu_split2" id="background"></div>
                                 <div class="scu_sub_title"><i>01</i>&nbsp;&nbsp;Background</div>
-                                <p class="scu_content_attri">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repressilator is the
-                                    necessary
-                                    and basic part of our project, which ‘grant’ the four melatonin-synthetic enzymes
-                                    (actually COMT) periodically expression pattern.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Repressilator was first construct by Michael B.
-                                    Elowitz & Stanislas Leibler in 2000. As
-                                    a well-characterized synthetic circuit, it is designed to help understand naturally
-                                    occurring oscillating networks and remarkably precise and robust dynamics shown in
-                                    many
-                                    biological systems, for example, the circadian clock.
-                                    Just like the name ‘repressilator’ indicate, the circuit actually is built from the
-                                    combination of (three) transcriptional repressor systems that are not part of any
-                                    natural biological clock, they inhibit mutually to achieve an oscillating pattern,
-                                    (A B
-                                    C A); in other words, each of the downstream gene is controlled by the previous
-                                    repressors. The protein half life of the repressors and the induction threshold of
-                                    the
-                                    promoter mainly contribute to the oscillating pattern and period.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the original ones the reporter is built in
-                                    another plasmid and co-transform into the
-                                    E.coli. pSC101 is choosed for the backbone because of its low replicating number. In
-                                    2016 researchers do some modification work for the both plasmid and E.coli starin.
-                                    Reporters are inserted into the repressilator plasmid and fuction simutanously as
-                                    trition sponge because triple reporters have exactly the same promoters of
-                                    repressors
-                                    elongating the period of reaching induction threshold for the repressors and
-                                    diluting
-                                    repressor effective concentration referring to the number of proteins binding with
-                                    the
-                                    operator sequence in the promoter.(Fig1)<br>
+                                <p class="scu_content_attri">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quorum sensing, or the
+                                    control of gene expression in response to cell density, is used by both
+                                    gram-negative and gram-positive bacteria to regulate a variety of physiological and
+                                    chemical functions. In all cases, quorum sensing involves the production and
+                                    detection of extracellular signalling molecules called autoinducers. While universal
+                                    signalling themes exist, variations in the design of the extracellular signals, the
+                                    signal detection apparatuses, and the biochemical mechanisms of signal relay have
+                                    allowed quorum sensing systems to be exquisitely adapted for their varied uses,
+                                    enabling bacteria to architect complex community structures. <sup>[2]</sup><br>
                                 </p>
+                                <div class="scu_sub_title"><i>02</i>&nbsp;&nbsp;Design</div>
+                                <p class="scu_content_attri">
+                                    Quorum sensing is first integrated into our circuit to solve three main problems:
+                                    1. The plasmid (pLPT107) we get is totally 9800bp three reporters (CFP/YFP/RFP)
+                                    contained and if we insert the four melatonin synthases (5800bp) into pLPT107, the
+                                    whole plasmid will ultimately reach 15600bp which is too big to transform
+                                    efficiently into bacteria.<br>
+                                    2. Three repressors, four enzymes and at least one reporter give the cell such a
+                                    heavy protein synthesis pressure. And it may greatly influence the growth rate of
+                                    E.coli. So it is better to divide two system into two cells and combine each other
+                                    with inner-related QS.<br>
+                                    3. A more regular and precise oscillating pattern still could not be obtained in our
+                                    previous part. So QS have been settled on as a cell-cell communication pathway to
+                                    urge the bacteria synchronize in a coherent oscillatory state, according to a
+                                    computational modeling work in 2000<sup>[1]</sup>.
+                                    It is predicted that diverse and noisy community of such genetic oscillators
+                                    interacting through a quorum-sensing mechanism could self-synchronize in a robust
+                                    way, leading to a substantially improved global rhythmicity in the system.(mechanism
+                                    is illustrated in modelling parts and video.[1]
+                                </p>
+
                                 <div class="scu_svg_image_middle_2">
-                                    <div></div>
-                                    <img src="http://2017.igem.org/wiki/images/f/f7/T-SCU_China-2017_Repressilator_2000.png">
-                                    <img src="http://2017.igem.org/wiki/images/b/b6/T-SCU_China-2017_Repressilator_2016.png">
-                                    <div class="scu_img_index">Figure1. (a) Original repressilator and (b)optimised
-                                        pLPT107
-                                        .
-                                    </div>
+                                    <img src="http://2017.igem.org/wiki/images/8/8e/T-SCU_China-2017_project_Repressilator01.gif">
+                                    <img src="http://2017.igem.org/wiki/images/c/cd/T-SCU_China-2017_project_Repressilator02.gif">
+                                    <div class="scu_svg_index">A</div>
+                                    <div class="scu_svg_index">B</div>
+                                </div>
+                                <div class="scu_hp_image_single_mid">
+                                    <img src="http://2017.igem.org/wiki/images/0/0a/T-SCU_China-2017_project_Repressilator03.gif">
+                                    <div class="scu_img_index">C</div>
+                                </div>
+                                <div class="scu_img_index">Figure 1. Scheme of the repressilator network coupled to
+                                    a quorum-sensing mechanism in the paper 2000[1]. The original repressilator
+                                    module is located at the left of the vertical dashed line, and the coupling QS
+                                    module appears at the right. The letters A, B, and C correspond to the LacI,
+                                    TetR, CI respectively. As reported, with the increasing of the cellular AI(AHL)
+                                    the whole system, especially oscillation will reach a more and more stable
+                                    state.
                                 </div>
                                 <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To some extent, original repressilator can
-                                    exhibit a
-                                    wide range of dynamical features
-                                    but often with lower accuracy, especially obvious unsynchrony and phase drift. In
-                                    2016,
-                                    researchers modified the original one and rebuilt a triple reporter repressilator
-                                    without repressor degradation (E.coli proteaseΔclpXP strains) and with titration
-                                    sponge.
-                                    It was reported that cells could display macroscopic, population-scale oscillations
-                                    and
-                                    shew a typical 14 generation cyclic period without cell–cell communication. In other
-                                    words they can synchronize automatically in a liquid culture and maintain it after
-                                    proper (1mM) iPTG induction, which provides a theoretically feasible design to
-                                    combine
-                                    the oscillating network with melatonin synthesis via TetR controlled promoter of key
-                                    enzyme COMT. Thus, in this part, we design a lot of experiments to verify the
-                                    repressilator basic properties in different conditions and try to acquire a more
-                                    precise
-                                    and regular oscillating pattern as the origin of the periodic signal.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Based on this modelling work, two circuit named
+                                    4p0＆3p1 are designed to provide a theoretically feasible solution and achieve the
+                                    ultimate macroscopic, population-scale oscillation. Both two plans comprise two
+                                    parts—cell A and cell B which include repressilator plus quorum sensing system and
+                                    synthases system respectively. The Major difference between our design and that in
+                                    the paper is we choose CI-lambda to control the expression of LuxI (AHL synthase)
+                                    and pTet-LuxpR hybrid promoter (BBa_K176000) for QS CI repressor, because pLac
+                                    (LacO1 promoter) exists leak expression phenomenon.<br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cell A-Repressilator cell
+                                    For “repressilator cells”, circuit can be seen as two system (QS and Repressilator)
+                                    inner-related with each other via pCI controlled LuxI and additive hybrid promoter
+                                    induced CI lamba. pCI-LuxI is thought as the Repressilator output/QS input, matching
+                                    with QS output/Repressilator input to form a bistable system, and simultaneously
+                                    negative feedback pattern in QS circuit increases the potential balance or synchrony
+                                    of whole system.<br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cell B-Enzyme cell
+                                    Two similar gene circuit consists of following parts-constitutively expressed luxR,
+                                    tetR (+LVA tag target for its quick degradation) controlled by luxpL promoter,
+                                    fluorescent protein mOrange controlled by pTet promoter (These three are identical
+                                    for both) and luxI under the control of pTet promoter just for 3p1 comparing to COMT
+                                    just for 4p0. The whole circuit is encoded on pSB1C3 plasmid in Escherichia coli
+                                    strain BL21/DHL708 which are used to express enzymes in melatonin synthesis pathway.<br>
+
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When the level of repressor TetR is high, the
+                                    expression of CI is inhibited, which
+                                    contribute to the expression of LuxI catalyzing the synthesis of acyl-homoserine
+                                    lactone (AHL), a signaling molecules in bacterial quorum sensing. Subsequently, AHL
+                                    starts to defuse and accumulate in bacterial population as a small molecule. When
+                                    the amount of AHL reach the threshold, bacterial quorum sensing in both cells are
+                                    initiated rapidly. In this circumstance, constitutively expressed LuxR can interact
+                                    with AHL and then have conformational changes for binding to and inhibit/activate
+                                    luxpL/R promoter. As a consequence, in the cell B the amount of TetR (+LVA tagged)
+                                    repressors expressed will fall down quickly and then the following pTet promoter
+                                    will be activated, while in the cell A this impact on the pTet/LuxpR hybrid promoter
+                                    are not determined by effective LuxR (binding AHL) but dominantly by inner cell TetR
+                                    repressor’s concentration. In other words, although quorum sensing has initiated if
+                                    the number of the TetR repressors are still high enough (over the threshold) the
+                                    hybrid promoter will ultimately maintain in a repressed state.
+                                    In “3p1” system, this gene circuit is used for accumulate AHL in bacterial
+                                    population more quickly. Mathematical and computational predictions have suggested
+                                    that the oscillation is much more stable and regular if the amount of AHL is large
+                                    enough. When the level of repressor TetR is high in “repressilator cells”, LuxI will
+                                    be expressed in “enzyme cells” which contribute to the synthesis of AHL. On this
+                                    occasion, both “repressilator cells” and “enzyme cells” produce AHL in bacterial
+                                    population. As a result, it will take less time to reach stable stage, with
+                                    fluorescent protein mOrange indicting whether the circuit works as expected. And we
+                                    rename QS system ‘synchronizor’.<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In “4p0” system, luxI gene of the “enzyme cell”
+                                    is replaced by COMT
+                                    (rate-controlling enzyme of melatonin synthesis pathway) gene. Therefore, with high
+                                    level of repressor TetR in “repressilator cells”, COMT will be expressed in “enzyme
+                                    cells”. In this way, QS circuit can transfer and modulate the rhythmic signal from
+                                    “repressilator cells” to “enzyme cells” via AHL concentration fluctuation and then
+                                    ‘enzyme cells’ receive the signal and modulate the COMT expression with periodical
+                                    pattern. In this system QS functions not only as ‘synchronizor’ but also ‘modulator’
+                                    assist the whole working steadily and efficiently.
                                 </p>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/5/51/T-SCU_China-2017_QS_fig2a1.png">
+                                    <img src="http://2017.igem.org/wiki/images/a/af/T-SCU_China-2017_QS_fig2a2.png">
+                                    <div class="scu_img_index">a</div>
+                                </div>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/5/50/T-SCU_China-2017_QS_fig2b1.png">
+                                    <img src="http://2017.igem.org/wiki/images/5/59/T-SCU_China-2017_QS_fig2b2.png">
+                                    <div class="scu_img_index">b</div>
+                                </div>
+                                <div class="scu_img_index">Fig 2. a, 4p0＆b, 3p1 circuit.</div>
                             </div>
                             <div class="scu_split" id="results"></div>
                             <div>
                                 <div class="scu_sub_title"><i>02</i>&nbsp;&nbsp;Results</div>
-                                <div class="scu_acma_subtitle">2.1 Repressilator basic properties and optimization</div>
-                                <div><p class="scu_content_attri">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We bought well-construct
-                                    commercialized plasmid pLPT107 (as reported in the paper) (Fig1)and transformed it
-                                    into
-                                    E.coli MC4100 and DHL708ΔclpXP strain (received from team “Peking”, more details
-                                    about
-                                    knock-out are listed at the end) (both are LacI knocked out) respectively to test
-                                    the
-                                    function of protease for oscillating period and phase drift, because protease
-                                    knocking-out may have some potential influence on the enzyme activity and kinetics
-                                    of
-                                    whole four-enzyme system due to the protein half-life changes and it is better not
-                                    to
-                                    use this strain in enzyme expression if not necessary. The real-time fluorescence
-                                    intensity of all three reporters CFP (400/476nm) YFP(480/530nm) RFP(590/630nm) is
-                                    measured by 37℃ culturing the strains in 96-well plate in plate reader. And every
-                                    90mins
-                                    bacteria is diluted to OD0.1-0.2 to keep in early exponential phase. We calculate
-                                    the
-                                    fluorescence intensity/OD600 in the figure to represent the fluorescence protein
-                                    concentration in a single unit such as one E.coli cell. And our results shows that
-                                    strains obey a 120min long oscillating period, whileΔclpXP strain exhibits a more
-                                    regular oscillating pattern than its counterpart, whereas it is quite confused that
-                                    the
-                                    period is such short and DHL708ΔclpXP only differ with MC4100 in amplitude not in
-                                    the
-                                    period length which is inconsistent with the paper (Fig 2). However DHL708 exhibits
-                                    colony ring-structure comparing to MC4100 (Fig3), and all indicts that protease
-                                    knocked-out strain is necessary for following experiments to achieve a much more
-                                    regular
-                                    cyclic pattern.<br>
+                                <div class="scu_acma_subtitle">2.1 Quorum sensing basic property</div>
+                                <div><p class="scu_content_attri">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To confirm QS function
+                                    in architect cell-cell communication we build LuxpR-GFP-constitutive (J23106)
+                                    LuxR-pSB1C3, pTet-LuxI/pCI-LuxI-pSB1C3 and pTet/LuxpR hybrid promoter-J23106
+                                    LuxR-J23106 TetR-pSB1C3 via co-culture and additive AHL. pTet-LuxI/pCI-LuxI-pSB1C3
+                                    are exclusively built and tested because they can constitutive or semi-constitutive
+                                    express LuxI(AHL synthase) when the TetR/CI-Lambda repressor are not added in and
+                                    both are key components for QS modulator system in 3p1/4p0 circuit. All circuits
+                                    referring to are transformed into E.coli DHL708 and BL21 simultaneously for the
+                                    reason that four melatonin synthase are designed to express in BL21 or DHL708 and
+                                    pTet/LuxpR hybrid promoter-Lambda as the QS output versus repressilator input have
+                                    to be confirmed in DHL708. Function of LuxR transcriptional activator (Lux pR) is
+                                    confirmed in both GFP reporter and hybrid promoter-RFP circuits after co-culture
+                                    with DHL708/BL21 pTet-LuxI/pCI-LuxI for about 13 hours. Several nutrition and
+                                    culture conditions (M9/LB/artificial intestinal fluid) are set to explore the QS
+                                    threshold in different milieu, especially artificial intestinal fluid are used to
+                                    mimic the QS in the intestine. pCI-LuxI and Hybrid promoter-J23106 LuxR-J23106 TetR
+                                    (known as UHP) are co-cultured in same wells of a 96-well plate with formula 8uL
+                                    pCI-LuxI DHL708 bacteria liquid culture/ 8uL UHP bacteria liquid culture/ 134 uL
+                                    corresponding blank culture medium and UHP DHL708 used in this section is
+                                    conditioned with 80 ng/mL ATc 4 hours before measurement( aTc+ indicted in the
+                                    figure). Continuous incubation in plate reader for 37 degree Celsius and measure RFP
+                                    fluorescence (580/630 nm) every 15 mins. Supplementary blank mediums are added in
+                                    the measurement process because culture medium is evaporating in 37℃ incubation and
+                                    the bacteria are diluted after this, shown as black arrow in the figure. As Figure
+                                    3a,b, indicts, the OD is about 0.1 at the 0 time point, while the fluorescence/OD
+                                    (means the relative RFP protein concentration in cell unit) start at a low level
+                                    about 8000 A.U. per OD. It is obvious that fluorescence for all four groups begin
+                                    increase exponentially at about 60-75mins latter with the OD600 reaching 0.2. As for
+                                    pTet-LuxI/UHP-aTc+ groups pTet-LuxI BL21 are also designed to co-culture with
+                                    UHP-aTc+ DHL708 because pTet-LuxI is necessary in 3p1 cell B. Slightly different
+                                    from pCI-LuxI/UHP-aTc+ groups, data exhibits that mainly after 135mins groups begin
+                                    early exponential phase, with OD600 reaching 0.25-0.3.<br>
                                 </p>
                                 </div>
-                                <div class="scu_hp_image_single_mid">
-                                    <img src="http://2017.igem.org/wiki/images/7/7a/T-SCU_China-2017_project_rep_fig2a.png">
-                                    <div class="scu_img_index">(a)</div>
-                                </div>
-                                <div class="scu_hp_image_single_mid">
-                                    <img src="http://2017.igem.org/wiki/images/7/7c/T-SCU_China-2017_Repressilator_1st_measurement_YFP.png">
-                                    <div class="scu_img_index">(b)</div>
-                                </div>
-                                <div class="scu_hp_image_single_mid">
-                                    <img src="http://2017.igem.org/wiki/images/e/ef/T-SCU_China-2017_Repressilator_1st_RFP.png">
-                                    <div class="scu_img_index">(c)</div>
-                                </div>
-                                <p class="scu_img_index"> Figure 2. Fluorescence intensity changes in the whole
-                                    measuring period. (a) CFP and (b)YFP fluorescence change in a oscillating
-                                    pattern
-                                    for both MC4100 and DHL708ΔclpXP strains in a period of approximately 120mins.
-                                    The
-                                    major difference between protease clpXP knout-out and normal MC4100 is MC4100
-                                    shows
-                                    a higher and more irregular oscillating amplitude especially at the
-                                    begin(0-200min)
-                                    and at the end (1500-1675min). (c), and for RFP both strains oscillates in a
-                                    similar
-                                    low level 100-300 A.U./OD 1300mins before, but after 1300min the fluorescence
-                                    intensity of MC4100 increase obviously and even reaches 5000 A.U./OD in the
-                                    following 300min which cannot be illustrated reasonably.
-                                </p>
-                                <div class="scu_svg_imgage_array_3_auto">
-                                    <img src="http://2017.igem.org/wiki/images/3/39/T-SCU_China-2017_project_rep_fig3a.png">
-                                    <img src="http://2017.igem.org/wiki/images/9/92/T-SCU_China-2017_project_rep_fig3b.png">
-                                    <img src="http://2017.igem.org/wiki/images/d/d8/T-SCU_China-2017_project_rep_fig3c.png">
-                                    <div class="scu_svg_index_3">(a)</div>
-                                    <div class="scu_svg_index_3">(b)</div>
-                                    <div class="scu_svg_index_3">(c)</div>
-                                </div>
-                                <div class="scu_svg_imgage_array_3_auto">
-                                    <img src="http://2017.igem.org/wiki/images/d/d9/T-SCU_China-2017_project_rep_fig3d.png">
-                                    <img src="http://2017.igem.org/wiki/images/6/64/T-SCU_China-2017_project_rep_fig3e.png">
-                                    <img src="http://2017.igem.org/wiki/images/b/b2/T-SCU_China-2017_project_rep_fig3f.png">
-                                    <div class="scu_svg_index_3">(a)</div>
-                                    <div class="scu_svg_index_3">(b)</div>
-                                    <div class="scu_svg_index_3">(c)</div>
-                                    <p class="scu_img_index"> Figure 3 colony ring structure.a-c, A 3-mm diameter colony
-                                        of
-                                        DHL708ΔclpXP cells with the triple reporter repressilator (pLPT107) reveals
-                                        tree-like ring patterns in fluorescent protein levels. e-f, However colony of
-                                        MC4100
-                                        cells with the triple reporter repressilator (pLPT107) do not show ring-pattern.
-                                        The
-                                        images are acquired using Leica microscopy and solid culture medium are
-                                        conditioned
-                                        on the slides for bacterial colony incubation and image acquisition.
-                                    </p>
-                                </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;To optimize the oscillating period, we try to
-                                    add
-                                    additive iPTG in the measuring process
-                                    to urge the cell synchronize under the outer ‘pressure’. And different concentration
-                                    of
-                                    iPTG is added into the dilution M9 medium to achieve ultimate 100/250/500/1000μM. We
-                                    find that additive iPTG could help to synchronize in a more robust way by amplify
-                                    the
-                                    oscillating amplitude, in other word the fluorescence intensity changes more
-                                    rapidly.
-                                    (Fig 4)
-                                </p>
                                 <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/d/d5/T-SCU_China-2017_project_rep_fig4a.png">
-                                    <img src="http://2017.igem.org/wiki/images/f/fb/T-SCU_China-2017_project_rep_fig4b.png">
-                                    <div class="scu_svg_index2">(a)</div>
-                                    <div class="scu_svg_index2">(b)</div>
+                                    <img src="http://2017.igem.org/wiki/images/0/0b/T-SCU_China-2017_QS_fig3a.png">
+                                    <img src="http://2017.igem.org/wiki/images/7/70/T-SCU_China-2017_QS_fig3b.png">
+                                    <div class="scu_svg_index">a</div>
+                                    <div class="scu_svg_index">b</div>
+                                </div>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/8/89/T-SCU_China-2017_QS_fig3c.png">
+                                    <img src="http://2017.igem.org/wiki/images/2/2f/T-SCU_China-2017_QS_fig3d.png">
+                                    <div class="scu_svg_index">c</div>
+                                    <div class="scu_svg_index">d</div>
+                                </div>
+                                <div class="scu_img_index">Figure 3. pCI-LuxI DHL708/UHP-aTc+ DHL708 & pTet-LuxI
+                                    BL21+DHL708/UHP-aTc+ DHL708 co-culture experiments. a b, Fluorescence/OD and OD600
+                                    curves in pCI-LuxI DHL708/UHP-aTc+ DHL708, a beautiful ‘S’-shape may suggests that
+                                    QS happens at the OD of approximately 0.2. c d, Fluorescence/OD and OD600 curves in
+                                    pTet-LuxI BL21+DHL708/UHP-aTc+ DHL708. BL21 growths slower than DHL708 so its OD
+                                    threshold for QS may be 0.25-0.3.<br><br>
+                                </div>
+                                <div class="scu_acma_subtitle">2.2 pTet/LuxpR Hybrid promoter confirmation</div>
+                                <div class="scu_hp_image_single_mid" style="width: 35%">
+                                    <img src="http://2017.igem.org/wiki/images/f/f3/T-SCU_China-2017_QS_fig4a.png">
+                                    <div class="scu_img_index">a</div>
+                                </div>
+                                <div class="scu_svg_imgage_array">
+                                    <img src="http://2017.igem.org/wiki/images/b/b6/T-SCU_China-2017_QS_fig4b.png">
+                                    <img src="http://2017.igem.org/wiki/images/9/93/T-SCU_China-2017_QS_fig4c.png">
+                                    <div class="scu_svg_index">b</div>
+                                    <div class="scu_svg_index">c</div>
+                                </div>
+                                <div class="scu_img_index">Figure 4. pTet/LuxpR hybrid promoter measurement. a, pTet/Lux
+                                    pR hybrid promoter with RFP-J23106 LuxR-J23106 TetR in pSB1C3 plasmid. b c,
+                                    Fluorescence per OD and OD600 curves show that different concentrations of ATc have
+                                    no obvious influence on fluorescence, indicting Hybrid promoter may not be such a
+                                    solid circuit.
+                                </div>
+                                <div class="scu_acma_subtitle">2.3 iPTG imitation</div>
+                                <p class="scu_content_attri">
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;According to the computational modelling
+                                    results, we find QS system function like iPTG synchronize in the early state
+                                    (video), which all accelerate the oscillating period for those in LacI dominant
+                                    period but not in the rest (TetR＆CI). So during a few following generations this
+                                    pattern will assist the coherent to achieve self-sychrony. And to imitate this
+                                    process different concentration(100uM/250uM/500uM/1000uM) of iPTG is added in the
+                                    culture M9 medium and use to incubate the DHL708+pLPT107.
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We measure this oscillation pattern and period
+                                    during whole project totally for
+                                    three times and all shown in Figure 5. At the first time, we dilute the bacteria
+                                    every 60-90 minutes to maintain the coherent OD600 into the 0.2-0.5 interval to keep
+                                    it in growth exponential phase and we get the oscillating period for about 2 hours,
+                                    seriously it is really a little bit short and not so convincing because we do not
+                                    valuate the influence the dilution work to the data accuracy and maybe the
+                                    2-hour-period result from the dilution. For the second time we continuous 37℃
+                                    incubate the bacteria into plate reader for 10 hours and acquire each data point per
+                                    30mins, but as indicts the so called period become much more irregular. More data
+                                    points are needed to do further analysis, so we have our third
+                                    measurement—continuous incubate 13 hours and gain each point for 15mins, however,
+                                    still similar pattern. In our modelling work, we analyze this phenomenon and give a
+                                    reasonable explanation that the coherent are not well synchronized just via iPTG so
+                                    we hope after QS system is inserted into the repressilator, the oscillation could be
+                                    urged into a much more steadily synchronous stage.
+                                </p>
+                                <div class="scu_svg_imgage_array_3">
                                     <img src="http://2017.igem.org/wiki/images/9/98/T-SCU_China-2017_project_rep_fig4c.png">
-                                    <img src="http://2017.igem.org/wiki/images/b/ba/T-SCU_China-2017_project_rep_fig4d.png">
-                                    <div class="scu_svg_index2">(c)</div>
-                                    <div class="scu_svg_index2">(d)</div>
+                                    <img src="http://2017.igem.org/wiki/images/8/87/T-SCU_China-2017_QS_fig5d.png">
+                                    <img src="http://2017.igem.org/wiki/images/7/79/T-SCU_China-2017_QS_fig5e.png">
+                                    <div class="scu_svg_index_3">a</div>
+                                    <div class="scu_svg_index_3">b</div>
+                                    <div class="scu_svg_index_3">c</div>
                                 </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Generally, the periods of synthetic circuits
-                                    depend
-                                    on so many different parameters that
-                                    change with conditions, as conditions change, the plasmid copy numbers, RNA
-                                    degradation,
-                                    gene expression, and cell volume change in non-trivial ways, making it robust
-                                    relative
-                                    to internal physiological time scales such as the generation times. So we utilized
-                                    different culture conditions (measured by additive LB ratio-5% 10% 20% 40%, higher
-                                    ratio
-                                    means richer nutrition) to test whether cyclic period will change with the
-                                    increase/decrease of the nutrition and on the other hand try to get a longer
-                                    oscillating
-                                    period. Because we do hope this period could be adjusted closer to human circadian
-                                    clock
-                                    (12 hours) so we can express melatonin in this pattern to imitate the natural
-                                    process.
-                                    (Fig 5) MC4100 and DHL708ΔclpXP continuously incubate in 37 ℃ plate reader in
-                                    different
-                                    M9 culture medium and RFP fluorescence is measured in these conditions. Oscillating
-                                    pattern do not exhibit significant difference among various M9 medium for
-                                    DHL708ΔclpXP,
-                                    which indicts that culture conditions, especially nutrition, have no obvious
-                                    influence
-                                    on oscillation. And it is possible for us to rhythmic express our melatonin synthase
-                                    in
-                                    the E.coli and keep a regular period.
-                                </p>
-                                <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/d/df/T-SCU_China-2017_Fig5a.png">
-                                    <img src="http://2017.igem.org/wiki/images/7/73/T-SCU_China-2017_Fig5b.png">
-                                    <div class="scu_svg_index2">(a)</div>
-                                    <div class="scu_svg_index2">(b)</div>
-                                    <div class="scu_img_index">Figure 5. Influence of nutrition for oscillation. a b,
-                                        MC4100
-                                        and DHL708ΔclpXP continuously incubate in 37 ℃ plate reader in different M9
-                                        culture
-                                        medium (5% 10% 20% 40% LB additive) and RFP fluorescence is measured in these
-                                        conditions. As additive LB ratio increase, MC4100 exhibits higher and higher
-                                        fluorescence intensity per OD600 whereas DHL708ΔclpXP keep in a stable state and
-                                        appear no significant differences among each group.
-                                    </div>
-                                </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Next, in order to investigate whether the
-                                    strains or
-                                    bacteria have possibility to
-                                    colonize into the gut environment and change their oscillating period, artificial
-                                    intestinal fluid (formula in method) was applied to substitute the normal culture
-                                    medium
-                                    and different ratio of LB was added to mimic the various nutrition state for a
-                                    person in
-                                    a day (Empty to Full).As Fig 6a indicts both MC4100 and DHL708 are able to colonize
-                                    stably in the artificial intestinal fluid and Fig6b suggests that both strains can
-                                    maintain their oscillating period in artificial intestinal fluid while DHL708ΔclpXP
-                                    could keep a much better regularity in various nutritional intestinal fluid
-                                    simultaneously.
-                                </p>
-                                <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/3/33/T-SCU_China-2017_project_rep_Fig_6a.png">
-                                    <img src="http://2017.igem.org/wiki/images/0/0f/T-SCU_China-2017_Fig6.png">
-                                    <div class="scu_svg_index2">(a)</div>
-                                    <div class="scu_svg_index2">(b)</div>
-                                    <div class="scu_img_index">Figure 6. Artificial intestinal fluid colonization. a,
-                                        Bacterial liquid medium is firstly diluted to OD0.3 exponential phase before
-                                        continuous measurement.
-                                    </div>
-                                </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The OD of all experimental groups increase
-                                    exclusively relative to different culture
-                                    conditions, as indicts, absolute LB and intestinal fluid represent the fastest and
-                                    slowest growth rate respectively and DHL708ΔclpXP cells generally possess a slower
-                                    growth rate referring to its counterparts during the whole measurement. b, both
-                                    strains
-                                    can maintain their oscillating period in artificial intestinal fluid while
-                                    DHL708ΔclpXP
-                                    could keep a much better regularity in various nutritional intestinal fluid
-                                    simultaneously. On the other perspective, the nutrition of the fluid nearly exhibit
-                                    no
-                                    obvious impact on oscillation, no matter period and pattern.
-                                </p>
-                                <div class="scu_acma_subtitle">2.2 Protease knock-out for MC4100 and DHL708ΔclpXP strain
-                                </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClpXP protein is a protease which can recognize
-                                    ssrA
-                                    tag, a degradation tag, and target<br>
-                                    the attached protein for destruction, belonging to the heat shock protein Hsp100
-                                    family.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1. As the first repressilator reported in 2000,
-                                    ssrA
-                                    tag is added to repressors in
-                                    repressilator in order to bring the effective repressor protein lifetimes to that of
-                                    mRNA.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2. However, the research in 2016 showed that the
-                                    ssrA
-                                    tag induced ‘retroactivity’ effects
-                                    on oscillations owing to competition for shared proteases, and removing this
-                                    interference created very regular oscillations, with longer periods.<br>
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3. Hence we decide to knock out the clpXP to
-                                    create
-                                    a
-                                    more regular oscillation with
-                                    longer periods.<br>
-
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because the pKD3 plasmid we have was wrong, we
-                                    use
-                                    one part of Red recombination system.
-                                    The biggest difference between our method and the traditional method is that our PCR
-                                    production doesn’t have FRT site so we don’t need to transform the pCP20 plasmid
-                                    into
-                                    the bacterial to remove the reporter gene. Our RED recombination system utilize the
-                                    pKD46 plasmid to express three proteins: Exo can produce 3’-overhang, Bet can induce
-                                    two
-                                    single strand DNA molecule becoming double strand DNA and Gam can inhibit the
-                                    function
-                                    of RecBCD protein. The pKD46 plasmid is then transformed into E.coli, with these
-                                    three
-                                    proteins expressing under the induction of L-Arabinose. Then the PCR production of
-                                    reporter gene, Kanamycin resistance gene, which is flanked by two 57bp homologous
-                                    arm of
-                                    clpXP, is transformed into the bacteria expressiong Exo, Bet and Gam by
-                                    electroporation,
-                                    leading to the substitution of Kanamycin resistance gene for clpXP. Finally, the
-                                    pKD46
-                                    plasmid will be lost by high temperature culture, and the ΔclpXP E.coli is screened
-                                    by
-                                    Kanamycin.(Fig 7)<br>
-                                </p>
-                                <div class="scu_hp_image_single_mid">
-                                    <img src="http://2017.igem.org/wiki/images/c/c9/T-SCU_China-2017_project_rep_Fig_7.png">
-                                    <div class="scu_img_index">Fig.7 The schematic diagram of clpXP knock-out process.
-                                    </div>
-                                </div>
-                                <p class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Because our reporter gene is Kanamycin
-                                    resistance
-                                    gene, the bacteria is plated on the
-                                    solid medium contained Kanamycin. The number of colonies between experimental group
-                                    is
-                                    much larger than that of the control group, which is E.coli with pKD46 without the
-                                    insert bringing in the homology arms. The experimental group is cultured in liquid
-                                    media
-                                    and then used as template of PCR to confirm the recombination colonies. And then
-                                    colony
-                                    PCR is used to confirm the result of recombination. The PCR products from
-                                    recombination
-                                    colonies are below 2kb, while the products from wild type is about 2kb. Then we
-                                    optimized the PCR reaction and sequenced the product from recombination colonies,
-                                    whose
-                                    result indicts that we have successfully knocked out the clpXP gene. (Fig.8)
-                                </p>
-                                <div class="scu_svg_imgage_array_3_fix">
-                                    <img src="http://2017.igem.org/wiki/images/3/3c/T-SCU_China-2017_project_rep_Fig_8a.png">
-                                    <img src="http://2017.igem.org/wiki/images/c/cc/T-SCU_China-2017_project_rep_Fig_8b.png">
-                                    <img src="http://2017.igem.org/wiki/images/6/60/T-SCU_China-2017_project_rep_Fig_8c.png">
-                                    <div class="scu_svg_index_3">(a)</div>
-                                    <div class="scu_svg_index_3">(b)</div>
-                                    <div class="scu_svg_index_3">(c)</div>
-                                </div>
-                                <div class="scu_svg_imgage_array">
-                                    <img src="http://2017.igem.org/wiki/images/5/5d/T-SCU_China-2017_project_rep_Fig_8d.png">
-                                    <img src="http://2017.igem.org/wiki/images/4/42/T-SCU_China-2017_project_rep_Fig_8e.png">
-                                    <div class="scu_svg_index2">(d)</div>
-                                    <div class="scu_svg_index2">(e)</div>
-                                </div>
-                                <div class="scu_img_index">Figure 8 Electrophoresis confirmation.<br>
-                                    a,The electrophoresis
-                                    result of PCR production of adding homologous arm to K resistance gene. The result
-                                    of PCR was accordance with the anticipated objective strap size (1157bp).<br> b, The
-                                    result of single bacteria colony PCR after optimization. It’s clear that the length
-                                    of PCR production is less than 2kb.<br>c, The result of single bacteria colony PCR
-                                    after
-                                    optimization. It’s clear that the length of PCR production is less than 2kb. <br>d,
-                                    The
-                                    result of single bacteria colony PCR. The 12 lane is negative control which
-                                    undergoes the PCR without template. The 13 lane is positive control using the wild
-                                    type bacteria as template. <br>e, The recombination colony is obviously lower than
-                                    2000bp and has non-specific band at 1000bp. The wild type’s specific band is at
-                                    2000bp and the non-specific band is at 700bp.
-                                </div>
-                                <div class="scu_content_attri">
-                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We have did a lot of experiments to knock out
-                                    the clpXP, and However, the ΔclpXP MC4100
-                                    stain that has been knocked out by ourselves still has ampicillin resistance, which
-                                    may
-                                    be caused by partial remaining of pKD46. Therefore, the plasmid pLPT107 with
-                                    ampicillin
-                                    resistance gene cannot be transformed into the ΔclpXP MC4100 stain efficiently;
-                                    thus, we
-                                    turn to team "Peking" for help immediately. Great acknowledgement for they sending
-                                    their
-                                    ΔclpXP strain (from author 2) to us and sharing their experience. We use the primer
-                                    designed in the paper to confirm protease is well knocked out (Fig.9)
+                                <div class="scu_img_index">Figure 5. Three measurements for DHL708ΔclpXP and MC4100
+                                    (repressilator pLPT107+), RFP fluorescence shown.
                                 </div>
                             </div>
-                            <div class="scu_split" id="reference"></div>
-                            <div class="scu_sub_title"><i>03</i>&nbsp;&nbsp;Reference</div>
+                            <div class="scu_split" id="future"></div>
+                            <div class="scu_sub_title"><i>03</i>&nbsp;&nbsp;future</div>
                             <p class="scu_content_attri">
-                                1. Elowitz, M. B. & Leibler, S. A synthetic oscillatory network
-                                of transcriptional regulators. Nature 403, 335–338 (2000).<br>
-                                2. Potvin-Trottier, L., Lord, N. D., Vinnicombe, G. & Paulsson, J. Synchronous long-term
-                                oscillations in a synthetic gene circuit. Nature 538, 514–517 (2016).</p>
+                                1. Repeat DHL708ΔclpXP and MC4100 repressilator measurement for more than 30 hours to
+                                confirm oscillation.<br>
+                                2. Insert QS circuit (pCI LuxI-J23106 LuxR-pTet/LuxpR hybrid promoter Lambda) into
+                                repressiltor pLPT107 by replacing mCFP and mKate2 reporter as indicted in fig2 and
+                                measure the oscillation pattern of this optimized one (period ＆ regular or not).<br>
+                                3. Repeat pTet/LuxpR hybrid promoter confirmation work.
+
+                            </p>
+                            <div class="scu_split" id="reference"></div>
+                            <div class="scu_sub_title"><i>04</i>&nbsp;&nbsp;Reference</div>
+                            <p class="scu_content_attri">
+                                1. Garcia-Ojalvo J, Elowitz M B, Strogatz S H. Modeling a synthetic multicellular clock:
+                                Repressilators coupled by quorum sensing[J]. Proceedings of the National Academy of
+                                Sciences of the United States of America, 2004, 101(30):10955-60.<br>
+                                2. Bassler B L. How bacteria talk to each other: regulation of gene expression by quorum
+                                sensing[J]. Current Opinion in Microbiology, 1999, 2(6):582.<br>
+                            </p>
+
                         </div>
                         <div class="margin-top-20vh"></div>
                     </div>
