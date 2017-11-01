@@ -734,7 +734,7 @@ ul {
 }
 
 .scu_hp_image_single3 > img {
-    width: 40%;
+    width: 50%;
     height: auto;
 }
 
@@ -797,6 +797,13 @@ ul {
     text-align: center;
     float: left;
 }
+.scu_svg_index2 {
+    margin-top: 10px;
+    width: 48%;
+    text-align: center;
+    float: left;
+    font-size: 16px;
+}
 
 /*@media screen and (max-width: 1200px) {*/
 /*.scu_svg_imgage_list {*/
@@ -829,4 +836,12 @@ ul {
 .scu_hp_image_single_mid > img {
     width: 100%;
     height: auto;
+}
+
+/*css for survey*/
+.scu_survey_subtitle {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.0em;
+    padding: 20px;
 }
