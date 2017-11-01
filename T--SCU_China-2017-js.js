@@ -75,6 +75,6 @@ function resize_window() {
     $('#right_wrapper').css("height", Height + 30);
     $('#middle_wrapper').css("height", Height + 30);
 
-    var windowHeight = $(document).outerHeight();
-    $('#scu_nav_wrapper').css("height", windowHeight);
+    // var windowHeight = $(document).outerHeight();
+    // $('#scu_nav_wrapper').css("height", windowHeight);
 }

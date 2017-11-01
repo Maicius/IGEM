@@ -108,7 +108,7 @@ ul {
 
 .scu_down {
     position: relative;
-    margin: -20px auto 20px auto !important;
+    margin: 20px auto 20px auto !important;
     text-align: center !important;
     font-size: 22px !important;
     font-family: "cambria", "Times New Roman", Georgia, Serif, sans-serif !important;
@@ -311,7 +311,7 @@ ul {
 
 .scu_title {
     position: relative;
-    padding-top: 50vh;
+    padding-top: 60vh;
     text-align: center !important;
     font-size: 48px !important;
     color: white !important;
@@ -320,7 +320,7 @@ ul {
 
 .scu_vice_title {
     width: 70%;
-    font-size: 16px !important;
+    font-size: 32px !important;
     margin: 0 auto 30px auto;
     text-align: center;
     color: white !important;
@@ -476,8 +476,7 @@ ul {
     height: auto;
 }
 .scu_main_page_content:hover {
-    box-shadow:1px 1px 2000px 2000px rgba(0,0,0,0.4),0 0 10px 10px rgba(0,0,0,0.4);
-    transform: scale(1.02);
+
 }
 .scu_main_page_gold {
     width: 100%;
@@ -485,12 +484,14 @@ ul {
     margin: 10px auto;
     text-align: center;
     vertical-align: middle;
+
 }
 .scu_main_page_gold > img {
     width: 100%;
     height: auto;
     position: relative;
     margin: 0 auto;
+    transform: scale(0.7);
 }
 .scu_main_page_content_wrapper {
     border-top: solid 10px;
@@ -502,17 +503,49 @@ ul {
     -moz-box-shadow: 0px 0px 10px #888888; /* 老的 Firefox */
     box-shadow: 0px 0px 10px #888888;
 }
+.scu_main_page_content_wrapper:hover {
+    box-shadow:1px 1px 2000px 2000px rgba(0,0,0,0.4),0 0 10px 10px rgba(0,0,0,0.4);
+    transform: scale(1.02);
+}
 .scu_main_page_content_p {
     font-size: 22px !important;
     line-height: 2.0em !important;
     text-align: justify !important;
     padding: 10px !important;
     height: auto !important;
+    word-break: break-all !important;
+    hyphens: auto;
 }
 .scu_project_image_wrapper_wide {
     width: 100%;
     position: relative;
     background: url("http://2017.igem.org/wiki/images/8/85/T-SCU_China-2017_small_wide_background.jpg") repeat-y;
     background-size: contain;
-    height: 300vh;
+    height: 320vh;
+}
+.scu_main_page_content_p2 {
+    font-size: 22px !important;
+    line-height: 2.0em !important;
+    text-align: justify !important;
+    padding: 10px !important;
+    height: auto !important;
+    color: black;
+    word-break: break-all !important;
+    hyphens: auto;
+}
+.scu_hp_image_single_main {
+    width: 80%;
+    position: relative;
+    margin: 10px auto;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.scu_hp_image_single_main > img {
+    margin-top: 20px;
+    width: 80%;
+    height: auto;
+    border: dotted 5px;
+    box-shadow: #2b5d10 10px;
 }
